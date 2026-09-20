@@ -1,12 +1,12 @@
 """
 Directly clones and populates the friend's docx:
 'AI_Agent_for_Personal_Goal_Tracking_Project_Report (1).docx'
-Embeds 11 high-resolution system architecture diagrams, flowcharts,
-and UI screenshots specifically crafted for the Automated Literature Review Assistant.
-Includes bold formatted abstract and IEEE references.
+Embeds all 5 newly uploaded high-definition diagrams with rich, in-depth academic narrative,
+plus the 5 live UI screenshots, bold abstract, and IEEE citations.
 """
 
 import os
+import shutil
 import docx
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
@@ -225,23 +225,23 @@ def build_direct_from_friend():
         r.font.color.rgb = RGBColor(0, 0, 0)
         return p
 
-    def add_fig(path, cap, w=5.8):
+    def add_fig(path, cap, width_in=6.0):
         if os.path.exists(path):
             p_i = doc.add_paragraph()
             p_i.alignment = WD_ALIGN_PARAGRAPH.CENTER
-            p_i.paragraph_format.space_before = Pt(8)
+            p_i.paragraph_format.space_before = Pt(10)
             p_i.paragraph_format.space_after = Pt(4)
             p_i.paragraph_format.keep_with_next = True
             run = p_i.add_run()
-            run.add_picture(path, width=Inches(w))
+            run.add_picture(path, width=Inches(width_in))
             
             p_c = doc.add_paragraph()
             p_c.alignment = WD_ALIGN_PARAGRAPH.CENTER
             p_c.paragraph_format.space_before = Pt(2)
-            p_c.paragraph_format.space_after = Pt(10)
+            p_c.paragraph_format.space_after = Pt(12)
             r_c = p_c.add_run(cap)
             r_c.font.name = "Times New Roman"
-            r_c.font.size = Pt(10.5)
+            r_c.font.size = Pt(10)
             r_c.font.bold = True
             r_c.font.color.rgb = RGBColor(0, 0, 0)
 
@@ -258,12 +258,10 @@ def build_direct_from_friend():
         "downloading, skimming, and tabulating existing literature."
     )
     add_p(
-        "The Automated Literature Review Assistant (ALRA) conceptualizes literature synthesis as a multi-agent collaborative ecosystem (Figure 1.1). "
+        "The Automated Literature Review Assistant (ALRA) conceptualizes literature synthesis as an autonomous, multi-agent collaborative ecosystem. "
         "By combining real-time API integrations (ArXiv and Semantic Scholar) with dense vector retrieval (FAISS) and deep reasoning LLMs "
         "(Groq LLaMA-3.3 and DeepSeek R1), ALRA transforms passive document reading into an interactive, verifiable, and fully autonomous discovery process."
     )
-
-    add_fig('assets/diagrams/fig1_1_ecosystem.png', "Figure 1.1: Automated Literature Review Assistant high-level functional ecosystem")
 
     add_subhead("1.2 Research Objectives & Project Scope")
     add_p(
@@ -313,13 +311,23 @@ def build_direct_from_friend():
     add_chapter_head(2, "Problem Statement and Motivation")
     add_subhead("2.1 Formal Problem Statement")
     add_p(
-        "Traditional scholarly literature reviews suffer from three severe systemic flaws (Figure 2.1):\n"
-        "1. Fragmented Information Retrieval: Researchers must manually query separate databases (Google Scholar, IEEE Xplore, ArXiv, PubMed) with rigid keyword syntax, failing to retrieve papers using synonymous terminology.\n"
-        "2. Manual Comparison Overhead: Constructing comparative taxonomy tables (comparing dataset sizes, evaluation metrics, limitations, and architectures) requires dozens of hours of manual copy-pasting.\n"
-        "3. Cognitive Blindspots in Gap Identification: Identifying what has NOT been done requires a researcher to mentally synthesize hundreds of articles. Inexperienced graduate students frequently pursue research trajectories that are either already saturated or methodologically invalid."
+        "Traditional scholarly literature reviews suffer from severe systemic bottlenecks that impede scientific velocity. "
+        "As illustrated in Figure 2.1, traditional literature research is fundamentally time-consuming, manual, and error-prone. "
+        "Researchers face fragmented search across siloed portals, an overwhelming reading volume exceeding 100+ PDF downloads, "
+        "tedious copy-pasting of metadata into Excel matrices, incomplete coverage that overlooks subtle research gaps, and "
+        "a severe risk of fabricated citations when relying on generic conversational AI chatbots. The resultant outcome is "
+        "slow, inconsistent, and unreliable research output."
     )
 
-    add_fig('assets/diagrams/fig2_1_problem_gap.png', "Figure 2.1: Problem space and cognitive bottlenecks in traditional literature review vs ALRA Agentic Automation")
+    add_fig('assets/diagrams/fig2_1_problem_gap.png', "Figure 2.1: Traditional Literature Review vs ALRA Agentic Automation Workflow", width_in=6.1)
+
+    add_p(
+        "In contrast, the ALRA Agentic Automation paradigm transforms this entire pipeline into an automated, intelligent, and "
+        "reliable framework. By orchestrating multi-source querying across ArXiv and Semantic Scholar, performing instant neural "
+        "section extraction backed by local FAISS vector spaces, autonomously assembling structured taxonomy matrices, and "
+        "employing algorithmic gap clustering, ALRA guarantees 100% citation grounding with zero hallucinations, delivering fast, "
+        "accurate, and publication-ready literature surveys in under 3.8 minutes."
+    )
 
     add_subhead("2.2 Motivation & Industry Relevance")
     add_p(
@@ -334,12 +342,19 @@ def build_direct_from_friend():
     add_chapter_head(3, "Novelty and Innovative Contributions")
     add_subhead("3.1 System Novelty")
     add_p(
-        "Unlike generic commercial AI search tools that treat documents as flat text dumps, ALRA introduces an Agentic Decomposition Pipeline (Figure 3.1). "
-        "The system treats academic literature as structured multidimensional knowledge nodes consisting of Problem, Method, Dataset, Metric, "
-        "Limitation, and Future Scope vectors. This structured representation allows ALRA to perform verifiable cross-paper matrix operations."
+        "Unlike generic commercial AI search tools that treat documents as flat text dumps, ALRA introduces an Agentic Decomposition Pipeline. "
+        "Figure 3.1 illustrates the structural divergence between static single-turn LLM chatbots and ALRA's multi-step, tool-augmented "
+        "research pipeline. In standard chatbots, a user query is dispatched as an isolated prompt to an LLM without live search capabilities, "
+        "yielding ungrounded text summaries with fake citations trapped in the chat transcript."
     )
 
-    add_fig('assets/diagrams/fig3_1_static_vs_agentic.png', "Figure 3.1: Static LLM Generation vs Tool-Grounded Autonomous Review Synthesis")
+    add_fig('assets/diagrams/fig3_1_static_vs_agentic.png', "Figure 3.1: Static LLM / Chatbot Approach vs ALRA Tool-Grounded Agentic Pipeline", width_in=6.1)
+
+    add_p(
+        "Conversely, ALRA executes an autonomous 5-stage pipeline: (1) Research Intent Comprehension, (2) Query Expansion & Multi-API Call "
+        "across global academic databases, (3) Dense FAISS Vector Indexing for sub-50ms semantic search, (4) Gap Intelligence & Verified "
+        "Review Matrix compilation, and (5) Direct Compilation to publication-grade Microsoft Word (.docx) and LaTeX documents."
+    )
 
     add_subhead("3.2 Core Innovative Architectural Contributions")
     add_p(
@@ -400,24 +415,36 @@ def build_direct_from_friend():
     add_chapter_head(5, "Detailed Methodology and System Architecture")
     add_subhead("5.1 End-to-End System Architecture")
     add_p(
-        "The architecture of the Automated Literature Review Assistant is structured into five cohesive layers (Figure 5.1): "
-        "(1) Presentation & Multimodal UI Layer, (2) API Gateway & Application Routing Layer, (3) Autonomous Agentic Intelligence Layer, "
-        "(4) Extraction & Vector Indexing Layer, and (5) External Academic Repositories Layer."
+        "The architecture of the Automated Literature Review Assistant is structured into five cohesive, decoupled tiers (Figure 5.1):\n"
+        "• Layer 1 (External Data & Services): Integrates ArXiv Search API, Semantic Scholar Graph API, Microsoft EdgeTTS Speech Cloud, and Local Storage.\n"
+        "• Layer 2 (Extraction & Vector Indexing): Employs PyMuPDF Document Parser, sentence-transformers (`all-MiniLM-L6-v2`), and local FAISS L2 Vector Spaces.\n"
+        "• Layer 3 (Autonomous Agentic Intelligence): Coordinates Query Expansion Agents, Research Gap Intelligence Engines, Review Matrix Synthesizers, and Groq LLaMA-3.3 / DeepSeek reasoning models.\n"
+        "• Layer 4 (API Gateway & Application Routing): Handles FastAPI micro-endpoints, asynchronous coroutines, JSON schema validation, and session caching.\n"
+        "• Layer 5 (Presentation & Multimodal UI): Delivers a dual-themed Gradio 6.0 dashboard, Salim AI WebSpeech voice interaction, and 3D interactive knowledge network visualizations."
     )
 
-    add_fig('assets/diagrams/fig5_1_layered_architecture.png', "Figure 5.1: 5-Tier Layered System Architecture of ALRA")
+    add_fig('assets/diagrams/fig5_1_layered_architecture.png', "Figure 5.1: 5-Tier Layered System Architecture of ALRA", width_in=6.1)
 
     add_subhead("5.2 Working Principles & Agentic Subsystems")
     add_p(
-        "The execution lifecycle of ALRA operates in a multi-turn tool-calling loop (Figure 5.2):\n"
-        "• Query Expansion Agent: Takes a high-level research topic (e.g., 'Agentic AI in Healthcare') and formulates multiple Boolean search queries tailored for ArXiv and Semantic Scholar APIs.\n"
-        "• PDF Parsing & Semantic Chunking Engine: Extracts raw text, handles multi-column layouts, removes headers/footers, and segments content into 512-token chunks with 64-token overlap.\n"
-        "• Research Gap Analysis Engine: Computes cross-document semantic dissimilarities to detect unpopulated clusters in the research embedding space.\n"
-        "• Salim AI Voice Assistant: Handles real-time speech input via Web Speech API and produces ultra-clear voice synthesis through Microsoft EdgeTTS (Figure 5.5)."
+        "The core execution loop of ALRA operates in a multi-turn autonomous agent workflow (Figure 5.2). "
+        "Upon receiving a research query or verbal voice prompt (Step 1), the Query Expansion Agent (Step 2) expands and refines the "
+        "scholarly query with domain synonyms. The system then initiates parallel ingestion: fetching external papers via ArXiv/S2 APIs (Step 3A) "
+        "while simultaneously querying local PDF libraries via FAISS vector search (Step 3B). The LLM Synthesis & Gap Engine (Step 4) "
+        "synthesizes cross-paper findings, isolates unexplored scientific gaps, and autonomously formats the output into publication-ready "
+        "Word (.docx) and LaTeX documents (Step 5)."
     )
 
-    add_fig('assets/diagrams/fig5_2_agent_loop.png', "Figure 5.2: Multi-Turn Agentic Tool-Calling & Review Synthesis Workflow Loop")
-    add_fig('assets/diagrams/fig5_5_voice_flow.png', "Figure 5.3: Salim AI Bidirectional Multimodal Voice Interaction Architecture")
+    add_fig('assets/diagrams/fig5_2_agent_loop.png', "Figure 5.2: Multi-Turn Agentic Tool-Calling & Review Synthesis Workflow Loop", width_in=6.1)
+
+    add_p(
+        "Figure 5.3 details the specialized Salim AI Multimodal Voice Pipeline: User Speech captured via microphone (Step 1) is processed "
+        "by the browser's Web Speech API for low-latency Speech-to-Text conversion (Step 2). The textual transcript is fused with the current "
+        "research context by the Salim AI Agent (Step 3), which invokes Groq / DeepSeek LLMs. The response is synthesized into high-fidelity "
+        "natural speech via the Microsoft EdgeTTS Engine (Step 4) and played back through the user's speaker system (Step 5)."
+    )
+
+    add_fig('assets/diagrams/fig5_5_voice_flow.png', "Figure 5.3: Salim AI Bidirectional Multimodal Voice Interaction Pipeline", width_in=6.1)
 
     add_subhead("5.3 Database, Vector Indexing, and External API Integrations")
     add_p(
@@ -622,7 +649,9 @@ def build_direct_from_friend():
         os.path.expanduser(r"~\Desktop\Salim_Ansari_SIT_Nagpur_Academic_Project_Report.docx"),
         os.path.expanduser(r"~\Downloads\Salim_Ansari_SIT_Nagpur_Academic_Project_Report.docx"),
         os.path.expanduser(r"~\Downloads\Salim_Ansari_Project_Report_Final_SIT_Nagpur.docx"),
-        os.path.expanduser(r"~\Desktop\Salim_Ansari_Project_Report_Final_SIT_Nagpur.docx")
+        os.path.expanduser(r"~\Desktop\Salim_Ansari_Project_Report_Final_SIT_Nagpur.docx"),
+        os.path.expanduser(r"~\Downloads\Salim_Ansari_LiteratureAI_Premium_Report_SIT.docx"),
+        os.path.expanduser(r"~\Desktop\Salim_Ansari_LiteratureAI_Premium_Report_SIT.docx")
     ]
 
     for tgt in targets:
@@ -632,7 +661,7 @@ def build_direct_from_friend():
         except Exception as e:
             print(f"[SKIPPED/LOCKED] {tgt} ({e})")
 
-    print("[SUCCESS] Report with full diagrams and bold abstract successfully generated!")
+    print("[SUCCESS] Report with user-uploaded high-res diagrams and in-depth content generated successfully!")
 
 if __name__ == "__main__":
     build_direct_from_friend()
