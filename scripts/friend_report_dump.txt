@@ -1,0 +1,748 @@
+=== DOCUMENT PROPERTIES ===
+Section 1:
+  Page Size: 8.27 x 11.69 in
+  Margins: Top=0.94, Bottom=0.79, Left=1.18, Right=0.69
+  Different First Page: False
+Section 2:
+  Page Size: 8.27 x 11.69 in
+  Margins: Top=0.94, Bottom=1.00, Left=1.18, Right=0.69
+  Different First Page: False
+Section 3:
+  Page Size: 8.27 x 11.69 in
+  Margins: Top=0.94, Bottom=1.00, Left=1.18, Right=0.69
+  Different First Page: False
+
+=== PARAGRAPHS & RUNS (FIRST 100) ===
+
+[3] Style: Normal | Align: CENTER (1) | LineSp: 1.0 | Before: Nonept | After: Nonept
+TEXT: A PROJECT REPORT
+  Run 1: text='A PROJECT REPORT' | Font=None | Size=None | Bold=True | Italic=None | Color=000000
+
+[5] Style: Normal | Align: CENTER (1) | LineSp: 1.0 | Before: Nonept | After: Nonept
+TEXT: ON
+  Run 1: text='ON' | Font=None | Size=None | Bold=True | Italic=None | Color=000000
+
+[7] Style: Normal | Align: CENTER (1) | LineSp: 1.0 | Before: Nonept | After: Nonept
+TEXT: “AI Agent for Personal Goal Tracking”
+  Run 1: text='“AI Agent for Personal Goal Tracking”' | Font=None | Size=18.0 | Bold=True | Italic=None | Color=000000
+
+[10] Style: Normal | Align: CENTER (1) | LineSp: 1.0 | Before: Nonept | After: Nonept
+TEXT: A project report submitted in partial fulfilment of the requirements for the degree of Bachelor of Technology in Computer Science and Engineering
+  Run 1: text='A project report submitted in partial fulfilment of the requirements for the degree of Bachelor of Technology in Computer Science and Engineering' | Font=None | Size=None | Bold=None | Italic=None | Color=000000
+
+[12] Style: Normal | Align: CENTER (1) | LineSp: 1.0 | Before: Nonept | After: Nonept
+TEXT: Subject: Agentic AI & Automation
+  Run 1: text='Subject: Agentic AI & Automation' | Font=None | Size=14.0 | Bold=None | Italic=None | Color=000000
+
+[14] Style: Normal | Align: CENTER (1) | LineSp: 1.0 | Before: Nonept | After: Nonept
+TEXT: BACHELOR OF TECHNOLOGY COMPUTER SCIENCE AND ENGINEERING
+  Run 1: text='BACHELOR OF TECHNOLOGY COMPUTER SCIENCE AND ENGINEERING' | Font=None | Size=14.0 | Bold=None | Italic=None | Color=000000
+
+[17] Style: Normal | Align: CENTER (1) | LineSp: 1.0 | Before: Nonept | After: Nonept
+TEXT: Submitted By
+  Run 1: text='Submitted By' | Font=None | Size=14.0 | Bold=None | Italic=None | Color=000000
+
+[18] Style: Normal | Align: CENTER (1) | LineSp: 1.0 | Before: Nonept | After: Nonept
+TEXT: Sanskruti Gorle (PRN: 24070521025)
+
+  Run 1: text='Sanskruti ' | Font=None | Size=14.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='Gorle' | Font=None | Size=14.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text=' (PRN: 24070521025)' | Font=None | Size=14.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='
+' | Font=None | Size=14.0 | Bold=None | Italic=None | Color=000000
+
+[22] Style: Normal | Align: CENTER (1) | LineSp: 1.0 | Before: Nonept | After: Nonept
+TEXT: UNDER THE GUIDANCE OF
+  Run 1: text='UNDER THE GUIDANCE OF' | Font=None | Size=14.0 | Bold=None | Italic=None | Color=000000
+
+[24] Style: Normal | Align: CENTER (1) | LineSp: 1.0 | Before: Nonept | After: Nonept
+TEXT: Dr./Prof. <Guide Name>
+  Run 1: text='Dr./Prof. <Guide Name>' | Font=None | Size=14.0 | Bold=None | Italic=None | Color=000000
+
+[26] Style: Normal | Align: CENTER (1) | LineSp: 1.0 | Before: Nonept | After: Nonept
+TEXT: <Designation>
+  Run 1: text='<Designation>' | Font=None | Size=14.0 | Bold=None | Italic=None | Color=000000
+
+[30] Style: Normal | Align: CENTER (1) | LineSp: 1.0 | Before: Nonept | After: 6.0pt
+TEXT: DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
+  Run 1: text='DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING' | Font=None | Size=None | Bold=True | Italic=None | Color=000000
+
+[31] Style: Normal | Align: CENTER (1) | LineSp: 1.0 | Before: Nonept | After: 6.0pt
+TEXT: AY 2026-27
+  Run 1: text='AY 2026-27' | Font=None | Size=None | Bold=True | Italic=None | Color=None
+
+[33] Style: Normal | Align: CENTER (1) | LineSp: 1.0 | Before: Nonept | After: 6.0pt
+TEXT: DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
+  Run 1: text='DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING' | Font=None | Size=None | Bold=True | Italic=None | Color=000000
+
+[36] Style: Normal | Align: CENTER (1) | LineSp: 1.0 | Before: 18.0pt | After: 18.0pt
+TEXT: 
+CERTIFICATE
+  Run 1: text='
+' | Font=None | Size=None | Bold=True | Italic=None | Color=None
+  Run 2: text='CERTIFICATE' | Font=None | Size=14.0 | Bold=True | Italic=None | Color=None
+  Run 3: text='' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+
+[37] Style: Normal | Align: None | LineSp: None | Before: 14.0pt | After: 14.0pt
+TEXT: This is to certify that the Project work entitled “AI Agent for Personal Goal Tracking” is carried out by Sanskruti Gorle (PRN: 24070521025), in partial fulfillment for the award of the degree of Bachelor of Technology in Computer Science and Engineering, Symbiosis International (Deemed University), Pune during the academic year 2026-2027.
+  Run 1: text='This is to certify that the Project work entitled “' | Font=None | Size=None | Bold=None | Italic=None | Color=000000
+  Run 2: text='AI Agent for Personal Goal Tracking' | Font=None | Size=None | Bold=True | Italic=None | Color=000000
+  Run 3: text='” is carried out by ' | Font=None | Size=None | Bold=None | Italic=None | Color=000000
+  Run 4: text='Sanskruti ' | Font=None | Size=None | Bold=True | Italic=None | Color=000000
+  Run 5: text='Gorle' | Font=None | Size=None | Bold=True | Italic=None | Color=000000
+  Run 6: text=' (PRN: 24070521025), ' | Font=None | Size=None | Bold=True | Italic=None | Color=000000
+  Run 7: text='in partial fulfillment for the award of the degree of ' | Font=None | Size=None | Bold=None | Italic=None | Color=000000
+  Run 8: text='Bachelor of Technology ' | Font=None | Size=None | Bold=True | Italic=None | Color=000000
+  Run 9: text='in ' | Font=None | Size=None | Bold=None | Italic=None | Color=000000
+  Run 10: text='Computer Science and Engineering' | Font=None | Size=None | Bold=True | Italic=None | Color=000000
+  Run 11: text=', Symbiosis International (Deemed University), Pune during the academic year 2026-2027.' | Font=None | Size=None | Bold=None | Italic=None | Color=000000
+
+[40] Style: Heading 2 | Align: None | LineSp: None | Before: Nonept | After: Nonept
+TEXT: DECLARATION
+  Run 1: text='DECLARATION' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+
+[41] Style: Normal | Align: None | LineSp: None | Before: Nonept | After: 6.0pt
+TEXT: I hereby declare that the project titled “AI Agent for Personal Goal Tracking” submitted to Symbiosis Institute of Technology, a constituent of Symbiosis International (Deemed University) Pune, for the award of the degree of Bachelor of Technology in Computer Science and Engineering, is a result of original research carried out by me. I understand that my report may be made electronically available to the public. It is further declared that the project report or any part thereof has not been previously submitted to any University or Institute for the award of any degree or diploma.
+  Run 1: text='I hereby declare that the project titled “' | Font=None | Size=None | Bold=None | Italic=None | Color=000000
+  Run 2: text='AI Agent for Personal Goal Tracking' | Font=None | Size=None | Bold=True | Italic=None | Color=000000
+  Run 3: text='” submitted to Symbiosis Institute of Technology, a constituent of Symbiosis International (Deemed University) Pune, for the award of the degree of Bachelor of Technology in Computer Science and Engineering, is a result of original research carried out by me. I understand that my report may be made electronically available to the public. It is further declared that the project report or any part thereof has not been previously submitted to any University or Institute for the award of any degree or diploma.' | Font=None | Size=None | Bold=None | Italic=None | Color=000000
+
+[42] Style: Normal | Align: LEFT (0) | LineSp: 1.5 | Before: Nonept | After: Nonept
+TEXT: Name of Student 1: Sanskruti Gorle (PRN: 24070521025)
+  Run 1: text='Name of Student 1: Sanskruti ' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+  Run 2: text='Gorle' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+  Run 3: text=' (PRN: 24070521025)' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+
+[45] Style: Normal | Align: LEFT (0) | LineSp: None | Before: Nonept | After: Nonept
+TEXT: Degree: 	Bachelor of Technology in CSE
+  Run 1: text='Degree: ' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+  Run 2: text='	Bachelor of Technology in CSE' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+
+[46] Style: Normal | Align: LEFT (0) | LineSp: None | Before: Nonept | After: Nonept
+TEXT: Department: 	Computer Science and Engineering
+  Run 1: text='Department: ' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+  Run 2: text='	' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+  Run 3: text='Computer Science and Engineering' | Font=None | Size=None | Bold=None | Italic=None | Color=000000
+
+[47] Style: Normal | Align: LEFT (0) | LineSp: None | Before: Nonept | After: Nonept
+TEXT: Subject:	Agentic AI & Automation
+  Run 1: text='Subject:' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+  Run 2: text='	Agentic AI & Automation' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+
+[48] Style: Normal | Align: LEFT (0) | LineSp: None | Before: Nonept | After: Nonept
+TEXT: Title of the project: AI Agent for Personal Goal Tracking
+  Run 1: text='Title of the project: ' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+  Run 2: text='AI Agent for Personal Goal Tracking' | Font=None | Size=None | Bold=True | Italic=None | Color=None
+
+[50] Style: Normal | Align: LEFT (0) | LineSp: None | Before: Nonept | After: Nonept
+TEXT: Sanskruti Gorle
+  Run 1: text='Sanskruti ' | Font=None | Size=None | Bold=True | Italic=None | Color=None
+  Run 2: text='Gorle' | Font=None | Size=None | Bold=True | Italic=None | Color=None
+
+[51] Style: Normal | Align: LEFT (0) | LineSp: None | Before: Nonept | After: Nonept
+TEXT: Date: 
+  Run 1: text='Date: ' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+
+[52] Style: Heading 2 | Align: JUSTIFY (3) | LineSp: None | Before: Nonept | After: Nonept
+TEXT: Declaration
+  Run 1: text='Declaration' | Font=None | Size=12.0 | Bold=False | Italic=None | Color=None
+
+[53] Style: Heading 2 | Align: JUSTIFY (3) | LineSp: None | Before: Nonept | After: Nonept
+TEXT: I hereby declare that the project entitled “AI Agent for Personal Goal Tracking”, submitted by me for the purpose of processing under the IPR framework, is not an industry-sponsored project.
+  Run 1: text='I hereby declare that the project entitled “AI Agent for Personal Goal Tracking”, submitted by me for the purpose of processing under the IPR framework, is not an industry-sponsored project.' | Font=None | Size=12.0 | Bold=None | Italic=None | Color=None
+
+[54] Style: Heading 2 | Align: JUSTIFY (3) | LineSp: None | Before: Nonept | After: Nonept
+TEXT: I further provide my full consent to SIT Nagpur and SCRI Pune to evaluate, process, and proceed with the filing of the Intellectual Property Rights (IPR) application for the said idea.
+  Run 1: text='I further provide my full consent to SIT Nagpur and SCRI Pune to evaluate, process, and proceed with the filing of the Intellectual Property Rights (IPR) application for the said idea.' | Font=None | Size=12.0 | Bold=None | Italic=None | Color=None
+
+[58] Style: Heading 2 | Align: LEFT (0) | LineSp: 1.0 | Before: Nonept | After: Nonept
+TEXT: Student Signature
+  Run 1: text='Student Signature' | Font=None | Size=12.0 | Bold=False | Italic=None | Color=None
+
+[59] Style: Normal | Align: None | LineSp: 1.0 | Before: Nonept | After: Nonept
+TEXT: Sanskruti Gorle
+  Run 1: text='Sanskruti ' | Font=None | Size=None | Bold=True | Italic=None | Color=None
+  Run 2: text='Gorle' | Font=None | Size=None | Bold=True | Italic=None | Color=None
+
+[63] Style: Normal | Align: None | LineSp: 1.0 | Before: Nonept | After: Nonept
+TEXT: Dr. Shreyas Rajendra Hole
+  Run 1: text='Dr. Shreyas Rajendra Hole' | Font=None | Size=None | Bold=True | Italic=None | Color=None
+
+[66] Style: Normal | Align: None | LineSp: 1.0 | Before: Nonept | After: Nonept
+TEXT: Mr. Parag Naik
+  Run 1: text='Mr. Parag Naik' | Font=None | Size=None | Bold=True | Italic=None | Color=None
+
+[68] Style: Heading 2 | Align: None | LineSp: None | Before: Nonept | After: Nonept
+TEXT: ABSTRACT
+  Run 1: text='ABSTRACT' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+
+[69] Style: Normal | Align: None | LineSp: None | Before: Nonept | After: Nonept
+TEXT: Achieving long-term learning and habit goals depends on breaking an ambitious objective into small, scheduled actions and adjusting the plan when life intervenes. Conventional task trackers leave this decomposition entirely to the user, while general-purpose chat assistants produce roadmaps that remain trapped inside a conversation transcript. This project presents an AI Agent for Personal Goal Tracking, implemented as the GoalMate application, which closes this gap by coupling a tool-calling large language model with a persistent relational database and a live dashboard. When a user states a goal in natural language, the Google Gemini model, using native function calling, autonomously decomposes it into ordered milestones and date-assigned daily tasks and stores them in a SQLite database through SQLAlchemy. Eight database-backed tools let the agent read real progress, complete tasks, analyse missed work, adapt advice to the time available and replan deadlines, using a bounded multi-step tool loop. A Gradio and FastAPI interface provides optimistic task check-boxes, milestone roadmaps, an adaptive seven-day timeline, a Catmull-Rom cubic Bezier progress curve rendered as SVG, a habit-analytics Progress page and Sign Up / Log In access. All eight end-to-end acceptance tests, executed against the live database and the Gemini API, passed successfully. The system demonstrates that grounding generative reasoning in transactional data yields a trustworthy and actionable goal coach.
+  Run 1: text='Achieving long-term learning and habit goals depends on breaking an ambitious objective into small, scheduled actions and adjusting the plan when life intervenes. Conventional task trackers leave this decomposition entirely to the user, while general-purpose chat assistants produce roadmaps that remain trapped inside a conversation transcript. This project presents an AI Agent for Personal Goal Tracking, implemented as the ' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=None
+  Run 2: text='GoalMate' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=None
+  Run 3: text=' application, which closes this gap by coupling a tool-calling large language model with a persistent relational database and a live dashboard. When a user states a goal in natural language, the Google Gemini model, using native function calling, autonomously decomposes it into ordered milestones and date-assigned daily tasks and stores them in a SQLite database through ' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=None
+  Run 4: text='SQLAlchemy' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=None
+  Run 5: text='. Eight database-backed tools let the agent read real progress, complete tasks, ' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=None
+  Run 6: text='analyse' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=None
+  Run 7: text=' missed work, adapt advice to the time available and replan deadlines, using a bounded multi-step tool loop. A ' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=None
+  Run 8: text='Gradio' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=None
+  Run 9: text=' and ' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=None
+  Run 10: text='FastAPI' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=None
+  Run 11: text=' interface provides optimistic task check-boxes, milestone roadmaps, an adaptive seven-day timeline, a Catmull-Rom cubic Bezier progress curve rendered as SVG, a habit-analytics Progress page and Sign Up / Log In access. All eight end-to-end acceptance tests, executed against the live database and the Gemini API, passed successfully. The system demonstrates that grounding generative reasoning in transactional data yields a trustworthy and actionable goal coach.' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=None
+
+[71] Style: Normal | Align: None | LineSp: 1.0 | Before: Nonept | After: 6.0pt
+TEXT: Keywords—AI agent, agentic AI, goal tracking, function calling, Google Gemini, adaptive replanning, Gradio, FastAPI, SQLAlchemy
+  Run 1: text='Keywords—AI agent, agentic AI, goal tracking, function calling, Google Gemini, adaptive replanning, ' | Font=None | Size=10.0 | Bold=True | Italic=True | Color=None
+  Run 2: text='Gradio' | Font=None | Size=10.0 | Bold=True | Italic=True | Color=None
+  Run 3: text=', ' | Font=None | Size=10.0 | Bold=True | Italic=True | Color=None
+  Run 4: text='FastAPI' | Font=None | Size=10.0 | Bold=True | Italic=True | Color=None
+  Run 5: text=', ' | Font=None | Size=10.0 | Bold=True | Italic=True | Color=None
+  Run 6: text='SQLAlchemy' | Font=None | Size=10.0 | Bold=True | Italic=True | Color=None
+
+[73] Style: Heading 2 | Align: None | LineSp: None | Before: Nonept | After: Nonept
+TEXT: TABLE OF CONTENTS
+  Run 1: text='TABLE OF CONTENTS' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+
+[74] Style: Normal | Align: LEFT (0) | LineSp: 1.0 | Before: 8.0pt | After: 3.0pt
+TEXT: Contents	Page
+  Run 1: text='Contents' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=None
+  Run 2: text='	Page' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=None
+
+[75] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: 3.0pt | After: 1.0pt
+TEXT: Certificate	i
+  Run 1: text='Certificate' | Font=None | Size=11.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=11.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='i' | Font=None | Size=11.0 | Bold=None | Italic=None | Color=000000
+
+[76] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: 3.0pt | After: 1.0pt
+TEXT: Declaration	ii
+  Run 1: text='Declaration' | Font=None | Size=11.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	ii' | Font=None | Size=11.0 | Bold=None | Italic=None | Color=000000
+
+[77] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: 3.0pt | After: 1.0pt
+TEXT: Abstract	iv
+  Run 1: text='Abstract' | Font=None | Size=11.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	iv' | Font=None | Size=11.0 | Bold=None | Italic=None | Color=000000
+
+[78] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: 3.0pt | After: 1.0pt
+TEXT: Table of Contents	v
+  Run 1: text='Table of Contents' | Font=None | Size=11.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	v' | Font=None | Size=11.0 | Bold=None | Italic=None | Color=000000
+
+[79] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: 5.5pt | After: 0.5pt
+TEXT: CHAPTER 1: BACKGROUND AND TECHNICAL OVERVIEW	1
+  Run 1: text='CHAPTER 1: BACKGROUND AND TECHNICAL OVERVIEW' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 7: text='1' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+
+[80] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 1.1 Background	1
+  Run 1: text='1.1 Background' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='1' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[81] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 1.2 Objectives	2
+  Run 1: text='1.2 Objectives' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='2' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[82] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 1.3 Hardware and Software Components	2
+  Run 1: text='1.3 Hardware and Software Components' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='2' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[83] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: 5.5pt | After: 0.5pt
+TEXT: CHAPTER 2: PROBLEM STATEMENT AND MOTIVATION	3
+  Run 1: text='CHAPTER 2: PROBLEM STATEMENT AND MOTIVATION' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 7: text='3' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+
+[84] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 2.1 Problem Statement	3
+  Run 1: text='2.1 Problem Statement' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='3' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[85] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 2.2 Motivation	3
+  Run 1: text='2.2 Motivation' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='3' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[86] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: 5.5pt | After: 0.5pt
+TEXT: CHAPTER 3: NOVELTY AND INNOVATIVE CONTRIBUTIONS	4
+  Run 1: text='CHAPTER 3: NOVELTY AND INNOVATIVE CONTRIBUTIONS' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 7: text='4' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+
+[87] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 3.1 Novelty	4
+  Run 1: text='3.1 Novelty' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='4' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[88] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 3.2 Innovative Contributions	5
+  Run 1: text='3.2 Innovative Contributions' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='5' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[89] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: 5.5pt | After: 0.5pt
+TEXT: CHAPTER 4: TECHNICAL ADVANTAGES AND PRACTICAL USEFULNESS	6
+  Run 1: text='CHAPTER 4: TECHNICAL ADVANTAGES AND PRACTICAL USEFULNESS' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 7: text='6' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+
+[90] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 4.1 Technical Advantages	6
+  Run 1: text='4.1 Technical Advantages' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='6' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[91] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 4.2 Practical Usefulness	6
+  Run 1: text='4.2 Practical Usefulness' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='6' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[92] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: 5.5pt | After: 0.5pt
+TEXT: CHAPTER 5: DETAILED METHODOLOGY / SYSTEM ARCHITECTURE	8
+  Run 1: text='CHAPTER 5: DETAILED METHODOLOGY / SYSTEM ARCHITECTURE' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 7: text='8' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+
+[93] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 5.1 System Architecture	8
+  Run 1: text='5.1 System Architecture' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='8' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[94] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 5.2 Working Principle	9
+  Run 1: text='5.2 Working Principle' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='9' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[95] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 5.3 Database and API Connections	13
+  Run 1: text='5.3 Database and API Connections' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='13' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[96] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 5.4 Simulation and Results	14
+  Run 1: text='5.4 Simulation and Results' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='14' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[97] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: 5.5pt | After: 0.5pt
+TEXT: CHAPTER 6: PRIOR ART AND RELATED WORK (Literature Survey)	17
+  Run 1: text='CHAPTER 6: PRIOR ART AND RELATED WORK (Literature Survey)' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 7: text='17' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+
+[98] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 6.1 Introduction	17
+  Run 1: text='6.1 Introduction' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='17' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[99] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 6.2 Existing Technologies	17
+  Run 1: text='6.2 Existing Technologies' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='17' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[100] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 6.3 Related Work	17
+  Run 1: text='6.3 Related Work' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='17' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[101] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 6.4 Summary	17
+  Run 1: text='6.4 Summary' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='17' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[102] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: 5.5pt | After: 0.5pt
+TEXT: CHAPTER 7: APPLICATIONS AND DEPLOYMENT AREAS	18
+  Run 1: text='CHAPTER 7: APPLICATIONS AND DEPLOYMENT AREAS' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 7: text='18' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+
+[103] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 7.1 Applications	18
+  Run 1: text='7.1 Applications' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='18' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[104] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 7.2 Deployment Areas	18
+  Run 1: text='7.2 Deployment Areas' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='18' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[105] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: 5.5pt | After: 0.5pt
+TEXT: CHAPTER 8: CONCLUSION AND FUTURE SCOPE	19
+  Run 1: text='CHAPTER 8: CONCLUSION AND FUTURE SCOPE' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 7: text='19' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+
+[106] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 8.1 Conclusion	19
+  Run 1: text='8.1 Conclusion' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='19' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[107] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 8.2 Future Scope	19
+  Run 1: text='8.2 Future Scope' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='19' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[108] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: 5.5pt | After: 0.5pt
+TEXT: CHAPTER 9: GITHUB LINK AND SHORT CODE	20
+  Run 1: text='CHAPTER 9: GITHUB LINK AND SHORT CODE' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 7: text='20' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+
+[109] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 9.1 GitHub Repository	20
+  Run 1: text='9.1 GitHub Repository' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='20' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[110] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 9.2 Project File Structure	20
+  Run 1: text='9.2 Project File Structure' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='20' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[111] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: Nonept | After: Nonept
+TEXT: 9.3 Short Code Excerpts	20
+  Run 1: text='9.3 Short Code Excerpts' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 7: text='20' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=10.0 | Bold=None | Italic=None | Color=000000
+
+[112] Style: Normal | Align: LEFT (0) | LineSp: 1.0416666666666667 | Before: 5.5pt | After: 0.5pt
+TEXT: REFERENCES	21
+  Run 1: text='REFERENCES' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 2: text='	' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 3: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 4: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 5: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 6: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 7: text='21' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+  Run 8: text='' | Font=None | Size=11.0 | Bold=True | Italic=None | Color=000000
+
+[114] Style: Heading 1 | Align: None | LineSp: None | Before: 18.0pt | After: Nonept
+TEXT: Chapter 1
+  Run 1: text='Chapter 1' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+
+[115] Style: Normal | Align: CENTER (1) | LineSp: None | Before: 6.0pt | After: 3.0pt
+TEXT: Background and Technical Overview
+  Run 1: text='Background and Technical Overview' | Font=None | Size=16.0 | Bold=True | Italic=None | Color=None
+
+[116] Style: Heading 2 | Align: None | LineSp: None | Before: 10.0pt | After: 3.0pt
+TEXT: 1.1 Background
+  Run 1: text='1.1 Background' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+
+[117] Style: Normal | Align: None | LineSp: 1.5 | Before: Nonept | After: 6.0pt
+TEXT: Self-directed learning and habit building, such as mastering a framework, preparing for an examination or following a fitness routine, demands sustained effort over weeks or months. Research shows that specific, structured goals with clear sub-goals lead to better performance than vague intentions [1], and that concrete plans stating when and how to act make an intention far more likely to be carried out [2]. Yet many learners struggle at the first step: turning an aspiration such as “learn Angular in 30 days” into milestones and daily tasks, and revising that plan when life changes.
+  Run 1: text='Self-directed learning and habit building, such as mastering a framework, preparing for an examination or following a fitness routine, demands sustained effort over weeks or months. Research shows that specific, structured goals with clear sub-goals lead to better performance than vague intentions [1], and that concrete plans stating when and how to act make an intention far more likely to be carried out [2]. Yet many learners struggle at the first step: turning an aspiration such as “learn Angular in 30 days” into milestones and daily tasks, and revising that plan when life changes.' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+
+[118] Style: Normal | Align: None | LineSp: 1.5 | Before: Nonept | After: 6.0pt
+TEXT: Large language models (LLMs) such as Google Gemini [3] can generate such plans. Modern models also support function calling: instead of replying with free text, the model emits a structured request to invoke a developer-defined function with typed parameters [4]. When an LLM is placed in a loop where it can call tools, observe the results and decide what to do next, it acts as an agent [5]; this paradigm is called agentic AI.
+  Run 1: text='Large language models (LLMs) such as Google Gemini [3] can generate such plans. Modern models also support ' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+  Run 2: text='function calling' | Font=None | Size=None | Bold=None | Italic=True | Color=None
+  Run 3: text=': instead of replying with free text, the model emits a structured request to invoke a developer-defined function with typed parameters [4]. When an LLM is placed in a loop where it can call tools, observe the results and decide what to do next, it acts as an ' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+  Run 4: text='agent' | Font=None | Size=None | Bold=None | Italic=True | Color=None
+  Run 5: text=' [5]; this paradigm is called ' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+  Run 6: text='agentic AI' | Font=None | Size=None | Bold=None | Italic=True | Color=None
+  Run 7: text='.' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+
+[119] Style: Normal | Align: None | LineSp: 1.5 | Before: Nonept | After: 6.0pt
+TEXT: This project, “AI Agent for Personal Goal Tracking”, is implemented as the GoalMate application (Autonomous AI Goal Coach and Agentic Goal Management System). The agent does not merely suggest a plan; it creates it. The plan is written into a relational database, shown on a live dashboard and kept in step with reality as the user completes tasks or changes the schedule (Figure 1.1). Key concepts used are:
+  Run 1: text='' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+  Run 2: text='This project, ' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+  Run 3: text='“AI Agent for Personal Goal Tracking”' | Font=None | Size=None | Bold=True | Italic=None | Color=None
+  Run 4: text=', is implemented as the ' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+  Run 5: text='GoalMate' | Font=None | Size=None | Bold=True | Italic=None | Color=None
+  Run 6: text=' application (' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+  Run 7: text='Autonomous AI Goal Coach and Agentic Goal Management System' | Font=None | Size=None | Bold=None | Italic=True | Color=None
+  Run 8: text='). The agent does not merely suggest a plan; it creates it. The plan is written into a relational database, shown on a live dashboard and kept in step with reality as the user completes tasks or changes the schedule (Figure 1.1). Key concepts used are:' | Font=None | Size=None | Bold=None | Italic=None | Color=None
+
+=== TABLES (ALL TABLES) ===
+
+--- TABLE 1 (8 rows x 3 cols) ---
+  Row 1:  |  | 
+  Row 2: Dr. Parag Naik Subject Teacher |  | Dr. Shreyas Rajendra Hole  Subject Coordinator
+     [Style Cell 0]: Font=Times New Roman, Size=12.0, Bold=True, Color=None
+  Row 3:  |  | 
+  Row 4:  |  | 
+  Row 5:  |  | 
+  Row 6:  |  | 
+  Row 7:  |    | 
+  Row 8:  |  | 
+
+--- TABLE 2 (9 rows x 3 cols) ---
+  Row 1: Technology / Library | Version | Purpose in the Project
+     [Style Cell 0]: Font=None, Size=9.5, Bold=True, Color=None
+  Row 2: Python | 3.12 / 3.13 | Core language for application logic, the agent loop and data processing
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 3: Gradio | ≥ 5.0.0 | UI shell: three-column layout, client-side state and AI chatbot
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 4: FastAPI, Uvicorn | ≥ 0.110.0, ≥ 0.28.0 | Backend micro-endpoints (task toggle, heartbeat, HTML) on an ASGI server
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 5: Google Gemini REST API | v1beta | LLM with native function calling; model cascade gemini-3.5-flash-lite, gemini-3.5-flash, gemini-flash-latest (default gemini-2.5-flash)
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 6: SQLite 3, SQLAlchemy | Built-in, ≥ 2.0.0 | Embedded ACID-compliant database (data/goalmate.db) and its ORM
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 7: Passlib, Bcrypt, Python-Jose | ≥ 1.7.4, ≥ 4.0.1, ≥ 3.3.0 | Password hashing and token utilities for user access (backend/auth.py)
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 8: Requests, Pydantic, Python-Dotenv | ≥ 2.31.0, ≥ 2.6.0, ≥ 1.0.0 | Gemini HTTP client; data validation; loading the API key from .env
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 9: JavaScript, HTML5, CSS3, SVG | ES6+, SVG 1.1 | Optimistic check-boxes, polling, page structure, styling and vector curves
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+
+--- TABLE 3 (8 rows x 3 cols) ---
+  Row 1: Layer | File(s) | Responsibility
+     [Style Cell 0]: Font=None, Size=9.5, Bold=True, Color=None
+  Row 2: Entry point | app.py | Creates FastAPI, defines micro-endpoints, mounts Gradio with JavaScript (JS_HEAD) and CSS, starts Uvicorn
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 3: Presentation | ui/dashboard.py ui/components.py ui/styles.py | Renders HTML cards and SVG curves; handles chat events and sidebar navigation
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 4: Agent intelligence | agent/llm.py | Conversation history, system prompt, Gemini REST calls, tool loop (up to 4 turns)
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 5: Tool interface | agent/tools.py | Exposes TOOL_DECLARATIONS (OpenAPI-style schemas) and dispatches calls
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 6: Business logic | backend/services.py | Task creation, retroactive completion, replanning, streaks, 7-day window
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 7: Persistence | backend/models.py backend/database.py | ORM models (Goal, Milestone, Task, ActivityLog), engine and sessions
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 8: Access control | backend/auth.py | Registration and login logic, password hashing and token helpers
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+
+--- TABLE 4 (9 rows x 2 cols) ---
+  Row 1: Tool | Purpose
+     [Style Cell 0]: Font=None, Size=9.5, Bold=True, Color=None
+  Row 2: create_goal_with_plan | Creates the goal, ordered milestones and date-assigned daily tasks
+     [Style Cell 0]: Font=Courier New, Size=8.5, Bold=None, Color=None
+  Row 3: get_user_progress_summary | Returns all goals, milestone rates, streak and today’s task status
+     [Style Cell 0]: Font=Courier New, Size=8.5, Bold=None, Color=None
+  Row 4: get_today_tasks_list | Returns pending and completed tasks for the current date
+     [Style Cell 0]: Font=Courier New, Size=8.5, Bold=None, Color=None
+  Row 5: complete_task_by_id | Toggles a task between completed and pending and logs the activity
+     [Style Cell 0]: Font=Courier New, Size=8.5, Bold=None, Color=None
+  Row 6: replan_goal_duration | Updates duration, shifts the deadline, redistributes pending tasks evenly
+     [Style Cell 0]: Font=Courier New, Size=8.5, Bold=None, Color=None
+  Row 7: analyze_missed_tasks | Finds pending tasks whose scheduled_date is before today
+     [Style Cell 0]: Font=Courier New, Size=8.5, Bold=None, Color=None
+  Row 8: get_goal_details | Returns the milestone hierarchy and task breakdown of a goal
+     [Style Cell 0]: Font=Courier New, Size=8.5, Bold=None, Color=None
+  Row 9: delete_goal_by_id | Deletes a goal and cascades to its milestones, tasks and logs
+     [Style Cell 0]: Font=Courier New, Size=8.5, Bold=None, Color=None
+
+--- TABLE 5 (7 rows x 4 cols) ---
+  Row 1: Route | Method | Payload | Functionality
+     [Style Cell 0]: Font=None, Size=9.5, Bold=True, Color=None
+  Row 2: /api/task/toggle | POST | {"task_id": int, "completed": bool} | Sets completed/pending, records completed_at, logs activity, commits
+     [Style Cell 0]: Font=Courier New, Size=8.5, Bold=None, Color=None
+  Row 3: /api/goal/delete | POST | {"goal_id": int} | Deletes the goal and cascades to child records
+     [Style Cell 0]: Font=Courier New, Size=8.5, Bold=None, Color=None
+  Row 4: /api/dashboard/html | GET | None | Returns server-rendered sidebar and main HTML
+     [Style Cell 0]: Font=Courier New, Size=8.5, Bold=None, Color=None
+  Row 5: /api/goal/{goal_id}/html | GET | goal_id: int | Returns the HTML of a goal detail view
+     [Style Cell 0]: Font=Courier New, Size=8.5, Bold=None, Color=None
+  Row 6: /api/db/state | GET | None | Heartbeat hash {goals}-{completed}-{total} polled by the frontend
+     [Style Cell 0]: Font=Courier New, Size=8.5, Bold=None, Color=None
+  Row 7: /login | GET | None | Serves the Log In page (with Sign Up link)
+     [Style Cell 0]: Font=Courier New, Size=8.5, Bold=None, Color=None
+
+--- TABLE 6 (9 rows x 5 cols) ---
+  Row 1: # | Test | Action / input | Observed outcome | Result
+     [Style Cell 0]: Font=None, Size=9.5, Bold=True, Color=None
+  Row 2: 1 | Initial load | Application start | 3 goals loaded from the SQLite database | Passed
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 3: 2 | Goal creation | “I want to learn Angular in 30 days.” | create_goal_with_plan called; Goal ID 5, 16 tasks, 7 milestones | Passed
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 4: 3 | Today’s tasks and completion | Mark task #32 complete | 4 tasks found for today; task completed; Completed Today = 2, Streak = 0 | Passed
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 5: 4 | Retroactive completion | Task #124 dated 2026-09-18 | Completed and committed without date corruption | Passed
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 6: 5 | AI progress analysis | “How am I doing with Angular?” | Reported 1 of 16 tasks done (6 %), 30 days remaining | Passed
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 7: 6 | Adaptive time constraint | “I only have 30 minutes today.” | Recommended the pending 30-minute task “Define app idea and core features” | Passed
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 8: 7 | Duration replanning | “Make my Angular plan 20 days instead of 30.” | get_user_progress_summary then replan_goal_duration; deadline moved to 2026-10-09 | Passed
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
+  Row 9: 8 | Multi-goal verification | “I want to learn DSA in 45 days.” | 5 concurrent goals; dashboard rendered all active goals | Passed
+     [Style Cell 0]: Font=None, Size=9.5, Bold=None, Color=None
