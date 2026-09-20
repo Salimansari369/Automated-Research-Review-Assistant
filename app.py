@@ -1321,27 +1321,16 @@ def build_app():
 if __name__ == "__main__":
     theme = get_literature_theme()
     app = build_app()
-    base_port = int(os.environ.get("PORT", 7860))
+    port = int(os.environ.get("PORT", 7860))
     server_host = os.environ.get("SERVER_NAME", "0.0.0.0")
     share_flag = os.environ.get("GRADIO_SHARE", "False").lower() in ("true", "1")
     
-    for p in range(base_port, base_port + 20):
-        try:
-            _, local_url, share_url = app.launch(
-                server_name=server_host,
-                server_port=p,
-                share=share_flag,
-                theme=theme,
-                css=CUSTOM_CSS,
-                head=VOICE_SCRIPT_HEAD + "\n" + EARTH_SCRIPT_HEAD
-            )
-            if share_url:
-                print(f"\n========================================\nPUBLIC LIVE URL: {share_url}\n========================================\n", flush=True)
-                os.makedirs("exports", exist_ok=True)
-                with open("exports/live_url.txt", "w") as f:
-                    f.write(share_url)
-            break
-        except OSError as e:
-            if "empty port" in str(e).lower() or "address already in use" in str(e).lower():
-                continue
-            raise e
+    print(f"Starting LiteratureAI on {server_host}:{port}...", flush=True)
+    app.launch(
+        server_name=server_host,
+        server_port=port,
+        share=share_flag,
+        theme=theme,
+        css=CUSTOM_CSS,
+        head=VOICE_SCRIPT_HEAD + "\n" + EARTH_SCRIPT_HEAD
+    )
