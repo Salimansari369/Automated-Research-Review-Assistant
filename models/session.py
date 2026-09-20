@@ -1,10 +1,14 @@
 from dataclasses import dataclass, field
 from typing import List, Dict, Any, Set, Optional
 from datetime import datetime
+import json
+import os
 from models.paper import Paper
 from config.settings import (
-    DEFAULT_TOPIC, DEFAULT_YEAR_START, DEFAULT_YEAR_END, DEFAULT_MAX_PAPERS
+    DEFAULT_TOPIC, DEFAULT_YEAR_START, DEFAULT_YEAR_END, DEFAULT_MAX_PAPERS,
+    SESSION_FILE, DATA_DIR
 )
+
 
 @dataclass
 class ResearchSession:
@@ -132,3 +136,108 @@ class ResearchSession:
         if step_states:
             self.pipeline_status.update(step_states)
         self.last_updated = datetime.now()
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "research_topic": self.research_topic,
+            "year_start": self.year_start,
+            "year_end": self.year_end,
+            "selected_sources": self.selected_sources,
+            "max_papers": self.max_papers,
+            "searched_papers": [p.to_dict() for p in self.searched_papers],
+            "uploaded_papers": [p.to_dict() for p in self.uploaded_papers],
+            "selected_paper_ids": list(self.selected_paper_ids),
+            "detected_gaps": self.detected_gaps,
+            "future_directions": self.future_directions,
+            "literature_review": self.literature_review,
+            "ai_summary": self.ai_summary,
+            "pipeline_step": self.pipeline_step,
+            "pipeline_status": self.pipeline_status,
+            "pipeline_progress": self.pipeline_progress,
+            "pipeline_status_text": self.pipeline_status_text,
+            "system_status": self.system_status,
+            "api_status": self.api_status,
+            "errors": self.errors,
+            "last_updated": self.last_updated.isoformat() if isinstance(self.last_updated, datetime) else str(self.last_updated)
+        }
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "ResearchSession":
+        sess = cls()
+        sess.research_topic = data.get("research_topic", DEFAULT_TOPIC)
+        sess.year_start = int(data.get("year_start", DEFAULT_YEAR_START) or DEFAULT_YEAR_START)
+        sess.year_end = int(data.get("year_end", DEFAULT_YEAR_END) or DEFAULT_YEAR_END)
+        sess.selected_sources = data.get("selected_sources", ["Semantic Scholar", "OpenAlex", "Crossref", "arXiv"])
+        sess.max_papers = int(data.get("max_papers", DEFAULT_MAX_PAPERS) or DEFAULT_MAX_PAPERS)
+
+        sess.searched_papers = [Paper.from_dict(p) for p in data.get("searched_papers", [])]
+        sess.uploaded_papers = [Paper.from_dict(p) for p in data.get("uploaded_papers", [])]
+        sess.selected_paper_ids = set(data.get("selected_paper_ids", []))
+
+        sess.detected_gaps = data.get("detected_gaps", [])
+        sess.future_directions = data.get("future_directions", [])
+        sess.literature_review = data.get("literature_review", {})
+        sess.ai_summary = data.get("ai_summary", "")
+
+        sess.pipeline_step = int(data.get("pipeline_step", 1) or 1)
+        sess.pipeline_status = data.get("pipeline_status", {
+            "search": "ready", "dedup": "pending", "rank": "pending",
+            "analysis": "pending", "gaps": "pending", "review": "pending"
+        })
+        sess.pipeline_progress = int(data.get("pipeline_progress", 0) or 0)
+        sess.pipeline_status_text = data.get("pipeline_status_text", "Ready to start literature review")
+        sess.system_status = data.get("system_status", "All Systems Operational")
+        sess.api_status = data.get("api_status", {
+            "Semantic Scholar": True, "OpenAlex": True, "Crossref": True, "arXiv": True
+        })
+        sess.errors = data.get("errors", [])
+        last_up = data.get("last_updated")
+        if last_up:
+            try:
+                sess.last_updated = datetime.fromisoformat(last_up)
+            except Exception:
+                sess.last_updated = datetime.now()
+        return sess
+
+    def save_to_disk(self, filepath: Optional[str] = None) -> bool:
+        path = filepath or str(SESSION_FILE)
+        try:
+            target_dir = os.path.dirname(os.path.abspath(path))
+            os.makedirs(target_dir, exist_ok=True)
+            data = self.to_dict()
+            tmp_path = f"{path}.tmp"
+            with open(tmp_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+            if os.path.exists(path):
+                os.replace(tmp_path, path)
+            else:
+                os.rename(tmp_path, path)
+            return True
+        except Exception as e:
+            print(f"[ResearchSession] Failed to save session to disk: {e}")
+            return False
+
+    @classmethod
+    def load_from_disk(cls, filepath: Optional[str] = None) -> "ResearchSession":
+        path = filepath or str(SESSION_FILE)
+        if os.path.exists(path):
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                sess = cls.from_dict(data)
+                return sess
+            except Exception as e:
+                print(f"[ResearchSession] Failed to load session from disk: {e}")
+        return cls()
+
+    @classmethod
+    def clear_disk_history(cls, filepath: Optional[str] = None) -> bool:
+        path = filepath or str(SESSION_FILE)
+        try:
+            if os.path.exists(path):
+                os.remove(path)
+            return True
+        except Exception as e:
+            print(f"[ResearchSession] Failed to clear disk session: {e}")
+            return False
+

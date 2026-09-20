@@ -39,10 +39,13 @@ from ui.components import (
 from utils.logging_config import logger
 
 def build_app():
+    # Load persistent session from disk if available
+    initial_session = ResearchSession.load_from_disk()
+
     with gr.Blocks(title=f"{APP_NAME} • {APP_TAGLINE}") as app:
 
-        # Centralized Session State
-        session = gr.State(ResearchSession())
+        # Centralized Session State seeded from disk
+        session = gr.State(initial_session)
 
         with gr.Row(elem_classes=["app-container"]):
             # Sidebar Column
@@ -53,13 +56,14 @@ def build_app():
                 
                 # View Containers
                 with gr.Column(visible=True) as view_dashboard:
-                    dash_ui = create_dashboard_view()
+                    dash_ui = create_dashboard_view(initial_session)
 
                 with gr.Column(visible=False) as view_search:
                     search_ui = create_search_view()
 
                 with gr.Column(visible=False) as view_upload:
-                    upload_ui = create_upload_view()
+                    upload_ui = create_upload_view(initial_session.uploaded_papers)
+
 
                 with gr.Column(visible=False) as view_analysis:
                     analysis_ui = create_analysis_view()
@@ -241,6 +245,9 @@ def build_app():
             chat_hist = list(current_chat or INITIAL_WELCOME_MESSAGE)
             chat_hist.append({"role": "assistant", "content": chat_notice})
             profile_h = render_salim_sidebar_html(len(ranked), topic)
+
+            # Auto-persist session to disk
+            sess.save_to_disk()
 
             return (
                 sess,
@@ -427,6 +434,9 @@ def build_app():
             chat_hist.append({"role": "assistant", "content": chat_notice})
             profile_h = render_salim_sidebar_html(count, active_topic)
 
+            # Auto-persist session to disk
+            sess.save_to_disk()
+
             return (
                 sess,
                 active_topic,
@@ -586,6 +596,9 @@ def build_app():
             chat_hist.append({"role": "assistant", "content": chat_notice})
             profile_h = render_salim_sidebar_html(count, active_topic)
 
+            # Auto-persist session to disk
+            sess.save_to_disk()
+
             return (
                 sess,
                 msg,
@@ -673,6 +686,7 @@ def build_app():
 
         def clear_uploaded_papers(sess: ResearchSession):
             sess.uploaded_papers = []
+            sess.save_to_disk()
             profile_h = render_salim_sidebar_html(len(sess.unified_papers), sess.research_topic)
             fig1, fig2 = generate_comparison_charts(sess.unified_papers)
             return (
@@ -705,6 +719,64 @@ def build_app():
                 chat_ui["salim_profile_display"]
             ]
         )
+
+        def handle_reset_all_history():
+            ResearchSession.clear_disk_history()
+            clean_sess = ResearchSession()
+            cur_topic = clean_sess.research_topic
+            profile_h = render_salim_sidebar_html(0, cur_topic)
+            fig1, fig2 = generate_comparison_charts([])
+            return (
+                clean_sess,
+                "Workspace & session history cleared. Starting completely fresh.",
+                render_uploaded_table([]),
+                render_uploaded_papers_summary([]),
+                render_hero_banner_html(cur_topic),
+                cur_topic,
+                cur_topic,
+                render_stat_cards_html(0, 0, 0, 0),
+                render_pipeline_html(0, "Ready to start literature review", clean_sess.pipeline_status),
+                render_top_papers_card([], cur_topic),
+                render_gap_intelligence_card([], cur_topic),
+                render_ai_insight_card("", cur_topic),
+                render_search_results_cards([]),
+                render_analysis_cards([]),
+                render_detailed_gaps([]),
+                render_comparison_table([]),
+                fig1, fig2,
+                "*Click 'Synthesize Complete Literature Review' to build your document.*",
+                "",
+                profile_h
+            )
+
+        upload_ui["reset_all_btn"].click(
+            fn=handle_reset_all_history,
+            inputs=[],
+            outputs=[
+                session,
+                upload_ui["upload_status_msg"],
+                upload_ui["uploaded_table_html"],
+                dash_ui["upload_summary_html"],
+                dash_ui["hero_banner_html"],
+                dash_ui["topic_input"],
+                search_ui["search_topic_input"],
+                dash_ui["stats_html"],
+                dash_ui["pipeline_html"],
+                dash_ui["top_papers_html"],
+                dash_ui["gaps_html"],
+                dash_ui["ai_insight_html"],
+                search_ui["search_results_container"],
+                analysis_ui["analysis_container"],
+                gaps_ui["gaps_container"],
+                comparison_ui["comparison_table_html"],
+                comparison_ui["chart_scatter"],
+                comparison_ui["chart_hist"],
+                review_ui["review_markdown_display"],
+                review_ui["review_editor"],
+                chat_ui["salim_profile_display"]
+            ]
+        )
+
 
 
         # -------------------------------------------------------------
@@ -755,6 +827,7 @@ def build_app():
             chat_hist = list(current_chat or INITIAL_WELCOME_MESSAGE)
             chat_hist.append({"role": "assistant", "content": chat_notice})
             profile_h = render_salim_sidebar_html(count, topic)
+            sess.save_to_disk()
 
             return sess, msg, cards_h, stats_h, top_h, chat_hist, profile_h
 
@@ -800,6 +873,7 @@ def build_app():
                 sess.review_coverage_percent
             )
             msg = f"Completed grounded multi-dimension analysis for {len(papers_to_analyze)} papers."
+            sess.save_to_disk()
             return sess, msg, cards_h, stats_h
 
         analysis_ui["run_analysis_btn"].click(
@@ -864,6 +938,7 @@ def build_app():
                 sess.review_coverage_percent
             )
             msg = f"Identified {len(gaps)} critical research gaps supported by analyzed evidence."
+            sess.save_to_disk()
             return sess, msg, gaps_h, dash_gaps_h, stats_h
 
         gaps_ui["detect_gaps_btn"].click(
@@ -890,7 +965,9 @@ def build_app():
             sess.literature_review = review_data
             md_text = review_data.get("markdown", "")
             msg = f"Synthesized 7-section literature review with {len(review_data.get('references', []))} verified citations."
+            sess.save_to_disk()
             return sess, msg, md_text, md_text
+
 
         review_ui["generate_review_btn"].click(
             fn=handle_review_synthesis,
@@ -1043,9 +1120,80 @@ def build_app():
             outputs=[chat_ui["voice_recorder_row"]]
         )
 
+        # -------------------------------------------------------------
+        # SESSION RESTORATION ON CLIENT LOAD / REFRESH
+        # -------------------------------------------------------------
 
+        def restore_session_on_load():
+            sess = ResearchSession.load_from_disk()
+            cur_topic = sess.research_topic or DEFAULT_TOPIC
+            papers = sess.unified_papers
+            count = len(papers)
+            fig1, fig2 = generate_comparison_charts(papers)
+            review_md = (sess.literature_review.get("markdown", "") if (sess and sess.literature_review) else "*Click 'Synthesize Complete Literature Review' to build your document.*")
+            review_raw = sess.literature_review.get("markdown", "") if (sess and sess.literature_review) else ""
+            profile_html = render_salim_sidebar_html(count, cur_topic)
+
+            return (
+                sess,
+                cur_topic,
+                render_hero_banner_html(cur_topic),
+                cur_topic,
+                render_stat_cards_html(
+                    sess.papers_found_count,
+                    sess.highly_relevant_count,
+                    sess.gaps_count,
+                    sess.review_coverage_percent
+                ),
+                render_pipeline_html(
+                    sess.pipeline_progress,
+                    sess.pipeline_status_text,
+                    sess.pipeline_status
+                ),
+                render_uploaded_papers_summary(sess.uploaded_papers),
+                render_top_papers_card(papers[:4], cur_topic),
+                render_gap_intelligence_card(sess.detected_gaps, cur_topic),
+                render_ai_insight_card(sess.ai_summary, cur_topic),
+                render_search_results_cards(sess.searched_papers),
+                render_uploaded_table(sess.uploaded_papers),
+                render_analysis_cards(papers),
+                render_detailed_gaps(sess.detected_gaps),
+                render_comparison_table(papers),
+                fig1, fig2,
+                review_md,
+                review_raw,
+                profile_html
+            )
+
+        app.load(
+            fn=restore_session_on_load,
+            inputs=[],
+            outputs=[
+                session,
+                dash_ui["topic_input"],
+                dash_ui["hero_banner_html"],
+                search_ui["search_topic_input"],
+                dash_ui["stats_html"],
+                dash_ui["pipeline_html"],
+                dash_ui["upload_summary_html"],
+                dash_ui["top_papers_html"],
+                dash_ui["gaps_html"],
+                dash_ui["ai_insight_html"],
+                search_ui["search_results_container"],
+                upload_ui["uploaded_table_html"],
+                analysis_ui["analysis_container"],
+                gaps_ui["gaps_container"],
+                comparison_ui["comparison_table_html"],
+                comparison_ui["chart_scatter"],
+                comparison_ui["chart_hist"],
+                review_ui["review_markdown_display"],
+                review_ui["review_editor"],
+                chat_ui["salim_profile_display"]
+            ]
+        )
 
     return app
+
 
 if __name__ == "__main__":
     theme = get_literature_theme()

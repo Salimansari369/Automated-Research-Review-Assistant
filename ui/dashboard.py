@@ -53,7 +53,13 @@ def render_hero_banner_html(topic: str = "Space Communication Networks") -> str:
     </div>
     """
 
-def create_dashboard_view():
+def create_dashboard_view(initial_session: ResearchSession = None):
+    init_topic = initial_session.research_topic if initial_session else "Agentic AI for Autonomous Space Communication Networks"
+    init_from = initial_session.year_start if initial_session else 2020
+    init_to = initial_session.year_end if initial_session else 2026
+    init_sources = initial_session.selected_sources if initial_session else ["Semantic Scholar", "OpenAlex", "Crossref"]
+    init_max = initial_session.max_papers if initial_session else 20
+
     with gr.Column(elem_classes=["dashboard-view"]):
 
         # ── TOP WALKING RESEARCHER SCOUT ANIMATION ────────────────────────
@@ -73,7 +79,7 @@ def create_dashboard_view():
                 
                 modal_sources_checkbox = gr.CheckboxGroup(
                     choices=["Semantic Scholar", "OpenAlex", "Crossref", "arXiv", "Tavily"],
-                    value=["Semantic Scholar", "OpenAlex", "Crossref"],
+                    value=init_sources,
                     label="SELECTED ACTIVE REPOSITORIES",
                     elem_classes=["modal-sources-checklist"]
                 )
@@ -85,18 +91,19 @@ def create_dashboard_view():
                     apply_sources_modal_btn = gr.Button("✓ Save & Apply Sources", variant="primary", elem_classes=["btn-modal-apply"])
 
         # ── 1. MAIN HERO BANNER CARD (Target height: ~180px, single clean HTML card) ──
-        hero_banner_html = gr.HTML(value=render_hero_banner_html())
+        hero_banner_html = gr.HTML(value=render_hero_banner_html(init_topic))
 
         # ── 2. RESEARCH CONTROL CARD (Target height: ~155px, separate card) ──
         with gr.Column(elem_classes=["research-control-card"]):
             # Row 1: Full-width topic input
             topic_input = gr.Textbox(
                 label="RESEARCH TOPIC",
-                value="Agentic AI for Autonomous Space Communication Networks",
+                value=init_topic,
                 placeholder="Enter any research topic...",
                 lines=1,
                 elem_classes=["hero-topic-textbox"]
             )
+
 
             # Row 2: YEAR RANGE | SOURCES | MAX PAPERS | START REVIEW
             with gr.Row(elem_classes=["hero-filter-subrow"], equal_height=False):
@@ -106,7 +113,7 @@ def create_dashboard_view():
                     with gr.Row(elem_classes=["years-flex-row"]):
                         year_from = gr.Dropdown(
                             choices=list(range(2015, 2031)),
-                            value=2020,
+                            value=init_from,
                             scale=1,
                             allow_custom_value=False,
                             show_label=False,
@@ -116,7 +123,7 @@ def create_dashboard_view():
                         gr.HTML('<span class="year-hyphen">-</span>')
                         year_to = gr.Dropdown(
                             choices=list(range(2015, 2031)),
-                            value=2026,
+                            value=init_to,
                             scale=1,
                             allow_custom_value=False,
                             show_label=False,
@@ -131,7 +138,7 @@ def create_dashboard_view():
                         open_sources_modal_btn = gr.Button("⚙️ Manage", elem_classes=["btn-sources-config-icon"])
                     sources_select = gr.CheckboxGroup(
                         choices=["Semantic Scholar", "OpenAlex", "Crossref", "arXiv", "Tavily"],
-                        value=["Semantic Scholar", "OpenAlex", "Crossref"],
+                        value=init_sources,
                         show_label=False,
                         container=False,
                         elem_classes=["sources-chips-group"]
@@ -142,7 +149,7 @@ def create_dashboard_view():
                     gr.HTML('<div class="filter-header-label">MAX PAPERS</div>')
                     max_papers_input = gr.Dropdown(
                         choices=[10, 15, 20, 30, 40, 50],
-                        value=20,
+                        value=init_max,
                         show_label=False,
                         container=False,
                         elem_classes=["max-select-box"]
@@ -158,12 +165,27 @@ def create_dashboard_view():
                     )
 
         # ── 3. STATISTICS (~125px) ────────────────────────────────────────────
-        stats_html = gr.HTML(value=render_stat_cards_html(42, 18, 7, 84))
+        init_stats = (
+            render_stat_cards_html(
+                initial_session.papers_found_count,
+                initial_session.highly_relevant_count,
+                initial_session.gaps_count,
+                initial_session.review_coverage_percent
+            ) if initial_session else render_stat_cards_html(42, 18, 7, 84)
+        )
+        stats_html = gr.HTML(value=init_stats)
 
         # ── 4. PIPELINE (55%) + UPLOAD (45%) (~195px) ─────────────────────────
+        init_pipe = (
+            render_pipeline_html(
+                initial_session.pipeline_progress,
+                initial_session.pipeline_status_text,
+                initial_session.pipeline_status
+            ) if initial_session and initial_session.pipeline_progress > 0 else render_pipeline_html(68, "Analyzing papers... 68%")
+        )
         with gr.Row(elem_classes=["middle-dashboard-row"], equal_height=True):
             with gr.Column(scale=55, elem_classes=["pipeline-col"]):
-                pipeline_html = gr.HTML(value=render_pipeline_html(68, "Analyzing papers... 68%"))
+                pipeline_html = gr.HTML(value=init_pipe)
             with gr.Column(scale=45, elem_classes=["upload-col", "upload-card-wrapper"]):
                 with gr.Row(elem_classes=["upload-inner-split"], equal_height=True):
                     with gr.Column(scale=50, elem_classes=["upload-drop-col"]):
@@ -183,16 +205,29 @@ def create_dashboard_view():
                         </div>""")
 
                     with gr.Column(scale=50, elem_classes=["upload-list-col"]):
-                        upload_summary_html = gr.HTML(value=render_uploaded_papers_summary([]))
+                        upload_summary_html = gr.HTML(value=render_uploaded_papers_summary(initial_session.uploaded_papers if initial_session else []))
 
         # ── 5. LOWER CONTENT (3 Expanded Columns: Full Width ~310px) ─────────
+        init_top_papers = render_top_papers_card(
+            initial_session.unified_papers[:4] if initial_session else [],
+            init_topic
+        )
+        init_gaps = render_gap_intelligence_card(
+            initial_session.detected_gaps if initial_session else [],
+            init_topic
+        )
+        init_insight = render_ai_insight_card(
+            initial_session.ai_summary if initial_session else "",
+            init_topic
+        )
         with gr.Row(elem_classes=["bottom-dashboard-row"], equal_height=True):
             with gr.Column(scale=33):
-                top_papers_html = gr.HTML(value=render_top_papers_card([]))
+                top_papers_html = gr.HTML(value=init_top_papers)
             with gr.Column(scale=34):
-                gaps_html = gr.HTML(value=render_gap_intelligence_card([]))
+                gaps_html = gr.HTML(value=init_gaps)
             with gr.Column(scale=33):
-                ai_insight_html = gr.HTML(value=render_ai_insight_card(""))
+                ai_insight_html = gr.HTML(value=init_insight)
+
 
         # ── 6. BOTTOM CTA BANNER ──────────────────────────────────────────────
         with gr.Row(elem_classes=["footer-cta-row"]):

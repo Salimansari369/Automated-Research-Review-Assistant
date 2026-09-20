@@ -15,6 +15,10 @@ STATIC_DIR.mkdir(exist_ok=True)
 EXPORTS_DIR.mkdir(exist_ok=True)
 UPLOADS_DIR.mkdir(exist_ok=True)
 
+DATA_DIR = BASE_DIR / "data"
+DATA_DIR.mkdir(exist_ok=True)
+SESSION_FILE = DATA_DIR / "session_history.json"
+
 # Application Config
 APP_NAME = "LiteratureAI"
 APP_TAGLINE = "AI-Powered Literature Review Assistant"

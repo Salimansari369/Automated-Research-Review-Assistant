@@ -26,3 +26,10 @@ test_*.docx
 # Exported temp files (keep exports directory structure and official report)
 exports/*.csv
 !exports/Salim_Ansari_Project_Report_Automated_Literature_Review_Assistant.docx
+
+# User runtime data & uploaded files
+data/*.json
+!data/.gitkeep
+uploads/*
+!uploads/.gitkeep
+

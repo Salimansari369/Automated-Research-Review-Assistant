@@ -35,9 +35,23 @@ class PDFProcessor:
 
         ext = os.path.splitext(file_path)[1].lower()
         file_name = os.path.basename(file_path)
+
+        # Copy to persistent uploads directory so it survives temp cleanup and refreshes
+        try:
+            import shutil
+            from config.settings import UPLOADS_DIR
+            os.makedirs(str(UPLOADS_DIR), exist_ok=True)
+            persistent_path = os.path.join(str(UPLOADS_DIR), file_name)
+            if os.path.abspath(file_path) != os.path.abspath(persistent_path):
+                shutil.copy2(file_path, persistent_path)
+            file_path = persistent_path
+        except Exception as e:
+            logger.warning(f"Could not copy document to persistent uploads: {e}")
+
         file_size_mb = os.path.getsize(file_path) / (1024 * 1024)
 
         try:
+
             if ext == ".pdf":
                 return cls._process_pdf_file(file_path, file_name, file_size_mb)
             elif ext in (".docx", ".doc"):

@@ -161,26 +161,15 @@ def render_pipeline_html(progress: int = 68, status_text: str = "Analyzing paper
 
 def render_uploaded_papers_summary(uploaded_papers: List[Paper]) -> str:
     if not uploaded_papers:
-        demo_items = [
-            ("Survey_on_MARL_Space_Networks.pdf", "12.4 MB • 2024", "📄"),
-            ("Autonomous_Space_Routing.docx", "4.2 MB • 2024", "📝"),
-            ("6G_NTN_Agentic_AI_Summary.txt", "1.1 MB • 2025", "📃"),
-        ]
-        items_html = "".join([
-            f"""
-            <div class="paper-file-item">
-              <div class="file-item-left">
-                <span class="pdf-icon-badge">{icon}</span>
-                <div>
-                  <div class="file-name-text">{name}</div>
-                  <div class="file-meta-text">{meta}</div>
-                </div>
-              </div>
-              <span class="file-check-badge">✓</span>
-            </div>
-            """ for name, meta, icon in demo_items
-        ])
-        total_info = "Total: 3 documents (17.7 MB)"
+        items_html = """
+        <div style="text-align: center; padding: 22px 14px; color: #94a3b8; font-size: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+          <div style="font-size: 26px; margin-bottom: 6px;">📂</div>
+          <div style="font-weight: 700; color: #cbd5e1; font-size: 13px;">No documents uploaded yet</div>
+          <div style="font-size: 11px; margin-top: 3px; color: #64748b;">Drop PDF / Word files on the left to extract & auto-save to history.</div>
+        </div>
+        """
+        total_info = "Ready for uploads (PDF, DOCX, TXT)"
+        badge_count = "0"
     else:
         total_mb = sum((p.file_size_mb or 0) for p in uploaded_papers)
         items = []
@@ -190,32 +179,34 @@ def render_uploaded_papers_summary(uploaded_papers: List[Paper]) -> str:
             <div class="paper-file-item">
               <div class="file-item-left">
                 <span class="pdf-icon-badge">{ext_icon}</span>
-                <div>
-                  <div class="file-name-text">{p.title}</div>
-                  <div class="file-meta-text">{p.file_size_mb or 1.0:.1f} MB • {p.year or 2024}</div>
+                <div style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 170px;">
+                  <div class="file-name-text" title="{p.title}">{p.title}</div>
+                  <div class="file-meta-text">{p.file_size_mb or 1.0:.1f} MB • {p.year or '2024'} • <span style="color:#10b981;">Saved</span></div>
                 </div>
               </div>
-              <span class="file-check-badge">✓</span>
+              <span class="file-check-badge" title="Persisted to Disk">✓</span>
             </div>
             """)
         items_html = "".join(items)
-        total_info = f"Total: {len(uploaded_papers)} documents ({total_mb:.1f} MB)"
+        total_info = f"Total: {len(uploaded_papers)} saved ({total_mb:.1f} MB)"
+        badge_count = str(len(uploaded_papers))
 
     return f"""
     <div class="upload-summary-container">
       <div class="upload-summary-header">
-        <span class="upload-summary-title">UPLOADED PAPERS ({len(uploaded_papers) or 3})</span>
-        <span class="view-all-link">View All</span>
+        <span class="upload-summary-title">SAVED DOCUMENTS ({badge_count})</span>
+        <span class="view-all-link" style="color: #10b981; font-size: 11px;">💾 Auto-Persisted</span>
       </div>
       <div class="upload-files-list">
         {items_html}
       </div>
       <div class="upload-summary-footer">
         <span>{total_info}</span>
-        <span class="trash-icon">🗑️</span>
+        <span class="trash-icon" title="History saved to disk">💾</span>
       </div>
     </div>
     """
+
 
 def extract_topic_tags(topic: str = "", summary: str = "") -> List[str]:
     stopwords = {

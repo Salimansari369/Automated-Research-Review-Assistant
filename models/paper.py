@@ -79,7 +79,35 @@ class Paper:
             "source": self.source,
             "citation_count": self.citation_count,
             "relevance_score": self.relevance_score,
-            "is_uploaded": self.is_uploaded,
+            "open_access_url": self.open_access_url,
+            "raw_text": self.raw_text,
+            "file_path": self.file_path,
             "file_size_mb": self.file_size_mb,
+            "is_uploaded": self.is_uploaded,
+            "selected": self.selected,
             "analysis": self.analysis
         }
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "Paper":
+        return cls(
+            id=data.get("id", ""),
+            title=data.get("title", ""),
+            authors=data.get("authors", []) or [],
+            year=data.get("year"),
+            abstract=data.get("abstract", "") or "",
+            doi=data.get("doi"),
+            url=data.get("url"),
+            venue=data.get("venue"),
+            source=data.get("source", "Semantic Scholar"),
+            citation_count=data.get("citation_count", 0),
+            relevance_score=float(data.get("relevance_score", 0.0) or 0.0),
+            open_access_url=data.get("open_access_url"),
+            raw_text=data.get("raw_text", "") or "",
+            file_path=data.get("file_path"),
+            file_size_mb=float(data.get("file_size_mb")) if data.get("file_size_mb") is not None else None,
+            is_uploaded=bool(data.get("is_uploaded", False)),
+            selected=bool(data.get("selected", False)),
+            analysis=data.get("analysis")
+        )
+
