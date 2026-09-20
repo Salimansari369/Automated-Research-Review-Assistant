@@ -1,3 +1,15 @@
+---
+title: LiteratureAI Automated Research Review Assistant
+emoji: 🌌
+colorFrom: indigo
+colorTo: purple
+sdk: gradio
+sdk_version: 6.0.0
+app_file: app.py
+pinned: false
+license: mit
+---
+
 # Automated Literature Review Assistant (LiteratureAI) 🌌
 ### *An Agentic AI-Powered Autonomous Academic Research Discovery, Gap Intelligence & Review Synthesis System*
 

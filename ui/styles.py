@@ -4682,7 +4682,70 @@ body:not(.light-theme) .btn-chat-clear {
     min-width: 100% !important;
     flex: 1 1 100% !important;
   }
+
+  /* Grid & Columns responsiveness on mobile */
+  .stat-cards-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+  .middle-dashboard-row, .bottom-dashboard-row, .footer-cta-row {
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+  .pipeline-col, .upload-col {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 1 1 100% !important;
+  }
+  .upload-inner-split {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .upload-drop-col, .upload-list-col {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 1 1 100% !important;
+  }
+  .paper-anime-container, .gap-anime-container {
+    display: none !important;
+  }
+  .papers-content-split, .gaps-content-split {
+    flex-direction: column !important;
+  }
+  .top-papers-list, .gap-items-col {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .table-responsive, table {
+    display: block !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  .gradio-container {
+    padding: 8px !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .stat-cards-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .hero-headline {
+    font-size: 18px !important;
+    line-height: 1.3 !important;
+  }
+  .hero-greeting {
+    font-size: 13px !important;
+  }
+  .card-title-pill, .stat-header {
+    font-size: 11px !important;
+  }
+  .btn-start-review-main, .upload-action-btn {
+    padding: 12px 14px !important;
+    font-size: 13px !important;
+  }
 }
 """
+
 
 

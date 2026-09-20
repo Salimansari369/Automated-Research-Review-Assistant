@@ -1294,7 +1294,7 @@ if __name__ == "__main__":
     theme = get_literature_theme()
     app = build_app()
     base_port = int(os.environ.get("PORT", 7860))
-    server_host = os.environ.get("SERVER_NAME", "127.0.0.1")
+    server_host = os.environ.get("SERVER_NAME", "0.0.0.0")
     share_flag = os.environ.get("GRADIO_SHARE", "False").lower() in ("true", "1")
     
     for p in range(base_port, base_port + 20):
