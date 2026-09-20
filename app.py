@@ -777,6 +777,67 @@ def build_app():
             ]
         )
 
+        def handle_refresh_from_db():
+            sess = ResearchSession.load_from_disk()
+            papers = sess.unified_papers
+            cur_topic = sess.research_topic or DEFAULT_TOPIC
+            fig1, fig2 = generate_comparison_charts(papers)
+            review_md = (sess.literature_review.get("markdown", "") if (sess and sess.literature_review) else "*Click 'Synthesize Complete Literature Review' to build your document.*")
+            review_raw = sess.literature_review.get("markdown", "") if (sess and sess.literature_review) else ""
+            profile_html = render_salim_sidebar_html(len(papers), cur_topic)
+
+            return (
+                sess,
+                f"Successfully reloaded {len(sess.uploaded_papers)} documents from SQLite database.",
+                render_uploaded_table(sess.uploaded_papers),
+                render_uploaded_papers_summary(sess.uploaded_papers),
+                render_hero_banner_html(cur_topic),
+                cur_topic,
+                cur_topic,
+                render_stat_cards_html(sess.papers_found_count, sess.highly_relevant_count, sess.gaps_count, sess.review_coverage_percent),
+                render_pipeline_html(sess.pipeline_progress, sess.pipeline_status_text, sess.pipeline_status),
+                render_top_papers_card(papers[:4], cur_topic),
+                render_gap_intelligence_card(sess.detected_gaps, cur_topic),
+                render_ai_insight_card(sess.ai_summary, cur_topic),
+                render_search_results_cards(sess.searched_papers),
+                render_analysis_cards(papers),
+                render_detailed_gaps(sess.detected_gaps),
+                render_comparison_table(papers),
+                fig1, fig2,
+                review_md,
+                review_raw,
+                profile_html
+            )
+
+        upload_ui["refresh_db_btn"].click(
+            fn=handle_refresh_from_db,
+            inputs=[],
+            outputs=[
+                session,
+                upload_ui["upload_status_msg"],
+                upload_ui["uploaded_table_html"],
+                dash_ui["upload_summary_html"],
+                dash_ui["hero_banner_html"],
+                dash_ui["topic_input"],
+                search_ui["search_topic_input"],
+                dash_ui["stats_html"],
+                dash_ui["pipeline_html"],
+                dash_ui["top_papers_html"],
+                dash_ui["gaps_html"],
+                dash_ui["ai_insight_html"],
+                search_ui["search_results_container"],
+                analysis_ui["analysis_container"],
+                gaps_ui["gaps_container"],
+                comparison_ui["comparison_table_html"],
+                comparison_ui["chart_scatter"],
+                comparison_ui["chart_hist"],
+                review_ui["review_markdown_display"],
+                review_ui["review_editor"],
+                chat_ui["salim_profile_display"]
+            ]
+        )
+
+
 
 
         # -------------------------------------------------------------
@@ -1114,56 +1175,90 @@ def build_app():
             outputs=[chat_ui["chatbot"], chat_ui["voice_recorder"], chat_ui["msg_input"]]
         )
 
+        whisper_visible = gr.State(False)
+        def toggle_whisper_ui(is_open):
+            new_state = not is_open
+            return new_state, gr.update(visible=new_state)
+
         chat_ui["whisper_toggle_btn"].click(
-            fn=lambda vis: gr.update(visible=not vis),
-            inputs=[chat_ui["voice_recorder_row"]],
-            outputs=[chat_ui["voice_recorder_row"]]
+            fn=toggle_whisper_ui,
+            inputs=[whisper_visible],
+            outputs=[whisper_visible, chat_ui["voice_recorder_row"]]
         )
+
 
         # -------------------------------------------------------------
         # SESSION RESTORATION ON CLIENT LOAD / REFRESH
         # -------------------------------------------------------------
 
         def restore_session_on_load():
-            sess = ResearchSession.load_from_disk()
-            cur_topic = sess.research_topic or DEFAULT_TOPIC
-            papers = sess.unified_papers
-            count = len(papers)
-            fig1, fig2 = generate_comparison_charts(papers)
-            review_md = (sess.literature_review.get("markdown", "") if (sess and sess.literature_review) else "*Click 'Synthesize Complete Literature Review' to build your document.*")
-            review_raw = sess.literature_review.get("markdown", "") if (sess and sess.literature_review) else ""
-            profile_html = render_salim_sidebar_html(count, cur_topic)
+            try:
+                sess = ResearchSession.load_from_disk()
+                cur_topic = sess.research_topic or DEFAULT_TOPIC
+                papers = sess.unified_papers
+                count = len(papers)
+                fig1, fig2 = generate_comparison_charts(papers)
+                review_md = (sess.literature_review.get("markdown", "") if (sess and sess.literature_review) else "*Click 'Synthesize Complete Literature Review' to build your document.*")
+                review_raw = sess.literature_review.get("markdown", "") if (sess and sess.literature_review) else ""
+                profile_html = render_salim_sidebar_html(count, cur_topic)
 
-            return (
-                sess,
-                cur_topic,
-                render_hero_banner_html(cur_topic),
-                cur_topic,
-                render_stat_cards_html(
-                    sess.papers_found_count,
-                    sess.highly_relevant_count,
-                    sess.gaps_count,
-                    sess.review_coverage_percent
-                ),
-                render_pipeline_html(
-                    sess.pipeline_progress,
-                    sess.pipeline_status_text,
-                    sess.pipeline_status
-                ),
-                render_uploaded_papers_summary(sess.uploaded_papers),
-                render_top_papers_card(papers[:4], cur_topic),
-                render_gap_intelligence_card(sess.detected_gaps, cur_topic),
-                render_ai_insight_card(sess.ai_summary, cur_topic),
-                render_search_results_cards(sess.searched_papers),
-                render_uploaded_table(sess.uploaded_papers),
-                render_analysis_cards(papers),
-                render_detailed_gaps(sess.detected_gaps),
-                render_comparison_table(papers),
-                fig1, fig2,
-                review_md,
-                review_raw,
-                profile_html
-            )
+                return (
+                    sess,
+                    cur_topic,
+                    render_hero_banner_html(cur_topic),
+                    cur_topic,
+                    render_stat_cards_html(
+                        sess.papers_found_count,
+                        sess.highly_relevant_count,
+                        sess.gaps_count,
+                        sess.review_coverage_percent
+                    ),
+                    render_pipeline_html(
+                        sess.pipeline_progress,
+                        sess.pipeline_status_text,
+                        sess.pipeline_status
+                    ),
+                    render_uploaded_papers_summary(sess.uploaded_papers),
+                    render_top_papers_card(papers[:4], cur_topic),
+                    render_gap_intelligence_card(sess.detected_gaps, cur_topic),
+                    render_ai_insight_card(sess.ai_summary, cur_topic),
+                    render_search_results_cards(sess.searched_papers),
+                    render_uploaded_table(sess.uploaded_papers),
+                    render_analysis_cards(papers),
+                    render_detailed_gaps(sess.detected_gaps),
+                    render_comparison_table(papers),
+                    fig1, fig2,
+                    review_md,
+                    review_raw,
+                    profile_html
+                )
+            except Exception as e:
+                logger.error(f"Error in restore_session_on_load: {e}", exc_info=True)
+                clean_sess = ResearchSession()
+                cur_topic = clean_sess.research_topic
+                fig1, fig2 = generate_comparison_charts([])
+                return (
+                    clean_sess,
+                    cur_topic,
+                    render_hero_banner_html(cur_topic),
+                    cur_topic,
+                    render_stat_cards_html(0, 0, 0, 0),
+                    render_pipeline_html(0, "Ready to start", clean_sess.pipeline_status),
+                    render_uploaded_papers_summary([]),
+                    render_top_papers_card([], cur_topic),
+                    render_gap_intelligence_card([], cur_topic),
+                    render_ai_insight_card("", cur_topic),
+                    render_search_results_cards([]),
+                    render_uploaded_table([]),
+                    render_analysis_cards([]),
+                    render_detailed_gaps([]),
+                    render_comparison_table([]),
+                    fig1, fig2,
+                    "*Click 'Synthesize Complete Literature Review' to build your document.*",
+                    "",
+                    render_salim_sidebar_html(0, cur_topic)
+                )
+
 
         app.load(
             fn=restore_session_on_load,

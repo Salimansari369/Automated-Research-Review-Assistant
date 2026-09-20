@@ -29,7 +29,10 @@ exports/*.csv
 
 # User runtime data & uploaded files
 data/*.json
+data/*.db
+data/*.sqlite
 !data/.gitkeep
 uploads/*
 !uploads/.gitkeep
+
 

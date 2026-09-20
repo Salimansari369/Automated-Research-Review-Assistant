@@ -3,20 +3,27 @@ from typing import List
 from models.paper import Paper
 from models.session import ResearchSession
 
-def render_uploaded_table(papers: List[Paper]) -> str:
+def render_uploaded_table(papers: List[Paper] = None) -> str:
+    from services.db_service import DatabaseService
+    if not papers:
+        papers = DatabaseService.get_all_uploaded_papers()
+
     if not papers:
         return """
         <div style="text-align: center; padding: 40px; background: #080b1a; border-radius: 16px; border: 1px dashed #1e2548; margin-top: 16px;">
           <div style="font-size: 32px; margin-bottom: 8px;">📂</div>
-          <div style="font-size: 15px; font-weight: 700; color: #f8fafc;">No documents uploaded yet</div>
-          <div style="font-size: 12px; color: #94a3b8; margin-top: 4px;">Drag & drop PDF, Word (.docx, .doc), or Text (.txt, .md) research papers to extract metadata and full text.</div>
+          <div style="font-size: 15px; font-weight: 700; color: #f8fafc;">No documents in database yet</div>
+          <div style="font-size: 12px; color: #94a3b8; margin-top: 4px;">Drag & drop PDF, Word (.docx, .doc), or Text (.txt, .md) research papers. All files are automatically committed to SQLite database (<code>data/database.db</code>).</div>
+          <div style="margin-top: 12px; display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.25); border-radius: 8px; font-size: 11px; color: #60a5fa;">
+            <span>🗄️ SQLite Database Ready:</span> <code>data/database.db</code>
+          </div>
         </div>
         """
 
     total_mb = sum((p.file_size_mb or 0.0) for p in papers)
     rows = []
     for idx, p in enumerate(papers, 1):
-        status_tag = "<span style='color: #34d399; font-weight: 700;'>✓ Saved & Ready</span>"
+        status_tag = "<span style='color: #34d399; font-weight: 700;'>✓ Saved in DB</span>"
         if "Scanned" in (p.abstract or ""):
             status_tag = "<span style='color: #fbbf24; font-weight: 700;'>⚠️ Scanned Layer</span>"
 
@@ -38,15 +45,15 @@ def render_uploaded_table(papers: List[Paper]) -> str:
 
     table_body = "".join(rows)
     return f"""
-    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 18px; background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; margin-top: 14px; margin-bottom: 12px;">
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <span style="font-size: 20px;">💾</span>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 14px 20px; background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(59, 130, 246, 0.15) 100%); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 14px; margin-top: 14px; margin-bottom: 12px;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span style="font-size: 24px;">🗄️</span>
         <div>
-          <span style="font-weight: 700; color: #34d399; font-size: 13px;">Persistent Storage Active: {len(papers)} Document(s) Saved ({total_mb:.1f} MB)</span>
-          <div style="font-size: 11px; color: #94a3b8;">Uploaded files and extracted AI text are preserved on disk. Refreshes will automatically restore this history.</div>
+          <span style="font-weight: 800; color: #34d399; font-size: 14px;">SQLite Relational Database Active: {len(papers)} Document(s) Saved ({total_mb:.1f} MB)</span>
+          <div style="font-size: 11px; color: #94a3b8; margin-top: 2px;">Database File: <code>data/database.db</code> • Persistent ACID storage preserves all files and extracted text across browser refreshes & server restarts.</div>
         </div>
       </div>
-      <span style="background: rgba(16, 185, 129, 0.2); color: #34d399; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 9999px;">✓ Persisted</span>
+      <span style="background: rgba(16, 185, 129, 0.25); color: #34d399; font-size: 11px; font-weight: 700; padding: 5px 12px; border-radius: 9999px; border: 1px solid rgba(16, 185, 129, 0.4);">✓ SQLite Synced</span>
     </div>
     <div style="background: #0d1126; border-radius: 16px; border: 1px solid #1e2548; overflow: hidden; box-shadow: var(--card-shadow); margin-top: 8px;">
       <table style="width: 100%; border-collapse: collapse; text-align: left;">
@@ -69,7 +76,7 @@ def render_uploaded_table(papers: List[Paper]) -> str:
 
 def create_upload_view(initial_papers: List[Paper] = None):
     with gr.Column(elem_classes=["upload-view", "upload-page-container"]):
-        gr.Markdown("## 📂 Upload Personal Research Papers & Documents\n*Integrate your own PDF, Word DOCX/DOC, and Text research files. All uploaded documents are automatically saved to disk and persist across page refreshes.*")
+        gr.Markdown("## 📂 Upload Personal Research Papers & Documents\n*Integrate your own PDF, Word DOCX/DOC, and Text research files. All uploaded documents are automatically committed to SQLite database (`data/database.db`) and persist across page refreshes.*")
 
         with gr.Row():
             file_upload = gr.File(
@@ -80,12 +87,14 @@ def create_upload_view(initial_papers: List[Paper] = None):
             )
 
         with gr.Row():
-            upload_process_btn = gr.Button("📑 Process & Extract Documents (PDF / DOCX / TXT)", variant="primary", elem_classes=["btn-primary-gradient"])
+            upload_process_btn = gr.Button("📑 Process & Save to Database", variant="primary", elem_classes=["btn-primary-gradient"])
+            refresh_db_btn = gr.Button("🔄 Reload from SQLite DB", elem_classes=["btn-whisper-toggle"])
             clear_uploads_btn = gr.Button("🗑️ Clear Uploaded Documents", elem_classes=["btn-whisper-toggle"])
-            reset_all_btn = gr.Button("⚠️ Reset / Clear All Workspace History", elem_classes=["btn-whisper-toggle"])
+            reset_all_btn = gr.Button("⚠️ Wipe Database & Reset Workspace", elem_classes=["btn-whisper-toggle"])
 
-        upload_status_msg = gr.Markdown("Ready to upload and process documents. Uploaded papers auto-persist to disk.")
+        upload_status_msg = gr.Markdown("Ready to upload and process documents. Uploaded papers auto-commit to SQLite DB.")
         uploaded_table_html = gr.HTML(value=render_uploaded_table(initial_papers or []))
+
 
         with gr.Accordion("🔍 Extracted Text & Metadata Preview", open=False):
             text_preview_output = gr.Textbox(
@@ -97,11 +106,13 @@ def create_upload_view(initial_papers: List[Paper] = None):
     return {
         "file_upload": file_upload,
         "upload_process_btn": upload_process_btn,
+        "refresh_db_btn": refresh_db_btn,
         "clear_uploads_btn": clear_uploads_btn,
         "reset_all_btn": reset_all_btn,
         "upload_status_msg": upload_status_msg,
         "uploaded_table_html": uploaded_table_html,
         "text_preview_output": text_preview_output
     }
+
 
 

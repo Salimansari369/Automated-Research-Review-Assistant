@@ -212,6 +212,14 @@ class ResearchSession:
                 os.replace(tmp_path, path)
             else:
                 os.rename(tmp_path, path)
+
+            # Persist to relational SQLite Database
+            try:
+                from services.db_service import DatabaseService
+                DatabaseService.save_session_state(self)
+            except Exception as dbe:
+                print(f"[DatabaseService] Warning saving to SQLite DB: {dbe}")
+
             return True
         except Exception as e:
             print(f"[ResearchSession] Failed to save session to disk: {e}")
@@ -219,6 +227,50 @@ class ResearchSession:
 
     @classmethod
     def load_from_disk(cls, filepath: Optional[str] = None) -> "ResearchSession":
+        # 1. First attempt to load from SQLite Database
+        try:
+            from services.db_service import DatabaseService
+            db_state = DatabaseService.load_session_state()
+            uploaded_papers = DatabaseService.get_all_uploaded_papers()
+            searched_papers = DatabaseService.get_all_searched_papers()
+
+            if uploaded_papers or searched_papers or (db_state and db_state.get("research_topic")):
+                sess = cls()
+                if db_state.get("research_topic"):
+                    sess.research_topic = db_state["research_topic"]
+                if db_state.get("year_start"):
+                    sess.year_start = db_state["year_start"]
+                if db_state.get("year_end"):
+                    sess.year_end = db_state["year_end"]
+                if db_state.get("selected_sources"):
+                    sess.selected_sources = db_state["selected_sources"]
+                if db_state.get("max_papers"):
+                    sess.max_papers = db_state["max_papers"]
+                if db_state.get("detected_gaps"):
+                    sess.detected_gaps = db_state["detected_gaps"]
+                if db_state.get("future_directions"):
+                    sess.future_directions = db_state["future_directions"]
+                if db_state.get("literature_review"):
+                    sess.literature_review = db_state["literature_review"]
+                if db_state.get("ai_summary"):
+                    sess.ai_summary = db_state["ai_summary"]
+                if db_state.get("pipeline_step"):
+                    sess.pipeline_step = db_state["pipeline_step"]
+                if db_state.get("pipeline_progress"):
+                    sess.pipeline_progress = db_state["pipeline_progress"]
+                if db_state.get("pipeline_status_text"):
+                    sess.pipeline_status_text = db_state["pipeline_status_text"]
+                if db_state.get("pipeline_status"):
+                    sess.pipeline_status = db_state["pipeline_status"]
+
+                sess.uploaded_papers = uploaded_papers
+                sess.searched_papers = searched_papers
+                sess.selected_paper_ids = {p.id for p in uploaded_papers}
+                return sess
+        except Exception as dbe:
+            print(f"[DatabaseService] Fallback to JSON: {dbe}")
+
+        # 2. Fallback to JSON file if SQLite was empty
         path = filepath or str(SESSION_FILE)
         if os.path.exists(path):
             try:
@@ -232,6 +284,14 @@ class ResearchSession:
 
     @classmethod
     def clear_disk_history(cls, filepath: Optional[str] = None) -> bool:
+        # Clear SQLite Database
+        try:
+            from services.db_service import DatabaseService
+            DatabaseService.clear_database()
+        except Exception as dbe:
+            print(f"[DatabaseService] Error clearing SQLite: {dbe}")
+
+        # Clear JSON file
         path = filepath or str(SESSION_FILE)
         try:
             if os.path.exists(path):
@@ -240,4 +300,5 @@ class ResearchSession:
         except Exception as e:
             print(f"[ResearchSession] Failed to clear disk session: {e}")
             return False
+
 

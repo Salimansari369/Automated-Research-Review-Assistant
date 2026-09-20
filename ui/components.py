@@ -372,8 +372,8 @@ def render_gap_intelligence_card(gaps: List[Dict[str, Any]] = None, topic: str =
           <div class="gap-card-box border-purple">
             <div class="gap-box-top">
               <div class="gap-num-title">
-                <span class="gap-index-text">{gap1.get('id', '01')}</span>
-                <span class="gap-title-text">{gap1.get('title', 'GAP 01')}</span>
+                <span class="gap-index-text">{gap1.get('id') or '01'}</span>
+                <span class="gap-title-text">{gap1.get('title') or gap1.get('area') or 'GAP 01'}</span>
               </div>
               <span class="gap-tag-pill tag-{gap1.get('impact_class', 'high')}">{gap1.get('impact', 'High Impact')}</span>
             </div>
@@ -390,11 +390,12 @@ def render_gap_intelligence_card(gaps: List[Dict[str, Any]] = None, topic: str =
           <div class="gap-card-box border-blue">
             <div class="gap-box-top">
               <div class="gap-num-title">
-                <span class="gap-index-text">{gap2.get('id', '02')}</span>
-                <span class="gap-title-text">{gap2.get('title', 'GAP 02')}</span>
+                <span class="gap-index-text">{gap2.get('id') or '02'}</span>
+                <span class="gap-title-text">{gap2.get('title') or gap2.get('area') or 'GAP 02'}</span>
               </div>
               <span class="gap-tag-pill tag-{gap2.get('impact_class', 'medium')}">{gap2.get('impact', 'Medium Impact')}</span>
             </div>
+
             <div class="gap-desc-text">
               {gap2.get('description', '')}
             </div>
