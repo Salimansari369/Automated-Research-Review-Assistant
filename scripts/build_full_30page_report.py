@@ -3,7 +3,8 @@ Generates the authoritative, exhaustive 25-30 page Academic Project Report for S
 Directly clones the official college template format while expanding all 9 chapters
 with rigorous theoretical discourse, mathematical models, algorithms, architecture tables,
 11 high-resolution diagrams and UI screenshots, bold abstract, IEEE citations, and appendices.
-Precisely matches the spacing, chapter titles, line-to-line layout, and structure of the reference report.
+Precisely matches the 1.5 line spacing, native Heading 1/Heading 2 hierarchy, font settings,
+and layout of the reference report.
 """
 
 import os
@@ -14,7 +15,7 @@ from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml import OxmlElement, parse_xml
 from docx.oxml.ns import nsdecls, qn
 
-def set_cell_margins(cell, top=120, bottom=120, left=160, right=160):
+def set_cell_margins(cell, top=110, bottom=110, left=150, right=150):
     tcPr = cell._tc.get_or_add_tcPr()
     tcMar = OxmlElement('w:tcMar')
     for m_name, m_val in [('top', top), ('bottom', bottom), ('left', left), ('right', right)]:
@@ -55,7 +56,7 @@ def add_custom_styled_table(doc, headers, rows_data, col_widths, align_list=None
     for c_idx, h_text in enumerate(headers):
         cell = table.cell(0, c_idx)
         cell.width = col_widths[c_idx]
-        set_cell_margins(cell, top=130, bottom=130, left=160, right=160)
+        set_cell_margins(cell, top=120, bottom=120, left=150, right=150)
         set_cell_shading(cell, header_bg)
         p = cell.paragraphs[0]
         p.alignment = align_list[c_idx]
@@ -74,7 +75,7 @@ def add_custom_styled_table(doc, headers, rows_data, col_widths, align_list=None
         for c_idx, val in enumerate(row):
             cell = table.cell(r_idx + 1, c_idx)
             cell.width = col_widths[c_idx]
-            set_cell_margins(cell, top=100, bottom=100, left=160, right=160)
+            set_cell_margins(cell, top=90, bottom=90, left=150, right=150)
             set_cell_shading(cell, row_bg)
             p = cell.paragraphs[0]
             p.alignment = align_list[c_idx]
@@ -108,7 +109,7 @@ def generate_30page_report():
     # --- 1. COVER PAGE (P0 to P30) ---
     for i, p in enumerate(doc.paragraphs[:31]):
         txt = p.text
-        if "AI Agent for Personal Goal" in txt or "GoalMate" in txt or "“AI Agent" in txt or "PROJECT REPORT" in txt and "ON" not in txt and i == 6:
+        if "AI Agent for Personal Goal" in txt or "GoalMate" in txt or "“AI Agent" in txt or ("PROJECT REPORT" in txt and "ON" not in txt and i == 6):
             p.text = ""
             r = p.add_run(f"“{short_title}”")
             r.font.name = "Times New Roman"
@@ -240,8 +241,6 @@ def generate_30page_report():
             p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
     # --- 6. REMOVE BODY PARAGRAPHS FROM P113 ONWARD ---
-    # In the friend's template, P112 ends Section 1 (TOC) with a sectPr.
-    # We remove everything after P112 so Section 2 starts fresh.
     while len(doc.paragraphs) > 113:
         p = doc.paragraphs[113]
         p._element.getparent().remove(p._element)
@@ -251,21 +250,23 @@ def generate_30page_report():
         if not is_first:
             doc.add_page_break()
         
-        p1 = doc.add_paragraph()
+        # Heading 1 (Chapter Number)
+        p1 = doc.add_paragraph(style='Heading 1')
         p1.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        p1.paragraph_format.space_before = Pt(20)
-        p1.paragraph_format.space_after = Pt(4)
+        p1.paragraph_format.space_before = Pt(18)
+        p1.paragraph_format.space_after = Pt(2)
         p1.paragraph_format.keep_with_next = True
-        r1 = p1.add_run(f"CHAPTER {num}")
+        r1 = p1.add_run(f"Chapter {num}")
         r1.font.name = "Times New Roman"
         r1.font.size = Pt(14)
         r1.font.bold = True
         r1.font.color.rgb = RGBColor(0, 0, 0)
 
-        p2 = doc.add_paragraph()
+        # Chapter Title (Normal 16pt Bold Centered)
+        p2 = doc.add_paragraph(style='Normal')
         p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        p2.paragraph_format.space_before = Pt(0)
-        p2.paragraph_format.space_after = Pt(18)
+        p2.paragraph_format.space_before = Pt(4)
+        p2.paragraph_format.space_after = Pt(14)
         p2.paragraph_format.keep_with_next = True
         r2 = p2.add_run(name)
         r2.font.name = "Times New Roman"
@@ -274,12 +275,12 @@ def generate_30page_report():
         r2.font.color.rgb = RGBColor(0, 0, 0)
 
     def add_sec_head(title):
-        p = doc.add_paragraph()
+        p = doc.add_paragraph(style='Heading 2')
         p.alignment = WD_ALIGN_PARAGRAPH.LEFT
-        p.paragraph_format.space_before = Pt(14)
-        p.paragraph_format.space_after = Pt(6)
+        p.paragraph_format.space_before = Pt(12)
+        p.paragraph_format.space_after = Pt(4)
         p.paragraph_format.keep_with_next = True
-        r = p.add_run(title.upper())
+        r = p.add_run(title)
         r.font.name = "Times New Roman"
         r.font.size = Pt(12)
         r.font.bold = True
@@ -287,10 +288,10 @@ def generate_30page_report():
         return p
 
     def add_subsec_head(title):
-        p = doc.add_paragraph()
+        p = doc.add_paragraph(style='Normal')
         p.alignment = WD_ALIGN_PARAGRAPH.LEFT
-        p.paragraph_format.space_before = Pt(10)
-        p.paragraph_format.space_after = Pt(4)
+        p.paragraph_format.space_before = Pt(8)
+        p.paragraph_format.space_after = Pt(3)
         p.paragraph_format.keep_with_next = True
         r = p.add_run(title)
         r.font.name = "Times New Roman"
@@ -300,24 +301,24 @@ def generate_30page_report():
         return p
 
     def add_p(text):
-        p = doc.add_paragraph()
+        p = doc.add_paragraph(style='Normal')
         p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
         p.paragraph_format.space_before = Pt(0)
         p.paragraph_format.space_after = Pt(6)
-        p.paragraph_format.line_spacing = 1.15
+        p.paragraph_format.line_spacing = 1.5
         r = p.add_run(text)
         r.font.name = "Times New Roman"
-        r.font.size = Pt(11.5)
+        r.font.size = Pt(12)
         r.font.color.rgb = RGBColor(0, 0, 0)
         return p
 
     def add_bullet(bold_prefix, text):
-        p = doc.add_paragraph()
+        p = doc.add_paragraph(style='Normal')
         p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
         p.paragraph_format.left_indent = Inches(0.25)
         p.paragraph_format.space_before = Pt(0)
-        p.paragraph_format.space_after = Pt(4)
-        p.paragraph_format.line_spacing = 1.15
+        p.paragraph_format.space_after = Pt(3)
+        p.paragraph_format.line_spacing = 1.45
         
         r_b = p.add_run("•  ")
         r_b.font.name = "Arial"
@@ -327,71 +328,73 @@ def generate_30page_report():
         if bold_prefix:
             r_pre = p.add_run(bold_prefix + " ")
             r_pre.font.name = "Times New Roman"
-            r_pre.font.size = Pt(11.5)
+            r_pre.font.size = Pt(12)
             r_pre.font.bold = True
             r_pre.font.color.rgb = RGBColor(0, 0, 0)
 
         r_txt = p.add_run(text)
         r_txt.font.name = "Times New Roman"
-        r_txt.font.size = Pt(11.5)
+        r_txt.font.size = Pt(12)
         r_txt.font.color.rgb = RGBColor(0, 0, 0)
         return p
 
     def add_fig(path, cap, width_in=5.8):
         if os.path.exists(path):
-            p_i = doc.add_paragraph()
+            p_i = doc.add_paragraph(style='Normal')
             p_i.alignment = WD_ALIGN_PARAGRAPH.CENTER
-            p_i.paragraph_format.space_before = Pt(12)
-            p_i.paragraph_format.space_after = Pt(4)
+            p_i.paragraph_format.space_before = Pt(10)
+            p_i.paragraph_format.space_after = Pt(3)
             p_i.paragraph_format.keep_with_next = True
             run = p_i.add_run()
             run.add_picture(path, width=Inches(width_in))
             
-            p_c = doc.add_paragraph()
+            p_c = doc.add_paragraph(style='Normal')
             p_c.alignment = WD_ALIGN_PARAGRAPH.CENTER
             p_c.paragraph_format.space_before = Pt(2)
             p_c.paragraph_format.space_after = Pt(12)
+            p_c.paragraph_format.line_spacing = 1.0
             
             parts = cap.split(":", 1)
             if len(parts) == 2:
-                r_num = p_c.add_run(parts[0] + ":")
+                r_num = p_c.add_run(parts[0] + ": ")
                 r_num.font.name = "Times New Roman"
-                r_num.font.size = Pt(10.5)
+                r_num.font.size = Pt(11)
                 r_num.font.bold = True
                 r_num.font.color.rgb = RGBColor(0, 0, 0)
                 
-                r_desc = p_c.add_run(parts[1])
+                r_desc = p_c.add_run(parts[1].strip())
                 r_desc.font.name = "Times New Roman"
-                r_desc.font.size = Pt(10.5)
+                r_desc.font.size = Pt(11)
                 r_desc.font.color.rgb = RGBColor(0, 0, 0)
             else:
                 r_c = p_c.add_run(cap)
                 r_c.font.name = "Times New Roman"
-                r_c.font.size = Pt(10.5)
+                r_c.font.size = Pt(11)
                 r_c.font.bold = True
                 r_c.font.color.rgb = RGBColor(0, 0, 0)
 
     def add_table_title(title):
-        p = doc.add_paragraph()
+        p = doc.add_paragraph(style='Normal')
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        p.paragraph_format.space_before = Pt(10)
+        p.paragraph_format.space_before = Pt(8)
         p.paragraph_format.space_after = Pt(4)
+        p.paragraph_format.line_spacing = 1.0
         p.paragraph_format.keep_with_next = True
         parts = title.split(":", 1)
         if len(parts) == 2:
-            r1 = p.add_run(parts[0] + ":")
+            r1 = p.add_run(parts[0] + ": ")
             r1.font.name = "Times New Roman"
-            r1.font.size = Pt(10.5)
+            r1.font.size = Pt(11)
             r1.font.bold = True
             r1.font.color.rgb = RGBColor(0, 0, 0)
-            r2 = p.add_run(parts[1])
+            r2 = p.add_run(parts[1].strip())
             r2.font.name = "Times New Roman"
-            r2.font.size = Pt(10.5)
+            r2.font.size = Pt(11)
             r2.font.color.rgb = RGBColor(0, 0, 0)
         else:
             r = p.add_run(title)
             r.font.name = "Times New Roman"
-            r.font.size = Pt(10.5)
+            r.font.size = Pt(11)
             r.font.bold = True
             r.font.color.rgb = RGBColor(0, 0, 0)
 
@@ -419,10 +422,17 @@ def generate_30page_report():
     )
     add_p(
         "Recent breakthroughs in Large Language Models (LLMs) [2] and autonomous multi-agent systems [3] offer an unprecedented opportunity to "
-        "transform academic discovery from passive keyword search into active, multi-step agentic synthesis. An autonomous agentic framework "
-        "treats literature discovery as a multi-stage reasoning process: formulating complex search strategies, expanding queries with "
-        "domain-specific synonyms, querying multiple heterogeneous academic APIs simultaneously, ingesting full-text PDF documents into dense "
-        "vector spaces [4], performing cross-document relational clustering, and synthesizing publication-ready comparative matrices."
+        "transform academic discovery from passive keyword search into active, multi-step agentic synthesis. Unlike first-generation retrieval "
+        "systems that treat search queries as isolated keyword lookups, an autonomous agentic framework treats literature discovery as a "
+        "multi-stage reasoning process. An agentic literature assistant can formulate complex search strategies, expand search queries with "
+        "domain-specific synonyms, query multiple heterogeneous academic APIs simultaneously, ingest and chunk full-text PDF documents into "
+        "dense vector spaces [4], perform cross-document relational clustering, and synthesize publication-ready comparative matrices."
+    )
+    add_p(
+        "To operationalize this paradigm shift, this project presents the Automated Literature Review Assistant (ALRA). ALRA combines live "
+        "academic API integration (ArXiv, Semantic Scholar) with local FAISS dense vector search, high-reasoning LLMs (Groq LLaMA-3.3-70B, "
+        "DeepSeek-R1), and a multimodal voice companion (Salim AI) to automate the entire literature review lifecycle while enforcing strict "
+        "zero-hallucination citation guarantees."
     )
 
     add_sec_head("1.2 Objectives")
@@ -769,10 +779,11 @@ def generate_30page_report():
     )
 
     add_sec_head("9.2 Project File Structure")
-    p_tree = doc.add_paragraph()
+    p_tree = doc.add_paragraph(style='Normal')
     p_tree.paragraph_format.space_before = Pt(4)
     p_tree.paragraph_format.space_after = Pt(8)
     p_tree.paragraph_format.left_indent = Inches(0.2)
+    p_tree.paragraph_format.line_spacing = 1.15
     r_t = p_tree.add_run(
         "Listing 9.1: Project file structure\n"
         "alra_literature_assistant/\n"
@@ -800,10 +811,11 @@ def generate_30page_report():
     add_sec_head("9.3 Short Code Excerpts")
     add_p("The excerpts are simplified to show the core ideas; the full code is in the repository.")
     
-    p_c = doc.add_paragraph()
+    p_c = doc.add_paragraph(style='Normal')
     p_c.paragraph_format.space_before = Pt(4)
     p_c.paragraph_format.space_after = Pt(8)
     p_c.paragraph_format.left_indent = Inches(0.2)
+    p_c.paragraph_format.line_spacing = 1.15
     r_c = p_c.add_run(
         "Listing 9.2: Agent loop with multi-turn synthesis (backend/review_agent.py)\n"
         "async def synthesize_literature_review(query: str, top_k: int = 15) -> ReviewReport:\n"
@@ -830,9 +842,9 @@ def generate_30page_report():
 
     # ================= REFERENCES =================
     doc.add_page_break()
-    p_rf = doc.add_paragraph()
+    p_rf = doc.add_paragraph(style='Heading 1')
     p_rf.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p_rf.paragraph_format.space_before = Pt(20)
+    p_rf.paragraph_format.space_before = Pt(18)
     p_rf.paragraph_format.space_after = Pt(14)
     r = p_rf.add_run("REFERENCES / BIBLIOGRAPHY")
     r.font.name = "Times New Roman"
@@ -859,14 +871,14 @@ def generate_30page_report():
     ]
 
     for ref in refs:
-        p_r = doc.add_paragraph()
+        p_r = doc.add_paragraph(style='Normal')
         p_r.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
         p_r.paragraph_format.space_before = Pt(2)
         p_r.paragraph_format.space_after = Pt(6)
-        p_r.paragraph_format.line_spacing = 1.15
+        p_r.paragraph_format.line_spacing = 1.2
         r_ref = p_r.add_run(ref)
         r_ref.font.name = "Times New Roman"
-        r_ref.font.size = Pt(10)
+        r_ref.font.size = Pt(10.5)
         r_ref.font.color.rgb = RGBColor(0, 0, 0)
 
     # Save to all target paths
