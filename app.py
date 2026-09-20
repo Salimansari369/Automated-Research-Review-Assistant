@@ -26,7 +26,8 @@ from ui.search_page import create_search_view, render_search_results_cards
 from ui.upload_page import create_upload_view, render_uploaded_table
 from ui.analysis_page import create_analysis_view, render_analysis_cards
 from ui.comparison_page import create_comparison_view, render_comparison_table, generate_comparison_charts
-from ui.gaps_page import create_gaps_view, render_detailed_gaps
+from ui.gaps_page import create_gaps_view, render_detailed_gaps, render_gap_survival_verdict_card, EARTH_SCRIPT_HEAD
+from services.tavily_service import TavilyService
 from ui.review_page import create_review_view
 from ui.chat_page import create_chat_view, render_salim_sidebar_html, INITIAL_WELCOME_MESSAGE, VOICE_SCRIPT_HEAD
 from services.chat_rag_service import ChatRAGService
@@ -1014,6 +1015,33 @@ def build_app():
             ]
         )
 
+        def handle_investigate_gap_survival(sess: ResearchSession, query: str, custom_key: str):
+            topic = sess.research_topic if (sess and sess.research_topic) else "Academic Research"
+            default_gap = sess.detected_gaps[0].get("title", "Autonomous Edge Scheduling & Handover") if (sess and sess.detected_gaps) else "Dynamic Distributed Multi-Agent Consensus"
+            inquiry = query.strip() if (query and query.strip()) else default_gap
+            
+            logger.info(f"Running Agentic Gap Survival Investigation: Topic='{topic}', Inquiry='{inquiry}'")
+            result = TavilyService.investigate_gap_survival(
+                topic=topic,
+                gap_title=inquiry,
+                gap_description="",
+                api_key=custom_key.strip() if custom_key else None
+            )
+            return render_gap_survival_verdict_card(result)
+
+        gaps_ui["investigate_btn"].click(
+            fn=handle_investigate_gap_survival,
+            inputs=[session, gaps_ui["investigate_input"], gaps_ui["tavily_key_input"]],
+            outputs=[gaps_ui["investigate_result_html"]]
+        )
+
+        gaps_ui["investigate_input"].submit(
+            fn=handle_investigate_gap_survival,
+            inputs=[session, gaps_ui["investigate_input"], gaps_ui["tavily_key_input"]],
+            outputs=[gaps_ui["investigate_result_html"]]
+        )
+
+
         # -------------------------------------------------------------
         # LITERATURE REVIEW SYNTHESIS & EXPORT HANDLERS
         # -------------------------------------------------------------
@@ -1305,7 +1333,7 @@ if __name__ == "__main__":
                 share=share_flag,
                 theme=theme,
                 css=CUSTOM_CSS,
-                head=VOICE_SCRIPT_HEAD
+                head=VOICE_SCRIPT_HEAD + "\n" + EARTH_SCRIPT_HEAD
             )
             if share_url:
                 print(f"\n========================================\nPUBLIC LIVE URL: {share_url}\n========================================\n", flush=True)

@@ -4745,7 +4745,350 @@ body:not(.light-theme) .btn-chat-clear {
     font-size: 13px !important;
   }
 }
+
+/* ========================================================= */
+/* 3D EARTH KNOWLEDGE SPHERE & SEE BEYOND HERO STYLES        */
+/* ========================================================= */
+.earth-hero-row {
+  background: radial-gradient(circle at 75% 40%, rgba(0, 160, 255, 0.12) 0%, rgba(6, 12, 28, 0.95) 70%);
+  border: 1px solid rgba(0, 220, 255, 0.2);
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  align-items: center !important;
+}
+
+.see-beyond-container {
+  margin-bottom: 20px;
+}
+
+.agentic-pill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  border-radius: 100px;
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #34d399;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.pulse-emerald-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 10px #10b981;
+  animation: pulseEmerald 1.8s infinite;
+}
+
+@keyframes pulseEmerald {
+  0% { transform: scale(0.95); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+.see-beyond-title {
+  font-size: 38px !important;
+  font-weight: 900 !important;
+  line-height: 1.15 !important;
+  color: #ffffff !important;
+  letter-spacing: -0.5px;
+  margin: 0 0 10px 0 !important;
+}
+
+.text-cyan-glow {
+  color: #00f0ff !important;
+  text-shadow: 0 0 20px rgba(0, 240, 255, 0.6);
+  font-style: italic;
+}
+
+.see-beyond-subtitle {
+  font-size: 15px;
+  color: #94a3b8;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.investigate-input-group {
+  background: rgba(15, 23, 42, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 12px !important;
+  padding: 14px !important;
+}
+
+.investigate-label {
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.investigate-search-box textarea, .investigate-search-box input {
+  background: rgba(2, 6, 23, 0.8) !important;
+  border: 1px solid rgba(0, 220, 255, 0.3) !important;
+  border-radius: 8px !important;
+  color: #f8fafc !important;
+  font-size: 14px !important;
+}
+
+.btn-investigate-cta {
+  background: linear-gradient(135deg, #0284c7 0%, #06b6d4 50%, #0d9488 100%) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4) !important;
+  transition: all 0.25s ease !important;
+}
+
+.btn-investigate-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(6, 182, 212, 0.6) !important;
+}
+
+/* Earth Canvas & HUD */
+.earth-globe-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.earth-hud-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(0, 220, 255, 0.1);
+  border: 1px solid rgba(0, 220, 255, 0.3);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #38bdf8;
+  margin-bottom: 8px;
+}
+
+.hud-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 8px #38bdf8;
+}
+
+.earth-canvas {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  cursor: grab;
+  touch-action: none;
+}
+
+.earth-canvas:active {
+  cursor: grabbing;
+}
+
+.earth-controls-hint {
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 6px;
+}
+
+/* Gap Survival Result Card */
+.gap-survival-result-box {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, rgba(8, 14, 28, 0.98) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 22px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(16, 185, 129, 0.12);
+  width: 100%;
+}
+
+.survival-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.survival-tag-eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  color: #34d399;
+  text-transform: uppercase;
+}
+
+.survival-target-title {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: #f8fafc !important;
+  margin: 4px 0 0 0 !important;
+}
+
+.survival-badge-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.survival-status-pill {
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 100px;
+  letter-spacing: 0.5px;
+}
+
+.survival-conf-pill {
+  font-size: 11px;
+  font-weight: 700;
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 6px 10px;
+  border-radius: 100px;
+}
+
+.survival-verdict-banner {
+  display: flex;
+  gap: 14px;
+  background: rgba(16, 185, 129, 0.08);
+  border-left: 4px solid #10b981;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.verdict-banner-icon {
+  font-size: 24px;
+}
+
+.verdict-banner-content strong {
+  color: #34d399;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.verdict-banner-content p {
+  color: #e2e8f0;
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.survival-engine-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 12px;
+}
+
+.survival-refs-heading {
+  font-size: 14px !important;
+  color: #38bdf8 !important;
+  font-weight: 700 !important;
+  margin: 0 0 12px 0 !important;
+}
+
+.survival-refs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.verdict-ref-card {
+  background: rgba(2, 6, 23, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 12px 14px;
+  transition: border-color 0.2s;
+}
+
+.verdict-ref-card:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.verdict-ref-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.verdict-ref-title {
+  color: #38bdf8 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  line-height: 1.3;
+}
+
+.verdict-ref-title:hover {
+  text-decoration: underline !important;
+}
+
+.verdict-ref-score {
+  font-size: 10px;
+  font-weight: 700;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.15);
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.verdict-ref-snippet {
+  font-size: 12px;
+  color: #94a3b8;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.survival-empty-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px dashed rgba(0, 220, 255, 0.25);
+  border-radius: 12px;
+  padding: 16px 20px;
+  width: 100%;
+}
+
+.survival-empty-icon {
+  font-size: 32px;
+}
+
+.survival-empty-text strong {
+  color: #e2e8f0;
+  font-size: 14px;
+}
+
+.survival-empty-text p {
+  color: #64748b;
+  font-size: 12px;
+  margin: 2px 0 0 0;
+}
 """
+
 
 
 
