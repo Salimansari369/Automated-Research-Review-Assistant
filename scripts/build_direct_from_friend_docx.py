@@ -14,7 +14,7 @@ from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml import OxmlElement, parse_xml
 from docx.oxml.ns import nsdecls, qn
 
-def set_cell_margins(cell, top=100, bottom=100, left=150, right=150):
+def set_cell_margins(cell, top=120, bottom=120, left=160, right=160):
     tcPr = cell._tc.get_or_add_tcPr()
     tcMar = OxmlElement('w:tcMar')
     for m_name, m_val in [('top', top), ('bottom', bottom), ('left', left), ('right', right)]:
@@ -28,19 +28,71 @@ def set_cell_shading(cell, color_hex):
     shd = parse_xml(f'<w:shd {nsdecls("w")} w:fill="{color_hex}"/>')
     cell._tc.get_or_add_tcPr().append(shd)
 
-def set_table_borders(table, color="000000", sz="4", val="single"):
+def set_modern_table_borders(table, frame_color="1E3A8A", grid_color="CBD5E1"):
     tblPr = table._tbl.tblPr
     borders = parse_xml(
         f'<w:tblBorders {nsdecls("w")}>'
-        f'  <w:top w:val="{val}" w:sz="{sz}" w:space="0" w:color="{color}"/>'
-        f'  <w:left w:val="{val}" w:sz="{sz}" w:space="0" w:color="{color}"/>'
-        f'  <w:bottom w:val="{val}" w:sz="{sz}" w:space="0" w:color="{color}"/>'
-        f'  <w:right w:val="{val}" w:sz="{sz}" w:space="0" w:color="{color}"/>'
-        f'  <w:insideH w:val="{val}" w:sz="{sz}" w:space="0" w:color="{color}"/>'
-        f'  <w:insideV w:val="{val}" w:sz="{sz}" w:space="0" w:color="{color}"/>'
+        f'  <w:top w:val="single" w:sz="12" w:space="0" w:color="{frame_color}"/>'
+        f'  <w:left w:val="none"/>'
+        f'  <w:bottom w:val="single" w:sz="12" w:space="0" w:color="{frame_color}"/>'
+        f'  <w:right w:val="none"/>'
+        f'  <w:insideH w:val="single" w:sz="4" w:space="0" w:color="{grid_color}"/>'
+        f'  <w:insideV w:val="none"/>'
         f'</w:tblBorders>'
     )
     tblPr.append(borders)
+
+def add_custom_styled_table(doc, headers, rows_data, col_widths, align_list=None, header_bg="1E3A8A", even_bg="F8FAFC", odd_bg="FFFFFF"):
+    table = doc.add_table(rows=len(rows_data) + 1, cols=len(headers))
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    table.autofit = False
+    set_modern_table_borders(table, frame_color=header_bg, grid_color="CBD5E1")
+    
+    if align_list is None:
+        align_list = [WD_ALIGN_PARAGRAPH.LEFT] * len(headers)
+
+    # 1. Header Row
+    for c_idx, h_text in enumerate(headers):
+        cell = table.cell(0, c_idx)
+        cell.width = col_widths[c_idx]
+        set_cell_margins(cell, top=130, bottom=130, left=160, right=160)
+        set_cell_shading(cell, header_bg)
+        p = cell.paragraphs[0]
+        p.alignment = align_list[c_idx]
+        p.paragraph_format.space_before = Pt(0)
+        p.paragraph_format.space_after = Pt(0)
+        p.paragraph_format.line_spacing = 1.15
+        r = p.add_run(h_text)
+        r.font.name = "Times New Roman"
+        r.font.size = Pt(10)
+        r.font.bold = True
+        r.font.color.rgb = RGBColor(255, 255, 255) # Pure White Text
+
+    # 2. Data Rows
+    for r_idx, row in enumerate(rows_data):
+        row_bg = even_bg if (r_idx % 2 == 0) else odd_bg
+        for c_idx, val in enumerate(row):
+            cell = table.cell(r_idx + 1, c_idx)
+            cell.width = col_widths[c_idx]
+            set_cell_margins(cell, top=100, bottom=100, left=160, right=160)
+            set_cell_shading(cell, row_bg)
+            p = cell.paragraphs[0]
+            p.alignment = align_list[c_idx]
+            p.paragraph_format.space_before = Pt(0)
+            p.paragraph_format.space_after = Pt(0)
+            p.paragraph_format.line_spacing = 1.15
+            r = p.add_run(val)
+            r.font.name = "Times New Roman"
+            r.font.size = Pt(9.5)
+            r.font.color.rgb = RGBColor(15, 23, 42) # Rich crisp dark text
+            if c_idx == 0:
+                r.font.bold = True
+
+    # Spacing after table
+    p_after = doc.add_paragraph()
+    p_after.paragraph_format.space_before = Pt(0)
+    p_after.paragraph_format.space_after = Pt(6)
+    return table
 
 def build_direct_from_friend():
     friend_path = r"C:\Users\Salim Ansari\Downloads\AI_Agent_for_Personal_Goal_Tracking_Project_Report (1).docx"
@@ -277,35 +329,21 @@ def build_direct_from_friend():
     add_p("The development, testing, and production deployment of ALRA were executed on the hardware and software environment detailed in Table 1.1.")
     
     # Table 1.1
-    t1 = doc.add_table(rows=7, cols=3)
-    t1.alignment = WD_TABLE_ALIGNMENT.CENTER
-    t1.autofit = False
-    set_table_borders(t1)
-    col_w = [Inches(1.8), Inches(2.2), Inches(2.4)]
-    
+    t1_headers = ["Component Category", "Specification & Version", "Operational Role in ALRA"]
     t1_data = [
-        ["Component Category", "Specification / Library", "Operational Role"],
-        ["Host Processor", "Intel Core i7 / AMD Ryzen 7 (8 Cores, 16 Threads)", "Parallel parsing, embedding generation, vector clustering"],
-        ["System Memory (RAM)", "16 GB DDR4 @ 3200 MHz", "In-memory vector cache, PDF text extraction buffer"],
-        ["Graphics Processing", "NVIDIA GeForce RTX (CUDA 12.x support)", "Local sentence-transformer acceleration & inference"],
-        ["Backend Architecture", "Python 3.11, FastAPI, Asyncio", "Asynchronous API orchestration, REST endpoints"],
-        ["User Interface", "Gradio 6.0 (Custom CSS, Dual Theming)", "Light Academic / Dark Cyber responsive web interface"],
-        ["AI Reasoning & Speech", "Groq LLaMA-3.3-70B, DeepSeek, EdgeTTS", "Semantic gap discovery, synthesis matrix, voice dialogue"]
+        ["Host Processor", "Intel Core i7 / AMD Ryzen 7 (8C/16T)", "Parallel parsing, embedding generation & clustering"],
+        ["System Memory (RAM)", "16 GB DDR4 @ 3200 MHz", "In-memory FAISS vector cache & extraction buffers"],
+        ["Graphics Processing", "NVIDIA GeForce RTX (CUDA 12.x)", "Local sentence-transformer acceleration & inference"],
+        ["Backend Architecture", "Python 3.11, FastAPI, Asyncio", "Asynchronous API orchestration & REST micro-endpoints"],
+        ["User Interface", "Gradio 6.0 (Custom Dual CSS)", "Light Academic / Dark Cyber responsive web interface"],
+        ["AI Reasoning & Voice", "Groq LLaMA-3.3-70B, DeepSeek, EdgeTTS", "Semantic gap discovery, review matrix & voice dialogue"]
     ]
-    for r_i, row in enumerate(t1_data):
-        for c_i, val in enumerate(row):
-            cell = t1.cell(r_i, c_i)
-            cell.width = col_w[c_i]
-            set_cell_margins(cell, 80, 80, 100, 100)
-            if r_i == 0:
-                set_cell_shading(cell, "F1F5F9")
-            p = cell.paragraphs[0]
-            p.alignment = WD_ALIGN_PARAGRAPH.LEFT
-            r = p.add_run(val)
-            r.font.name = "Times New Roman"
-            r.font.size = Pt(9.5)
-            r.font.bold = (r_i == 0)
-            r.font.color.rgb = RGBColor(0, 0, 0)
+    add_custom_styled_table(
+        doc, t1_headers, t1_data,
+        col_widths=[Inches(1.8), Inches(2.2), Inches(2.4)],
+        align_list=[WD_ALIGN_PARAGRAPH.LEFT, WD_ALIGN_PARAGRAPH.LEFT, WD_ALIGN_PARAGRAPH.LEFT],
+        header_bg="1E3A8A", even_bg="F8FAFC", odd_bg="FFFFFF"
+    )
 
     # ================= CHAPTER 2 =================
     add_chapter_head(2, "Problem Statement and Motivation")
@@ -382,34 +420,20 @@ def build_direct_from_friend():
     )
 
     # Table 4.1
-    t2 = doc.add_table(rows=6, cols=4)
-    t2.alignment = WD_TABLE_ALIGNMENT.CENTER
-    t2.autofit = False
-    set_table_borders(t2)
-    col_w2 = [Inches(1.8), Inches(1.5), Inches(1.5), Inches(1.6)]
-    
+    t2_headers = ["Research Workflow Task", "Traditional Manual Time", "ALRA Autonomous Time", "Acceleration Gain"]
     t2_data = [
-        ["Workflow Parameter", "Manual Research", "ALRA Autonomous", "Efficiency Gain"],
         ["Paper Discovery & Filtering (50 papers)", "6.5 Hours", "45 Seconds", "99.8% Faster"],
         ["PDF Text & Section Extraction", "4.0 Hours", "1.2 Minutes", "99.5% Faster"],
         ["Research Gap Matrix Compilation", "5.0 Hours", "35 Seconds", "99.8% Faster"],
-        ["Drafting Literature Review Chapter", "8.0 Hours", "1.5 Minutes", "99.7% Faster"],
+        ["Drafting Literature Review Survey", "8.0 Hours", "1.5 Minutes", "99.7% Faster"],
         ["Total Time Elapsed", "23.5 Hours", "3.8 Minutes", "99.7% Overall Gain"]
     ]
-    for r_i, row in enumerate(t2_data):
-        for c_i, val in enumerate(row):
-            cell = t2.cell(r_i, c_i)
-            cell.width = col_w2[c_i]
-            set_cell_margins(cell, 80, 80, 100, 100)
-            if r_i == 0:
-                set_cell_shading(cell, "F1F5F9")
-            p = cell.paragraphs[0]
-            p.alignment = WD_ALIGN_PARAGRAPH.LEFT
-            r = p.add_run(val)
-            r.font.name = "Times New Roman"
-            r.font.size = Pt(9.5)
-            r.font.bold = (r_i == 0)
-            r.font.color.rgb = RGBColor(0, 0, 0)
+    add_custom_styled_table(
+        doc, t2_headers, t2_data,
+        col_widths=[Inches(2.2), Inches(1.4), Inches(1.4), Inches(1.4)],
+        align_list=[WD_ALIGN_PARAGRAPH.LEFT, WD_ALIGN_PARAGRAPH.CENTER, WD_ALIGN_PARAGRAPH.CENTER, WD_ALIGN_PARAGRAPH.CENTER],
+        header_bg="1E3A8A", even_bg="F8FAFC", odd_bg="FFFFFF"
+    )
 
     # ================= CHAPTER 5 =================
     add_chapter_head(5, "Detailed Methodology and System Architecture")
@@ -462,33 +486,19 @@ def build_direct_from_friend():
     add_fig('assets/dashboard_dark.png', "Figure 5.8: ALRA Responsive Dark Cyber Themed Interface")
 
     # Table 5.3
-    t3 = doc.add_table(rows=5, cols=4)
-    t3.alignment = WD_TABLE_ALIGNMENT.CENTER
-    t3.autofit = False
-    set_table_borders(t3)
-    col_w3 = [Inches(1.8), Inches(1.5), Inches(1.5), Inches(1.6)]
-    
+    t3_headers = ["System Benchmark Metric", "Baseline Raw LLM", "ALRA Agentic Pipeline", "Verification Status"]
     t3_data = [
-        ["Subsystem Metric", "Baseline LLM (Raw)", "ALRA Agentic Pipeline", "Verification Status"],
         ["Citation Hallucination Rate", "34.2%", "0.0% (Verified Grounding)", "Strict Verification"],
         ["Synthesis Matrix Coverage", "4.2 papers / query", "18.6 papers / query", "4.4x Greater Breadth"],
         ["Vector Search Latency (FAISS)", "N/A", "42 Milliseconds", "Sub-second Real-time"],
         ["Report Generation Speed", "120 Seconds (Token lag)", "28 Seconds (Parallel stream)", "4.2x Faster"]
     ]
-    for r_i, row in enumerate(t3_data):
-        for c_i, val in enumerate(row):
-            cell = t3.cell(r_i, c_i)
-            cell.width = col_w3[c_i]
-            set_cell_margins(cell, 80, 80, 100, 100)
-            if r_i == 0:
-                set_cell_shading(cell, "F1F5F9")
-            p = cell.paragraphs[0]
-            p.alignment = WD_ALIGN_PARAGRAPH.LEFT
-            r = p.add_run(val)
-            r.font.name = "Times New Roman"
-            r.font.size = Pt(9.5)
-            r.font.bold = (r_i == 0)
-            r.font.color.rgb = RGBColor(0, 0, 0)
+    add_custom_styled_table(
+        doc, t3_headers, t3_data,
+        col_widths=[Inches(2.2), Inches(1.4), Inches(1.4), Inches(1.4)],
+        align_list=[WD_ALIGN_PARAGRAPH.LEFT, WD_ALIGN_PARAGRAPH.CENTER, WD_ALIGN_PARAGRAPH.CENTER, WD_ALIGN_PARAGRAPH.CENTER],
+        header_bg="1E3A8A", even_bg="F8FAFC", odd_bg="FFFFFF"
+    )
 
     # ================= CHAPTER 6 =================
     add_chapter_head(6, "Prior Art and Related Work (Literature Survey)")
@@ -503,34 +513,21 @@ def build_direct_from_friend():
     add_subhead("6.2 Comparative Feature & Performance Matrix")
     add_p("Table 6.1 compares ALRA against existing commercial and academic research assistants.")
 
-    t4 = doc.add_table(rows=6, cols=5)
-    t4.alignment = WD_TABLE_ALIGNMENT.CENTER
-    t4.autofit = False
-    set_table_borders(t4)
-    col_w4 = [Inches(1.5), Inches(1.2), Inches(1.2), Inches(1.2), Inches(1.3)]
-    
+    # Table 6.1
+    t4_headers = ["Key Feature / Capability", "Connected Papers", "Elicit AI", "SciSpace AI", "ALRA (This Work)"]
     t4_data = [
-        ["Feature / Capability", "Connected Papers", "Elicit AI", "SciSpace", "ALRA (This Project)"],
         ["Live Multi-API Search", "Semantic Scholar only", "Semantic Scholar only", "Google Scholar", "ArXiv + Semantic Scholar"],
         ["Local PDF RAG Vector Store", "No", "Limited (Cloud)", "Limited (Cloud)", "Yes (FAISS, Fully Local)"],
         ["Research Gap Intelligence", "No (Graph only)", "Basic Table", "Summary text", "Autonomous Matrix + Gaps"],
         ["Multimodal Voice AI", "No", "No", "No", "Yes (Salim AI Speech/TTS)"],
         ["Docx / LaTeX Report Export", "No (BibTeX only)", "CSV only", "Markdown", "Full Academic Report (.docx)"]
     ]
-    for r_i, row in enumerate(t4_data):
-        for c_i, val in enumerate(row):
-            cell = t4.cell(r_i, c_i)
-            cell.width = col_w4[c_i]
-            set_cell_margins(cell, 70, 70, 80, 80)
-            if r_i == 0:
-                set_cell_shading(cell, "F1F5F9")
-            p = cell.paragraphs[0]
-            p.alignment = WD_ALIGN_PARAGRAPH.LEFT
-            r = p.add_run(val)
-            r.font.name = "Times New Roman"
-            r.font.size = Pt(9.0)
-            r.font.bold = (r_i == 0)
-            r.font.color.rgb = RGBColor(0, 0, 0)
+    add_custom_styled_table(
+        doc, t4_headers, t4_data,
+        col_widths=[Inches(1.8), Inches(1.15), Inches(1.15), Inches(1.15), Inches(1.15)],
+        align_list=[WD_ALIGN_PARAGRAPH.LEFT, WD_ALIGN_PARAGRAPH.CENTER, WD_ALIGN_PARAGRAPH.CENTER, WD_ALIGN_PARAGRAPH.CENTER, WD_ALIGN_PARAGRAPH.CENTER],
+        header_bg="1E3A8A", even_bg="F8FAFC", odd_bg="FFFFFF"
+    )
 
     # ================= CHAPTER 7 =================
     add_chapter_head(7, "Applications and Deployment Areas")
