@@ -1,0 +1,1408 @@
+P000 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None]
+
+P001 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P002 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: A PROJECT REPORT
+  RUNS: [A PROJECT REPORT|font=None|sz=None|b=True|i=None|col=000000]
+
+P003 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P004 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: ON
+  RUNS: [ON|font=None|sz=None|b=True|i=None|col=000000]
+
+P005 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P006 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: “AI Agent for Personal Goal Tracking”
+  RUNS: [“AI Agent for Personal Goal Tracking”|font=None|sz=18.0|b=True|i=None|col=000000]
+
+P007 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P008 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P009 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: A project report submitted in partial fulfilment of the requirements for the degree of Bachelor of Technology in Computer Science and Engineering
+  RUNS: [A project report submitted in partial fulfilment of the requirements for the degree of Bachelor of Technology in Computer Science and Engineering|font=None|sz=None|b=None|i=None|col=000000]
+
+P010 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P011 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: Subject: Agentic AI & Automation
+  RUNS: [Subject: Agentic AI & Automation|font=None|sz=14.0|b=None|i=None|col=000000]
+
+P012 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P013 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: BACHELOR OF TECHNOLOGY COMPUTER SCIENCE AND ENGINEERING
+  RUNS: [BACHELOR OF TECHNOLOGY COMPUTER SCIENCE AND ENGINEERING|font=None|sz=14.0|b=None|i=None|col=000000]
+
+P014 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P015 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P016 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: Submitted By
+  RUNS: [Submitted By|font=None|sz=14.0|b=None|i=None|col=000000]
+
+P017 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: Sanskruti Gorle (PRN: 24070521025)
+
+  RUNS: [Sanskruti |font=None|sz=14.0|b=None|i=None|col=000000] [Gorle|font=None|sz=14.0|b=None|i=None|col=000000] [ (PRN: 24070521025)|font=None|sz=14.0|b=None|i=None|col=000000] [
+|font=None|sz=14.0|b=None|i=None|col=000000]
+
+P018 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P019 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P020 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P021 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: UNDER THE GUIDANCE OF
+  RUNS: [UNDER THE GUIDANCE OF|font=None|sz=14.0|b=None|i=None|col=000000]
+
+P022 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P023 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: Dr./Prof. <Guide Name>
+  RUNS: [Dr./Prof. <Guide Name>|font=None|sz=14.0|b=None|i=None|col=000000]
+
+P024 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P025 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: <Designation>
+  RUNS: [<Designation>|font=None|sz=14.0|b=None|i=None|col=000000]
+
+P026 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P027 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P028 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P029 [style=Normal|align=CENTER (1)|sb=0|sa=6.0|line=1.0]:
+  TEXT: DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
+  RUNS: [DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING|font=None|sz=None|b=True|i=None|col=000000]
+
+P030 [style=Normal|align=CENTER (1)|sb=0|sa=6.0|line=1.0]:
+  TEXT: AY 2026-27
+  RUNS: [AY 2026-27|font=None|sz=None|b=True|i=None|col=None]
+
+P031 [style=Normal|align=CENTER (1)|sb=0|sa=6.0|line=1.0]:
+  TEXT: 
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None]
+
+P032 [style=Normal|align=CENTER (1)|sb=0|sa=6.0|line=1.0]:
+  TEXT: DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
+  RUNS: [DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING|font=None|sz=None|b=True|i=None|col=000000]
+
+P033 [style=Normal|align=CENTER (1)|sb=18.0|sa=18.0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P034 [style=Normal|align=CENTER (1)|sb=18.0|sa=18.0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P035 [style=Normal|align=CENTER (1)|sb=18.0|sa=18.0|line=1.0]:
+  TEXT: 
+CERTIFICATE
+  RUNS: [
+|font=None|sz=None|b=True|i=None|col=None] [CERTIFICATE|font=None|sz=14.0|b=True|i=None|col=None] [|font=None|sz=None|b=None|i=None|col=None]
+
+P036 [style=Normal|align=None|sb=14.0|sa=14.0|line=None]:
+  TEXT: This is to certify that the Project work entitled “AI Agent for Personal Goal Tracking” is carried out by Sanskruti Gorle (PRN: 24070521025), in partial fulfillment for the award of the degree of Bachelor of Technology in Computer Science and Engineering, Symbiosis International (Deemed University), Pune during the academic year 2026-2027.
+  RUNS: [This is to certify that the Project work entitled “|font=None|sz=None|b=None|i=None|col=000000] [AI Agent for Personal Goal Tracking|font=None|sz=None|b=True|i=None|col=000000] [” is carried out by |font=None|sz=None|b=None|i=None|col=000000] [Sanskruti |font=None|sz=None|b=True|i=None|col=000000] [Gorle|font=None|sz=None|b=True|i=None|col=000000] [ (PRN: 24070521025), |font=None|sz=None|b=True|i=None|col=000000] [in partial fulfillment for the award of the degree of |font=None|sz=None|b=None|i=None|col=000000] [Bachelor of Technology |font=None|sz=None|b=True|i=None|col=000000] [in |font=None|sz=None|b=None|i=None|col=000000] [Computer Science and Engineering|font=None|sz=None|b=True|i=None|col=000000] [, Symbiosis International (Deemed University), Pune during the academic year 2026-2027.|font=None|sz=None|b=None|i=None|col=000000]
+
+P037 [style=Normal|align=None|sb=14.0|sa=14.0|line=None]:
+  TEXT: 
+  RUNS: 
+
+P038 [style=Normal|align=CENTER (1)|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P039 [style=Heading 2|align=None|sb=0|sa=0|line=None]:
+  TEXT: DECLARATION
+  RUNS: [DECLARATION|font=None|sz=None|b=None|i=None|col=None]
+
+P040 [style=Normal|align=None|sb=0|sa=6.0|line=None]:
+  TEXT: I hereby declare that the project titled “AI Agent for Personal Goal Tracking” submitted to Symbiosis Institute of Technology, a constituent of Symbiosis International (Deemed University) Pune, for the award of the degree of Bachelor of Technology in Computer Science and Engineering, is a result of original research carried out by me. I understand that my report may be made electronically available to the public. It is further declared that the project report or any part thereof has not been previously submitted to any University or Institute for the award of any degree or diploma.
+  RUNS: [I hereby declare that the project titled “|font=None|sz=None|b=None|i=None|col=000000] [AI Agent for Personal Goal Tracking|font=None|sz=None|b=True|i=None|col=000000] [” submitted to Symbiosis Institute of Technology, a constituent of Symbiosis International (Deemed University) Pune, for the award of the degree of Bachelor of Technology in Computer Science and Engineering, is a result of original research carried out by me. I understand that my report may be made electronically available to the public. It is further declared that the project report or any part thereof has not been previously submitted to any University or Institute for the award of any degree or diploma.|font=None|sz=None|b=None|i=None|col=000000]
+
+P041 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.5]:
+  TEXT: Name of Student 1: Sanskruti Gorle (PRN: 24070521025)
+  RUNS: [Name of Student 1: Sanskruti |font=None|sz=None|b=None|i=None|col=None] [Gorle|font=None|sz=None|b=None|i=None|col=None] [ (PRN: 24070521025)|font=None|sz=None|b=None|i=None|col=None]
+
+P042 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.5]:
+  TEXT: 
+  RUNS: 
+
+P043 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.5]:
+  TEXT: 	
+  RUNS: [	|font=None|sz=None|b=None|i=None|col=None]
+
+P044 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=None]:
+  TEXT: Degree: 	Bachelor of Technology in CSE
+  RUNS: [Degree: |font=None|sz=None|b=None|i=None|col=None] [	Bachelor of Technology in CSE|font=None|sz=None|b=None|i=None|col=None]
+
+P045 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=None]:
+  TEXT: Department: 	Computer Science and Engineering
+  RUNS: [Department: |font=None|sz=None|b=None|i=None|col=None] [	|font=None|sz=None|b=None|i=None|col=None] [Computer Science and Engineering|font=None|sz=None|b=None|i=None|col=000000]
+
+P046 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=None]:
+  TEXT: Subject:	Agentic AI & Automation
+  RUNS: [Subject:|font=None|sz=None|b=None|i=None|col=None] [	Agentic AI & Automation|font=None|sz=None|b=None|i=None|col=None]
+
+P047 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=None]:
+  TEXT: Title of the project: AI Agent for Personal Goal Tracking
+  RUNS: [Title of the project: |font=None|sz=None|b=None|i=None|col=None] [AI Agent for Personal Goal Tracking|font=None|sz=None|b=True|i=None|col=None]
+
+P048 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=None]:
+  TEXT: 
+  RUNS: 
+
+P049 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=None]:
+  TEXT: Sanskruti Gorle
+  RUNS: [Sanskruti |font=None|sz=None|b=True|i=None|col=None] [Gorle|font=None|sz=None|b=True|i=None|col=None]
+
+P050 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=None]:
+  TEXT: Date: 
+  RUNS: [Date: |font=None|sz=None|b=None|i=None|col=None]
+
+P051 [style=Heading 2|align=JUSTIFY (3)|sb=0|sa=0|line=None]:
+  TEXT: Declaration
+  RUNS: [Declaration|font=None|sz=12.0|b=False|i=None|col=None]
+
+P052 [style=Heading 2|align=JUSTIFY (3)|sb=0|sa=0|line=None]:
+  TEXT: I hereby declare that the project entitled “AI Agent for Personal Goal Tracking”, submitted by me for the purpose of processing under the IPR framework, is not an industry-sponsored project.
+  RUNS: [I hereby declare that the project entitled “AI Agent for Personal Goal Tracking”, submitted by me for the purpose of processing under the IPR framework, is not an industry-sponsored project.|font=None|sz=12.0|b=None|i=None|col=None]
+
+P053 [style=Heading 2|align=JUSTIFY (3)|sb=0|sa=0|line=None]:
+  TEXT: I further provide my full consent to SIT Nagpur and SCRI Pune to evaluate, process, and proceed with the filing of the Intellectual Property Rights (IPR) application for the said idea.
+  RUNS: [I further provide my full consent to SIT Nagpur and SCRI Pune to evaluate, process, and proceed with the filing of the Intellectual Property Rights (IPR) application for the said idea.|font=None|sz=12.0|b=None|i=None|col=None]
+
+P054 [style=Heading 2|align=None|sb=0|sa=0|line=None]:
+  TEXT: 
+  RUNS: 
+
+P055 [style=Heading 2|align=None|sb=0|sa=0|line=None]:
+  TEXT: 
+  RUNS: 
+
+P056 [style=Heading 2|align=None|sb=0|sa=0|line=None]:
+  TEXT: 
+  RUNS: 
+
+P057 [style=Heading 2|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: Student Signature
+  RUNS: [Student Signature|font=None|sz=12.0|b=False|i=None|col=None]
+
+P058 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: Sanskruti Gorle
+  RUNS: [Sanskruti |font=None|sz=None|b=True|i=None|col=None] [Gorle|font=None|sz=None|b=True|i=None|col=None]
+
+P059 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P060 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P061 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P062 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: Dr. Shreyas Rajendra Hole
+  RUNS: [Dr. Shreyas Rajendra Hole|font=None|sz=None|b=True|i=None|col=None]
+
+P063 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P064 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P065 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: Mr. Parag Naik
+  RUNS: [Mr. Parag Naik|font=None|sz=None|b=True|i=None|col=None]
+
+P066 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P067 [style=Heading 2|align=None|sb=0|sa=0|line=None]:
+  TEXT: ABSTRACT
+  RUNS: [ABSTRACT|font=None|sz=None|b=None|i=None|col=None]
+
+P068 [style=Normal|align=None|sb=0|sa=0|line=None]:
+  TEXT: Achieving long-term learning and habit goals depends on breaking an ambitious objective into small, scheduled actions and adjusting the plan when life intervenes. Conventional task trackers leave this decomposition entirely to the user, while general-purpose chat assistants produce roadmaps that remain trapped inside a conversation transcript. This project presents an AI Agent for Personal Goal Tracking, implemented as the GoalMate application, which closes this gap by coupling a tool-calling large language model with a persistent relational database and a live dashboard. When a user states a goal in natural language, the Google Gemini model, using native function calling, autonomously decomposes it into ordered milestones and date-assigned daily tasks and stores them in a SQLite database through SQLAlchemy. Eight database-backed tools let the agent read real progress, complete tasks, analyse missed work, adapt advice to the time available and replan deadlines, using a bounded multi-step tool loop. A Gradio and FastAPI interface provides optimistic task check-boxes, milestone roadmaps, an adaptive seven-day timeline, a Catmull-Rom cubic Bezier progress curve rendered as SVG, a habit-analytics Progress page and Sign Up / Log In access. All eight end-to-end acceptance tests, executed against the live database and the Gemini API, passed successfully. The system demonstrates that grounding generative reasoning in transactional data yields a trustworthy and actionable goal coach.
+  RUNS: [Achieving long-term learning and habit goals depends on breaking an ambitious objective into small, scheduled actions and adjusting the plan when life intervenes. Conventional task trackers leave this decomposition entirely to the user, while general-purpose chat assistants produce roadmaps that remain trapped inside a conversation transcript. This project presents an AI Agent for Personal Goal Tracking, implemented as the |font=None|sz=11.0|b=True|i=None|col=None] [GoalMate|font=None|sz=11.0|b=True|i=None|col=None] [ application, which closes this gap by coupling a tool-calling large language model with a persistent relational database and a live dashboard. When a user states a goal in natural language, the Google Gemini model, using native function calling, autonomously decomposes it into ordered milestones and date-assigned daily tasks and stores them in a SQLite database through |font=None|sz=11.0|b=True|i=None|col=None] [SQLAlchemy|font=None|sz=11.0|b=True|i=None|col=None] [. Eight database-backed tools let the agent read real progress, complete tasks, |font=None|sz=11.0|b=True|i=None|col=None] [analyse|font=None|sz=11.0|b=True|i=None|col=None] [ missed work, adapt advice to the time available and replan deadlines, using a bounded multi-step tool loop. A |font=None|sz=11.0|b=True|i=None|col=None] [Gradio|font=None|sz=11.0|b=True|i=None|col=None] [ and |font=None|sz=11.0|b=True|i=None|col=None] [FastAPI|font=None|sz=11.0|b=True|i=None|col=None] [ interface provides optimistic task check-boxes, milestone roadmaps, an adaptive seven-day timeline, a Catmull-Rom cubic Bezier progress curve rendered as SVG, a habit-analytics Progress page and Sign Up / Log In access. All eight end-to-end acceptance tests, executed against the live database and the Gemini API, passed successfully. The system demonstrates that grounding generative reasoning in transactional data yields a trustworthy and actionable goal coach.|font=None|sz=11.0|b=True|i=None|col=None]
+
+P069 [style=Normal|align=None|sb=0|sa=0|line=None]:
+  TEXT: 
+  RUNS: 
+
+P070 [style=Normal|align=None|sb=0|sa=6.0|line=1.0]:
+  TEXT: Keywords—AI agent, agentic AI, goal tracking, function calling, Google Gemini, adaptive replanning, Gradio, FastAPI, SQLAlchemy
+  RUNS: [Keywords—AI agent, agentic AI, goal tracking, function calling, Google Gemini, adaptive replanning, |font=None|sz=10.0|b=True|i=True|col=None] [Gradio|font=None|sz=10.0|b=True|i=True|col=None] [, |font=None|sz=10.0|b=True|i=True|col=None] [FastAPI|font=None|sz=10.0|b=True|i=True|col=None] [, |font=None|sz=10.0|b=True|i=True|col=None] [SQLAlchemy|font=None|sz=10.0|b=True|i=True|col=None]
+
+P071 [style=Normal|align=None|sb=0|sa=0|line=None]:
+  TEXT: 
+  RUNS: 
+
+P072 [style=Heading 2|align=None|sb=0|sa=0|line=None]:
+  TEXT: TABLE OF CONTENTS
+  RUNS: [TABLE OF CONTENTS|font=None|sz=None|b=None|i=None|col=None]
+
+P073 [style=Normal|align=LEFT (0)|sb=8.0|sa=3.0|line=1.0]:
+  TEXT: Contents	Page
+  RUNS: [Contents|font=None|sz=11.0|b=True|i=None|col=None] [	Page|font=None|sz=11.0|b=True|i=None|col=None]
+
+P074 [style=Normal|align=LEFT (0)|sb=3.0|sa=1.0|line=1.0416666666666667]:
+  TEXT: Certificate	i
+  RUNS: [Certificate|font=None|sz=11.0|b=None|i=None|col=000000] [	|font=None|sz=11.0|b=None|i=None|col=000000] [i|font=None|sz=11.0|b=None|i=None|col=000000]
+
+P075 [style=Normal|align=LEFT (0)|sb=3.0|sa=1.0|line=1.0416666666666667]:
+  TEXT: Declaration	ii
+  RUNS: [Declaration|font=None|sz=11.0|b=None|i=None|col=000000] [	ii|font=None|sz=11.0|b=None|i=None|col=000000]
+
+P076 [style=Normal|align=LEFT (0)|sb=3.0|sa=1.0|line=1.0416666666666667]:
+  TEXT: Abstract	iv
+  RUNS: [Abstract|font=None|sz=11.0|b=None|i=None|col=000000] [	iv|font=None|sz=11.0|b=None|i=None|col=000000]
+
+P077 [style=Normal|align=LEFT (0)|sb=3.0|sa=1.0|line=1.0416666666666667]:
+  TEXT: Table of Contents	v
+  RUNS: [Table of Contents|font=None|sz=11.0|b=None|i=None|col=000000] [	v|font=None|sz=11.0|b=None|i=None|col=000000]
+
+P078 [style=Normal|align=LEFT (0)|sb=5.5|sa=0.5|line=1.0416666666666667]:
+  TEXT: CHAPTER 1: BACKGROUND AND TECHNICAL OVERVIEW	1
+  RUNS: [CHAPTER 1: BACKGROUND AND TECHNICAL OVERVIEW|font=None|sz=11.0|b=True|i=None|col=000000] [	|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [1|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000]
+
+P079 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 1.1 Background	1
+  RUNS: [1.1 Background|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [1|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P080 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 1.2 Objectives	2
+  RUNS: [1.2 Objectives|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [2|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P081 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 1.3 Hardware and Software Components	2
+  RUNS: [1.3 Hardware and Software Components|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [2|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P082 [style=Normal|align=LEFT (0)|sb=5.5|sa=0.5|line=1.0416666666666667]:
+  TEXT: CHAPTER 2: PROBLEM STATEMENT AND MOTIVATION	3
+  RUNS: [CHAPTER 2: PROBLEM STATEMENT AND MOTIVATION|font=None|sz=11.0|b=True|i=None|col=000000] [	|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [3|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000]
+
+P083 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 2.1 Problem Statement	3
+  RUNS: [2.1 Problem Statement|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [3|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P084 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 2.2 Motivation	3
+  RUNS: [2.2 Motivation|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [3|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P085 [style=Normal|align=LEFT (0)|sb=5.5|sa=0.5|line=1.0416666666666667]:
+  TEXT: CHAPTER 3: NOVELTY AND INNOVATIVE CONTRIBUTIONS	4
+  RUNS: [CHAPTER 3: NOVELTY AND INNOVATIVE CONTRIBUTIONS|font=None|sz=11.0|b=True|i=None|col=000000] [	|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [4|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000]
+
+P086 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 3.1 Novelty	4
+  RUNS: [3.1 Novelty|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [4|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P087 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 3.2 Innovative Contributions	5
+  RUNS: [3.2 Innovative Contributions|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [5|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P088 [style=Normal|align=LEFT (0)|sb=5.5|sa=0.5|line=1.0416666666666667]:
+  TEXT: CHAPTER 4: TECHNICAL ADVANTAGES AND PRACTICAL USEFULNESS	6
+  RUNS: [CHAPTER 4: TECHNICAL ADVANTAGES AND PRACTICAL USEFULNESS|font=None|sz=11.0|b=True|i=None|col=000000] [	|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [6|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000]
+
+P089 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 4.1 Technical Advantages	6
+  RUNS: [4.1 Technical Advantages|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [6|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P090 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 4.2 Practical Usefulness	6
+  RUNS: [4.2 Practical Usefulness|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [6|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P091 [style=Normal|align=LEFT (0)|sb=5.5|sa=0.5|line=1.0416666666666667]:
+  TEXT: CHAPTER 5: DETAILED METHODOLOGY / SYSTEM ARCHITECTURE	8
+  RUNS: [CHAPTER 5: DETAILED METHODOLOGY / SYSTEM ARCHITECTURE|font=None|sz=11.0|b=True|i=None|col=000000] [	|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [8|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000]
+
+P092 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 5.1 System Architecture	8
+  RUNS: [5.1 System Architecture|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [8|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P093 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 5.2 Working Principle	9
+  RUNS: [5.2 Working Principle|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [9|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P094 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 5.3 Database and API Connections	13
+  RUNS: [5.3 Database and API Connections|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [13|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P095 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 5.4 Simulation and Results	14
+  RUNS: [5.4 Simulation and Results|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [14|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P096 [style=Normal|align=LEFT (0)|sb=5.5|sa=0.5|line=1.0416666666666667]:
+  TEXT: CHAPTER 6: PRIOR ART AND RELATED WORK (Literature Survey)	17
+  RUNS: [CHAPTER 6: PRIOR ART AND RELATED WORK (Literature Survey)|font=None|sz=11.0|b=True|i=None|col=000000] [	|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [17|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000]
+
+P097 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 6.1 Introduction	17
+  RUNS: [6.1 Introduction|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [17|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P098 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 6.2 Existing Technologies	17
+  RUNS: [6.2 Existing Technologies|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [17|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P099 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 6.3 Related Work	17
+  RUNS: [6.3 Related Work|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [17|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P100 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 6.4 Summary	17
+  RUNS: [6.4 Summary|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [17|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P101 [style=Normal|align=LEFT (0)|sb=5.5|sa=0.5|line=1.0416666666666667]:
+  TEXT: CHAPTER 7: APPLICATIONS AND DEPLOYMENT AREAS	18
+  RUNS: [CHAPTER 7: APPLICATIONS AND DEPLOYMENT AREAS|font=None|sz=11.0|b=True|i=None|col=000000] [	|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [18|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000]
+
+P102 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 7.1 Applications	18
+  RUNS: [7.1 Applications|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [18|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P103 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 7.2 Deployment Areas	18
+  RUNS: [7.2 Deployment Areas|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [18|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P104 [style=Normal|align=LEFT (0)|sb=5.5|sa=0.5|line=1.0416666666666667]:
+  TEXT: CHAPTER 8: CONCLUSION AND FUTURE SCOPE	19
+  RUNS: [CHAPTER 8: CONCLUSION AND FUTURE SCOPE|font=None|sz=11.0|b=True|i=None|col=000000] [	|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [19|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000]
+
+P105 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 8.1 Conclusion	19
+  RUNS: [8.1 Conclusion|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [19|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P106 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 8.2 Future Scope	19
+  RUNS: [8.2 Future Scope|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [19|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P107 [style=Normal|align=LEFT (0)|sb=5.5|sa=0.5|line=1.0416666666666667]:
+  TEXT: CHAPTER 9: GITHUB LINK AND SHORT CODE	20
+  RUNS: [CHAPTER 9: GITHUB LINK AND SHORT CODE|font=None|sz=11.0|b=True|i=None|col=000000] [	|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [20|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000]
+
+P108 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 9.1 GitHub Repository	20
+  RUNS: [9.1 GitHub Repository|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [20|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P109 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 9.2 Project File Structure	20
+  RUNS: [9.2 Project File Structure|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [20|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P110 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0416666666666667]:
+  TEXT: 9.3 Short Code Excerpts	20
+  RUNS: [9.3 Short Code Excerpts|font=None|sz=10.0|b=None|i=None|col=000000] [	|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000] [20|font=None|sz=10.0|b=None|i=None|col=000000] [|font=None|sz=10.0|b=None|i=None|col=000000]
+
+P111 [style=Normal|align=LEFT (0)|sb=5.5|sa=0.5|line=1.0416666666666667]:
+  TEXT: REFERENCES	21
+  RUNS: [REFERENCES|font=None|sz=11.0|b=True|i=None|col=000000] [	|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000] [21|font=None|sz=11.0|b=True|i=None|col=000000] [|font=None|sz=11.0|b=True|i=None|col=000000]
+
+P112 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P113 [style=Heading 1|align=None|sb=18.0|sa=0|line=None]:
+  TEXT: Chapter 1
+  RUNS: [Chapter 1|font=None|sz=None|b=None|i=None|col=None]
+
+P114 [style=Normal|align=CENTER (1)|sb=6.0|sa=3.0|line=None]:
+  TEXT: Background and Technical Overview
+  RUNS: [Background and Technical Overview|font=None|sz=16.0|b=True|i=None|col=None]
+
+P115 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 1.1 Background
+  RUNS: [1.1 Background|font=None|sz=None|b=None|i=None|col=None]
+
+P116 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Self-directed learning and habit building, such as mastering a framework, preparing for an examination or following a fitness routine, demands sustained effort over weeks or months. Research shows that specific, structured goals with clear sub-goals lead to better performance than vague intentions [1], and that concrete plans stating when and how to act make an intention far more likely to be carried out [2]. Yet many learners struggle at the first step: turning an aspiration such as “learn Angular in 30 days” into milestones and daily tasks, and revising that plan when life changes.
+  RUNS: [Self-directed learning and habit building, such as mastering a framework, preparing for an examination or following a fitness routine, demands sustained effort over weeks or months. Research shows that specific, structured goals with clear sub-goals lead to better performance than vague intentions [1], and that concrete plans stating when and how to act make an intention far more likely to be carried out [2]. Yet many learners struggle at the first step: turning an aspiration such as “learn Angular in 30 days” into milestones and daily tasks, and revising that plan when life changes.|font=None|sz=None|b=None|i=None|col=None]
+
+P117 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Large language models (LLMs) such as Google Gemini [3] can generate such plans. Modern models also support function calling: instead of replying with free text, the model emits a structured request to invoke a developer-defined function with typed parameters [4]. When an LLM is placed in a loop where it can call tools, observe the results and decide what to do next, it acts as an agent [5]; this paradigm is called agentic AI.
+  RUNS: [Large language models (LLMs) such as Google Gemini [3] can generate such plans. Modern models also support |font=None|sz=None|b=None|i=None|col=None] [function calling|font=None|sz=None|b=None|i=True|col=None] [: instead of replying with free text, the model emits a structured request to invoke a developer-defined function with typed parameters [4]. When an LLM is placed in a loop where it can call tools, observe the results and decide what to do next, it acts as an |font=None|sz=None|b=None|i=None|col=None] [agent|font=None|sz=None|b=None|i=True|col=None] [ [5]; this paradigm is called |font=None|sz=None|b=None|i=None|col=None] [agentic AI|font=None|sz=None|b=None|i=True|col=None] [.|font=None|sz=None|b=None|i=None|col=None]
+
+P118 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: This project, “AI Agent for Personal Goal Tracking”, is implemented as the GoalMate application (Autonomous AI Goal Coach and Agentic Goal Management System). The agent does not merely suggest a plan; it creates it. The plan is written into a relational database, shown on a live dashboard and kept in step with reality as the user completes tasks or changes the schedule (Figure 1.1). Key concepts used are:
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None] [This project, |font=None|sz=None|b=None|i=None|col=None] [“AI Agent for Personal Goal Tracking”|font=None|sz=None|b=True|i=None|col=None] [, is implemented as the |font=None|sz=None|b=None|i=None|col=None] [GoalMate|font=None|sz=None|b=True|i=None|col=None] [ application (|font=None|sz=None|b=None|i=None|col=None] [Autonomous AI Goal Coach and Agentic Goal Management System|font=None|sz=None|b=None|i=True|col=None] [). The agent does not merely suggest a plan; it creates it. The plan is written into a relational database, shown on a live dashboard and kept in step with reality as the user completes tasks or changes the schedule (Figure 1.1). Key concepts used are:|font=None|sz=None|b=None|i=None|col=None]
+
+P119 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P120 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 1.1: GoalMate at a glance
+  RUNS: [Figure 1.1: |font=None|sz=11.0|b=True|i=None|col=None] [GoalMate|font=None|sz=11.0|b=None|i=None|col=None] [ at a glance|font=None|sz=11.0|b=None|i=None|col=None]
+
+P121 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Agentic AI: a system that reasons, selects actions and executes them on an external environment (here, the goal database).
+  RUNS: [Agentic AI:|font=None|sz=None|b=True|i=None|col=None] [ a system that reasons, selects actions and executes them on an external environment (here, the goal database).|font=None|sz=None|b=None|i=None|col=None]
+
+P122 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Function calling: the model returns a functionCall; the application runs it and returns a functionResponse.
+  RUNS: [Function calling:|font=None|sz=None|b=True|i=None|col=None] [ the model returns a |font=None|sz=None|b=None|i=None|col=None] [functionCall|font=Courier New|sz=11.0|b=None|i=None|col=None] [; the application runs it and returns a |font=None|sz=None|b=None|i=None|col=None] [functionResponse|font=Courier New|sz=11.0|b=None|i=None|col=None] [.|font=None|sz=None|b=None|i=None|col=None]
+
+P123 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: ORM: SQLAlchemy [6] maps Python classes to tables of an SQLite database [7].
+  RUNS: [ORM:|font=None|sz=None|b=True|i=None|col=None] [ |font=None|sz=None|b=None|i=None|col=None] [SQLAlchemy|font=None|sz=None|b=None|i=None|col=None] [ [6] maps Python classes to tables of an SQLite database [7].|font=None|sz=None|b=None|i=None|col=None]
+
+P124 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Optimistic UI update: the interface updates immediately and confirms with the server asynchronously.
+  RUNS: [Optimistic UI update:|font=None|sz=None|b=True|i=None|col=None] [ the interface updates immediately and confirms with the server asynchronously.|font=None|sz=None|b=None|i=None|col=None]
+
+P125 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 1.2 Objectives
+  RUNS: [1.2 Objectives|font=None|sz=None|b=None|i=None|col=None]
+
+P126 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: To build an autonomous agent that turns a natural-language goal and time frame into milestones and dated daily tasks.
+  RUNS: [To build an autonomous agent that turns a natural-language goal and time frame into milestones and dated daily tasks.|font=None|sz=None|b=None|i=None|col=None]
+
+P127 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: To ground the agent in real data through database-backed tools and native Gemini function calling.
+  RUNS: [To ground the agent in real data through database-backed tools and native Gemini function calling.|font=None|sz=None|b=None|i=None|col=None]
+
+P128 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: To persist goals, milestones, tasks and history in an ACID-compliant database (SQLite via SQLAlchemy).
+  RUNS: [To persist goals, milestones, tasks and history in an ACID-compliant database (SQLite via |font=None|sz=None|b=None|i=None|col=None] [SQLAlchemy|font=None|sz=None|b=None|i=None|col=None] [).|font=None|sz=None|b=None|i=None|col=None]
+
+P129 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: To provide a real-time dashboard, a habit-analytics Progress page and SVG progress curves behind Sign Up and Log In screens.
+  RUNS: [To provide a real-time dashboard, a habit-analytics Progress page and SVG progress curves behind Sign Up and Log In screens.|font=None|sz=None|b=None|i=None|col=None]
+
+P130 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: To make the coach adaptive: analyse missed tasks, fit tasks to available time and replan deadlines.
+  RUNS: [To make the coach adaptive: |font=None|sz=None|b=None|i=None|col=None] [analyse|font=None|sz=None|b=None|i=None|col=None] [ missed tasks, fit tasks to available time and replan deadlines.|font=None|sz=None|b=None|i=None|col=None]
+
+P131 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: To verify the system with end-to-end acceptance tests on the live database and Gemini API.
+  RUNS: [To verify the system with end-to-end acceptance tests on the live database and Gemini API.|font=None|sz=None|b=None|i=None|col=None]
+
+P132 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 1.3 Hardware and Software Components
+  RUNS: [1.3 Hardware and Software Components|font=None|sz=None|b=None|i=None|col=None]
+
+P133 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: GoalMate is a purely software-based system; no embedded hardware, sensors or circuits are involved. It runs on any modern laptop or desktop that can run Python 3.12/3.13 and a web browser, and needs an Internet connection only for calls to the Gemini API. The interface uses Gradio [8] and the backend endpoints FastAPI [9] (Table 1.1).
+  RUNS: [GoalMate|font=None|sz=None|b=None|i=None|col=None] [ is a purely software-based system; no embedded hardware, sensors or circuits are involved. It runs on any modern laptop or desktop that can run Python 3.12/3.13 and a web browser, and needs an Internet connection only for calls to the Gemini API. The interface uses |font=None|sz=None|b=None|i=None|col=None] [Gradio|font=None|sz=None|b=None|i=None|col=None] [ [8] and the backend endpoints |font=None|sz=None|b=None|i=None|col=None] [FastAPI|font=None|sz=None|b=None|i=None|col=None] [ [9] (Table 1.1).|font=None|sz=None|b=None|i=None|col=None]
+
+P134 [style=Normal|align=CENTER (1)|sb=8.0|sa=4.0|line=1.0]:
+  TEXT: Table 1.1: Software components used in the project
+  RUNS: [Table 1.1: |font=None|sz=11.0|b=True|i=None|col=None] [Software components used in the project|font=None|sz=11.0|b=None|i=None|col=None]
+
+P135 [style=Normal|align=None|sb=0|sa=0|line=127000]:
+  TEXT: 
+  RUNS: 
+
+P136 [style=Heading 1|align=None|sb=18.0|sa=0|line=None]:
+  TEXT: Chapter 2
+  RUNS: [Chapter 2|font=None|sz=None|b=None|i=None|col=None]
+
+P137 [style=Normal|align=CENTER (1)|sb=6.0|sa=3.0|line=None]:
+  TEXT: Problem Statement and Motivation
+  RUNS: [Problem Statement and Motivation|font=None|sz=16.0|b=True|i=None|col=None]
+
+P138 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 2.1 Problem Statement
+  RUNS: [2.1 Problem Statement|font=None|sz=None|b=None|i=None|col=None]
+
+P139 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Long-term goals rarely fail for lack of intention; they fail for lack of a workable, adaptive plan. Two classes of tools are commonly used, and each leaves a gap (Figure 2.1): passive task trackers such as Todoist and Trello require the user to break every aspiration into daily steps manually, while general-purpose LLM chat interfaces produce roadmaps that stay isolated in the chat transcript, with no persistent tracking, completion state or adaptive rescheduling.
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None] [Long-term goals rarely fail for lack of intention; they fail for lack of a workable, adaptive plan. Two classes of tools are commonly used, and each leaves a gap (Figure 2.1): |font=None|sz=None|b=None|i=None|col=None] [passive task trackers|font=None|sz=None|b=True|i=None|col=None] [ such as |font=None|sz=None|b=None|i=None|col=None] [Todoist|font=None|sz=None|b=None|i=None|col=None] [ and Trello require the user to break every aspiration into daily steps manually, while |font=None|sz=None|b=None|i=None|col=None] [general-purpose LLM chat interfaces|font=None|sz=None|b=True|i=None|col=None] [ produce roadmaps that stay isolated in the chat transcript, with no persistent tracking, completion state or adaptive rescheduling.|font=None|sz=None|b=None|i=None|col=None]
+
+P140 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P141 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 2.1: Gap in existing approaches and how GoalMate addresses it
+  RUNS: [Figure 2.1: |font=None|sz=11.0|b=True|i=None|col=None] [Gap in existing approaches and how |font=None|sz=11.0|b=None|i=None|col=None] [GoalMate|font=None|sz=11.0|b=None|i=None|col=None] [ addresses it|font=None|sz=11.0|b=None|i=None|col=None]
+
+P142 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: The problem is therefore stated as: to design and implement an AI agent that autonomously decomposes a user’s natural-language goal into milestones and date-assigned daily tasks, persists them in a relational database, tracks real progress on a live dashboard, and adaptively replans when the user’s time or schedule changes.
+  RUNS: [The problem is therefore stated as: |font=None|sz=None|b=None|i=None|col=None] [to design and implement an AI agent that autonomously decomposes a user’s natural-language goal into milestones and date-assigned daily tasks, persists them in a relational database, tracks real progress on a live dashboard, and adaptively replans when the user’s time or schedule changes.|font=None|sz=None|b=None|i=True|col=None]
+
+P143 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 2.2 Motivation
+  RUNS: [2.2 Motivation|font=None|sz=None|b=None|i=None|col=None]
+
+P144 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Students, developers, exam aspirants and working professionals often spend their best energy on planning before any real learning begins. The main motivations for an agent that removes this overhead are:
+  RUNS: [Students, developers, exam aspirants and working professionals often spend their best energy on planning before any real learning begins. The main motivations for an agent that removes this overhead are:|font=None|sz=None|b=None|i=None|col=None]
+
+P145 [style=List Paragraph|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Reducing effort and bridging advice to execution: the user states an objective once; the agent produces the plan and writes it to the database instead of only describing steps.
+  RUNS: [Reducing effort and bridging advice to execution:|font=None|sz=None|b=True|i=None|col=None] [ the user states an objective once; the agent produces the plan and writes it to the database instead of only describing steps.|font=None|sz=None|b=None|i=None|col=None]
+
+P146 [style=List Paragraph|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Coping with real life and trust: missed days, limited time and changed deadlines are handled by dedicated tools, and grounding answers in database tools prevents invented progress.
+  RUNS: [Coping with real life and trust:|font=None|sz=None|b=True|i=None|col=None] [ missed days, limited time and changed deadlines are handled by dedicated tools, and grounding answers in database tools prevents invented progress.|font=None|sz=None|b=None|i=None|col=None]
+
+P147 [style=List Paragraph|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Academic motivation: hands-on practice with tool declarations, function calling, multi-step tool loops and stateful persistence from the course Agentic AI & Automation.
+  RUNS: [Academic motivation:|font=None|sz=None|b=True|i=None|col=None] [ hands-on practice with tool declarations, function calling, multi-step tool loops and stateful persistence from the course Agentic AI & Automation.|font=None|sz=None|b=None|i=None|col=None]
+
+P148 [style=Heading 1|align=None|sb=18.0|sa=0|line=None]:
+  TEXT: Chapter 3
+  RUNS: [Chapter 3|font=None|sz=None|b=None|i=None|col=None]
+
+P149 [style=Normal|align=CENTER (1)|sb=6.0|sa=3.0|line=None]:
+  TEXT: Novelty and Innovative Contributions
+  RUNS: [Novelty and Innovative Contributions|font=None|sz=16.0|b=True|i=None|col=None]
+
+P150 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 3.1 Novelty
+  RUNS: [3.1 Novelty|font=None|sz=None|b=None|i=None|col=None]
+
+P151 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Tool-grounded relational planning. Typical LLM chat applications produce unstructured text. In GoalMate the model’s output is a structured create_goal_with_plan call, so goals, milestones and daily tasks become persistent, queryable relational entities rather than paragraphs in a transcript (Figure 3.1).
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None] [Tool-grounded relational planning.|font=None|sz=None|b=True|i=None|col=None] [ Typical LLM chat applications produce unstructured text. In |font=None|sz=None|b=None|i=None|col=None] [GoalMate|font=None|sz=None|b=None|i=None|col=None] [ the model’s output is a structured |font=None|sz=None|b=None|i=None|col=None] [create_goal_with_plan|font=Courier New|sz=11.0|b=None|i=None|col=None] [ call, so goals, milestones and daily tasks become persistent, |font=None|sz=None|b=None|i=None|col=None] [queryable|font=None|sz=None|b=None|i=None|col=None] [ relational entities rather than paragraphs in a transcript (Figure 3.1).|font=None|sz=None|b=None|i=None|col=None]
+
+P152 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P153 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 3.1: Static LLM generation versus tool-grounded planning
+  RUNS: [Figure 3.1: |font=None|sz=11.0|b=True|i=None|col=None] [Static LLM generation versus tool-grounded planning|font=None|sz=11.0|b=None|i=None|col=None]
+
+P154 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Multi-step agentic replanning. For “Make my plan 20 days instead of 30” the agent chains tools on its own: it calls get_user_progress_summary to discover the goal_id, then replan_goal_duration, within a bounded loop of at most four tool turns. Figure 3.2 shows how different user prompts are mapped to tools and actions.
+  RUNS: [Multi-step agentic replanning.|font=None|sz=None|b=True|i=None|col=None] [ For “Make my plan 20 days instead of 30” the agent chains tools on its own: it calls |font=None|sz=None|b=None|i=None|col=None] [get_user_progress_summary|font=Courier New|sz=11.0|b=None|i=None|col=None] [ to discover the |font=None|sz=None|b=None|i=None|col=None] [goal_id|font=Courier New|sz=11.0|b=None|i=None|col=None] [, then |font=None|sz=None|b=None|i=None|col=None] [replan_goal_duration|font=Courier New|sz=11.0|b=None|i=None|col=None] [, within a bounded loop of at most four tool turns. Figure 3.2 shows how different user prompts are mapped to tools and actions.|font=None|sz=None|b=None|i=None|col=None]
+
+P155 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None]
+
+P156 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 3.2: Adaptive behaviour: prompt to tool call to action
+  RUNS: [Figure 3.2: |font=None|sz=11.0|b=True|i=None|col=None] [Adaptive |font=None|sz=11.0|b=None|i=None|col=None] [behaviour|font=None|sz=11.0|b=None|i=None|col=None] [: prompt to tool call to action|font=None|sz=11.0|b=None|i=None|col=None]
+
+P157 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Instruction-enforced honesty. The system prompt forbids invented data (“Never invent progress data. Always read from tools.”), so every progress statement comes from a query on the live database.
+  RUNS: [Instruction-enforced honesty.|font=None|sz=None|b=True|i=None|col=None] [ The system prompt forbids invented data (“Never invent progress data. Always read from tools.”), so every progress statement comes from a query on the live database.|font=None|sz=None|b=None|i=None|col=None]
+
+P158 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 3.2 Innovative Contributions
+  RUNS: [3.2 Innovative Contributions|font=None|sz=None|b=None|i=None|col=None]
+
+P159 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Dual-engine hybrid architecture: Gradio components, FastAPI micro-endpoints and client-side JavaScript give instant optimistic task completion without a full-page reload.
+  RUNS: [Dual-engine hybrid architecture:|font=None|sz=None|b=True|i=None|col=None] [ |font=None|sz=None|b=None|i=None|col=None] [Gradio|font=None|sz=None|b=None|i=None|col=None] [ components, |font=None|sz=None|b=None|i=None|col=None] [FastAPI|font=None|sz=None|b=None|i=None|col=None] [ micro-endpoints and client-side JavaScript give instant optimistic task completion without a full-page reload.|font=None|sz=None|b=None|i=None|col=None]
+
+P160 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: SVG curves without charting libraries: a Catmull-Rom to cubic Bezier transformation [10] implemented in Python draws smooth day-wise progress curves, with no D3.js or Chart.js.
+  RUNS: [SVG curves without charting libraries:|font=None|sz=None|b=True|i=None|col=None] [ a Catmull-Rom to cubic Bezier transformation [10] implemented in Python draws smooth day-wise progress curves, with no D3.js or Chart.js.|font=None|sz=None|b=None|i=None|col=None]
+
+P161 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Adaptive start-date timeline: the seven-day timeline is anchored to the goal’s start date instead of a fixed Monday-to-Sunday week.
+  RUNS: [Adaptive start-date timeline:|font=None|sz=None|b=True|i=None|col=None] [ the seven-day timeline is anchored to the goal’s start date instead of a fixed Monday-to-Sunday week.|font=None|sz=None|b=None|i=None|col=None]
+
+P162 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Retroactive completion: past tasks stay visible in a “Past” bucket and can be checked off later without corrupting their dates.
+  RUNS: [Retroactive completion:|font=None|sz=None|b=True|i=None|col=None] [ past tasks stay visible in a “Past” bucket and can be checked off later without corrupting their dates.|font=None|sz=None|b=None|i=None|col=None]
+
+P163 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Database heartbeat: the browser polls /api/db/state every 2.5 seconds, so changes made by the agent appear on the dashboard automatically.
+  RUNS: [Database heartbeat:|font=None|sz=None|b=True|i=None|col=None] [ the browser polls |font=None|sz=None|b=None|i=None|col=None] [/|font=Courier New|sz=11.0|b=None|i=None|col=None] [api|font=Courier New|sz=11.0|b=None|i=None|col=None] [/|font=Courier New|sz=11.0|b=None|i=None|col=None] [db|font=Courier New|sz=11.0|b=None|i=None|col=None] [/state|font=Courier New|sz=11.0|b=None|i=None|col=None] [ every 2.5 seconds, so changes made by the agent appear on the dashboard automatically.|font=None|sz=None|b=None|i=None|col=None]
+
+P164 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Habit analytics page: a dedicated Progress page turns the task history into habit velocity, weekly consistency and a 30-day activity view.
+  RUNS: [Habit analytics page:|font=None|sz=None|b=True|i=None|col=None] [ a dedicated Progress page turns the task history into habit velocity, weekly consistency and a 30-day activity view.|font=None|sz=None|b=None|i=None|col=None]
+
+P165 [style=Heading 1|align=None|sb=18.0|sa=0|line=None]:
+  TEXT: Chapter 4
+  RUNS: [Chapter 4|font=None|sz=None|b=None|i=None|col=None]
+
+P166 [style=Normal|align=CENTER (1)|sb=6.0|sa=3.0|line=None]:
+  TEXT: Technical Advantages and Practical Usefulness
+  RUNS: [Technical Advantages and Practical Usefulness|font=None|sz=16.0|b=True|i=None|col=None]
+
+P167 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 4.1 Technical Advantages
+  RUNS: [4.1 Technical Advantages|font=None|sz=None|b=None|i=None|col=None]
+
+P168 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Grounded answers: progress figures and task lists are read from SQLite through SQLAlchemy; the agent loop contains no mocked responses.
+  RUNS: [Grounded answers:|font=None|sz=None|b=True|i=None|col=None] [ progress figures and task lists are read from SQLite through |font=None|sz=None|b=None|i=None|col=None] [SQLAlchemy|font=None|sz=None|b=None|i=None|col=None] [; the agent loop contains no mocked responses.|font=None|sz=None|b=None|i=None|col=None]
+
+P169 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Transactional integrity: ACID commits, enforced foreign keys (PRAGMA foreign_keys=ON) and cascading deletes keep the data consistent.
+  RUNS: [Transactional integrity:|font=None|sz=None|b=True|i=None|col=None] [ ACID commits, enforced foreign keys (|font=None|sz=None|b=None|i=None|col=None] [PRAGMA |font=Courier New|sz=11.0|b=None|i=None|col=None] [foreign_keys|font=Courier New|sz=11.0|b=None|i=None|col=None] [=ON|font=Courier New|sz=11.0|b=None|i=None|col=None] [) and cascading deletes keep the data consistent.|font=None|sz=None|b=None|i=None|col=None]
+
+P170 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Responsive, lightweight UI: optimistic check-boxes, server-rendered HTML fragments and plain SVG/CSS visualisation with no client-side charting overhead.
+  RUNS: [Responsive, lightweight UI:|font=None|sz=None|b=True|i=None|col=None] [ optimistic check-boxes, server-rendered HTML fragments and plain SVG/CSS |font=None|sz=None|b=None|i=None|col=None] [visualisation|font=None|sz=None|b=None|i=None|col=None] [ with no client-side charting overhead.|font=None|sz=None|b=None|i=None|col=None]
+
+P171 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Modular design: presentation, agent runtime, tool interface, services and persistence are separate; a new capability needs only a tool schema and a handler.
+  RUNS: [Modular design:|font=None|sz=None|b=True|i=None|col=None] [ presentation, agent runtime, tool interface, services and persistence are separate; a new capability needs only a tool schema and a handler.|font=None|sz=None|b=None|i=None|col=None]
+
+P172 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Bounded agent loop: tool recursion is limited to four turns (max_tool_loops = 4).
+  RUNS: [Bounded agent loop:|font=None|sz=None|b=True|i=None|col=None] [ tool recursion is limited to four turns (|font=None|sz=None|b=None|i=None|col=None] [max_tool_loops|font=Courier New|sz=11.0|b=None|i=None|col=None] [ = 4|font=Courier New|sz=11.0|b=None|i=None|col=None] [).|font=None|sz=None|b=None|i=None|col=None]
+
+P173 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Safe key handling and simple deployment: GEMINI_API_KEY stays in server memory and is never sent to the client; the whole system runs as one process started with a single command.
+  RUNS: [Safe key handling and simple deployment:|font=None|sz=None|b=True|i=None|col=None] [ |font=None|sz=None|b=None|i=None|col=None] [GEMINI_API_KEY|font=Courier New|sz=11.0|b=None|i=None|col=None] [ stays in server memory and is never sent to the client; the whole system runs as one process started with a single command.|font=None|sz=None|b=None|i=None|col=None]
+
+P174 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: User access: Sign Up and Log In screens gate the application and show the signed-in user in the sidebar with a Log out option.
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None] [User access:|font=None|sz=None|b=True|i=None|col=None] [ Sign Up and Log In screens gate the application and show the signed-in user in the sidebar with a Log out option.|font=None|sz=None|b=None|i=None|col=None]
+
+P175 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P176 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 4.1: Technical advantages of GoalMate and the mechanisms behind them
+  RUNS: [Figure 4.1: |font=None|sz=11.0|b=True|i=None|col=None] [Technical advantages of |font=None|sz=11.0|b=None|i=None|col=None] [GoalMate|font=None|sz=11.0|b=None|i=None|col=None] [ and the mechanisms behind them|font=None|sz=11.0|b=None|i=None|col=None]
+
+P177 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 4.2 Practical Usefulness
+  RUNS: [4.2 Practical Usefulness|font=None|sz=None|b=None|i=None|col=None]
+
+P178 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: GoalMate helps anyone pursuing structured, self-directed goals. Scenarios exercised during verification include planning from one sentence (“I want to learn Angular in 30 days” gave 7 milestones and 16 tasks), time-constrained days (“I only have 30 minutes today”), missed work (“I couldn’t complete yesterday’s tasks”) and changing plans (“Make my Angular plan 20 days instead of 30”). Progress bars, the seven-day timeline, the progress curve and the streak counter give visible feedback on consistency, and all data stays in a local SQLite file on the user’s own machine. Figure 4.2 shows the plan generated for the Angular goal.
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None] [GoalMate|font=None|sz=None|b=None|i=None|col=None] [ helps anyone pursuing structured, self-directed goals. Scenarios exercised during verification include planning from one sentence (“I want to learn Angular in 30 days” gave 7 milestones and 16 tasks), time-constrained days (“I only have 30 minutes today”), missed work (“I couldn’t complete yesterday’s tasks”) and changing plans (“Make my Angular plan 20 days instead of 30”). Progress bars, the seven-day timeline, the progress curve and the streak counter give visible feedback on consistency, and all data stays in a local SQLite file on the user’s own machine. Figure 4.2 shows the plan generated for the Angular goal.|font=None|sz=None|b=None|i=None|col=None]
+
+P179 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P180 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 4.2: Milestone roadmap generated for “Learn Angular”
+  RUNS: [Figure 4.2: |font=None|sz=11.0|b=True|i=None|col=None] [Milestone roadmap generated for “Learn Angular”|font=None|sz=11.0|b=None|i=None|col=None]
+
+P181 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: The dedicated Progress page (Figure 4.3) gives a system-wide view. Its Overall Completion ring shows 12 % (11 of 93 tasks done) with a 1-day streak, and the Habit Velocity and Consistency card reports 0.9 tasks per day, 29 % weekly consistency, a 7-day task volume of 6 and 3 active goal tracks. The velocity corresponds to 6 tasks over 7 days and the consistency to 2 active days out of 7. Below, an Active Goals Progress Breakdown lists each goal with its completion, tasks done and days left, and a 30-day activity heatmap shows on which days work was done.
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None] [The dedicated |font=None|sz=None|b=None|i=None|col=None] [Progress|font=None|sz=None|b=True|i=None|col=None] [ page (Figure 4.3) gives a system-wide view. Its Overall Completion ring shows 12 % (11 of 93 tasks done) with a 1-day streak, and the Habit Velocity and Consistency card reports 0.9 tasks per day, 29 % weekly consistency, a 7-day task volume of 6 and 3 active goal tracks. The velocity corresponds to 6 tasks over 7 days and the consistency to 2 active days out of 7. Below, an Active Goals Progress Breakdown lists each goal with its completion, tasks done and days left, and a 30-day activity heatmap shows on which |font=None|sz=None|b=None|i=None|col=None] [days|font=None|sz=None|b=None|i=None|col=None] [ work was done.|font=None|sz=None|b=None|i=None|col=None]
+
+P182 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P183 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 4.3: Progress page with overall completion and habit metrics
+  RUNS: [Figure 4.3: |font=None|sz=11.0|b=True|i=None|col=None] [Progress page with overall completion and habit metrics|font=None|sz=11.0|b=None|i=None|col=None]
+
+P184 [style=Heading 1|align=None|sb=18.0|sa=0|line=None]:
+  TEXT: Chapter 5
+  RUNS: [Chapter 5|font=None|sz=None|b=None|i=None|col=None]
+
+P185 [style=Normal|align=CENTER (1)|sb=6.0|sa=3.0|line=None]:
+  TEXT: Detailed Methodology / System Architecture
+  RUNS: [Detailed Methodology / System Architecture|font=None|sz=16.0|b=True|i=None|col=None]
+
+P186 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 5.1 System Architecture
+  RUNS: [5.1 System Architecture|font=None|sz=None|b=None|i=None|col=None]
+
+P187 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: GoalMate follows a unified, event-driven, single-process architecture: the Gradio interface, FastAPI micro-endpoints, AI agent runtime, business services and SQLite database all run under one Uvicorn server. Figure 5.1 shows the layers and the numbered flow of a request. Instant actions such as toggling a task go from the browser to FastAPI and the service layer; chat messages go to the agent runtime, which calls Gemini with the tool schema. When Gemini decides to act, the tool router executes the function through the service layer and ORM on SQLite, and the browser detects the change by heartbeat polling. The whole application sits behind a Sign Up / Log In screen (Section 5.2 (f)). Table 5.1 summarises the modules.
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None] [GoalMate|font=None|sz=None|b=None|i=None|col=None] [ follows a unified, event-driven, single-process architecture: the |font=None|sz=None|b=None|i=None|col=None] [Gradio|font=None|sz=None|b=None|i=None|col=None] [ interface, |font=None|sz=None|b=None|i=None|col=None] [FastAPI|font=None|sz=None|b=None|i=None|col=None] [ micro-endpoints, AI agent runtime, business services and SQLite database all run under one |font=None|sz=None|b=None|i=None|col=None] [Uvicorn|font=None|sz=None|b=None|i=None|col=None] [ server. Figure 5.1 shows the layers and the numbered flow of a request. Instant actions such as toggling a task go from the browser to |font=None|sz=None|b=None|i=None|col=None] [FastAPI|font=None|sz=None|b=None|i=None|col=None] [ and the service layer; chat messages go to the agent runtime, which calls Gemini with the tool schema. When Gemini decides to act, the tool router executes the function through the service layer and ORM on SQLite, and the browser detects the change by heartbeat polling. The whole application sits behind a Sign Up / Log In screen (Section 5.2 (f)). Table 5.1 |font=None|sz=None|b=None|i=None|col=None] [summarises|font=None|sz=None|b=None|i=None|col=None] [ the modules.|font=None|sz=None|b=None|i=None|col=None]
+
+P188 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P189 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 5.1: Layered system architecture of GoalMate
+  RUNS: [Figure 5.1: |font=None|sz=11.0|b=True|i=None|col=None] [Layered system architecture of |font=None|sz=11.0|b=None|i=None|col=None] [GoalMate|font=None|sz=11.0|b=None|i=None|col=None]
+
+P190 [style=Normal|align=CENTER (1)|sb=8.0|sa=4.0|line=1.0]:
+  TEXT: Table 5.1: Module responsibilities
+  RUNS: [Table 5.1: |font=None|sz=11.0|b=True|i=None|col=None] [Module responsibilities|font=None|sz=11.0|b=None|i=None|col=None]
+
+P191 [style=Normal|align=None|sb=0|sa=0|line=127000]:
+  TEXT: 
+  RUNS: 
+
+P192 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 5.2 Working Principle
+  RUNS: [5.2 Working Principle|font=None|sz=None|b=None|i=None|col=None]
+
+P193 [style=Normal|align=LEFT (0)|sb=7.0|sa=2.0|line=1.5]:
+  TEXT: (a) AI agent and tool calling
+  RUNS: [(a) AI agent and tool calling|font=None|sz=None|b=True|i=None|col=None]
+
+P194 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: The agent sends HTTP POST requests to the Gemini v1beta generateContent endpoint with a system_instruction, the conversation contents and tools: [{"function_declarations": TOOL_DECLARATIONS}]. The SYSTEM_PROMPT states that “I want to learn X in Y days” must immediately trigger create_goal_with_plan, that the agent must never claim an action it did not perform with a tool, and that progress must always be read from tools. When the model acts it outputs a functionCall; Python runs the function, wraps the result in a functionResponse, appends it as a user turn and calls Gemini again, as shown in Figure 5.2. The eight tools are listed in Table 5.2.
+  RUNS: [The agent sends HTTP POST requests to the Gemini |font=None|sz=None|b=None|i=None|col=None] [v1beta|font=Courier New|sz=11.0|b=None|i=None|col=None] [ |font=None|sz=None|b=None|i=None|col=None] [generateContent|font=Courier New|sz=11.0|b=None|i=None|col=None] [ endpoint with a |font=None|sz=None|b=None|i=None|col=None] [system_instruction|font=Courier New|sz=11.0|b=None|i=None|col=None] [, the conversation |font=None|sz=None|b=None|i=None|col=None] [contents|font=Courier New|sz=11.0|b=None|i=None|col=None] [ and |font=None|sz=None|b=None|i=None|col=None] [tools: [{"|font=Courier New|sz=11.0|b=None|i=None|col=None] [function_declarations|font=Courier New|sz=11.0|b=None|i=None|col=None] [": TOOL_DECLARATIONS}]|font=Courier New|sz=11.0|b=None|i=None|col=None] [. The |font=None|sz=None|b=None|i=None|col=None] [SYSTEM_PROMPT|font=Courier New|sz=11.0|b=None|i=None|col=None] [ states that “I want to learn X in Y days” must immediately trigger |font=None|sz=None|b=None|i=None|col=None] [create_goal_with_plan|font=Courier New|sz=11.0|b=None|i=None|col=None] [, that the agent must never claim an action it did not perform with a tool, and that progress must always be read from tools. When the model acts it outputs a |font=None|sz=None|b=None|i=None|col=None] [functionCall|font=Courier New|sz=11.0|b=None|i=None|col=None] [; Python runs the function, wraps the result in a |font=None|sz=None|b=None|i=None|col=None] [functionResponse|font=Courier New|sz=11.0|b=None|i=None|col=None] [, appends it as a user turn and calls Gemini again, as shown in Figure 5.2. The eight tools are listed in Table 5.2.|font=None|sz=None|b=None|i=None|col=None]
+
+P195 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None]
+
+P196 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 5.2: Agent tool-calling loop (agent_chat)
+  RUNS: [Figure 5.2: |font=None|sz=11.0|b=True|i=None|col=None] [Agent tool-calling loop (|font=None|sz=11.0|b=None|i=None|col=None] [agent_chat|font=None|sz=11.0|b=None|i=None|col=None] [)|font=None|sz=11.0|b=None|i=None|col=None]
+
+P197 [style=Normal|align=CENTER (1)|sb=8.0|sa=4.0|line=1.0]:
+  TEXT: Table 5.2: Tools exposed to the Gemini agent (agent/tools.py)
+  RUNS: [Table 5.2: |font=None|sz=11.0|b=True|i=None|col=None] [Tools exposed to the Gemini agent (agent/tools.py)|font=None|sz=11.0|b=None|i=None|col=None]
+
+P198 [style=Normal|align=None|sb=0|sa=0|line=127000]:
+  TEXT: 
+  RUNS: 
+
+P199 [style=Normal|align=LEFT (0)|sb=7.0|sa=2.0|line=1.5]:
+  TEXT: (b) Goal creation workflow
+  RUNS: [(b) Goal creation workflow|font=None|sz=None|b=True|i=None|col=None]
+
+P200 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Figure 5.3 traces “I want to learn Angular in 30 days.” Gemini extracts the subject and duration, drafts milestones and tasks and returns a create_goal_with_plan call. The tool router sets start_date to today and deadline to start_date + 30 days, writes the goal, creates milestones with an order_index, maps each task’s day_number to scheduled_date = start_date + (day_number − 1) days, logs a goal_created activity and commits. The result is returned to Gemini, which confirms in a short message, and the dashboard is re-rendered from the database.
+  RUNS: [Figure 5.3 traces “I want to learn Angular in 30 days.” Gemini extracts the subject and duration, drafts milestones and tasks and returns a |font=None|sz=None|b=None|i=None|col=None] [create_goal_with_plan|font=Courier New|sz=11.0|b=None|i=None|col=None] [ call. The tool router sets |font=None|sz=None|b=None|i=None|col=None] [start_date|font=Courier New|sz=11.0|b=None|i=None|col=None] [ to today and |font=None|sz=None|b=None|i=None|col=None] [deadline|font=Courier New|sz=11.0|b=None|i=None|col=None] [ to |font=None|sz=None|b=None|i=None|col=None] [start_date|font=Courier New|sz=11.0|b=None|i=None|col=None] [ + 30 days|font=Courier New|sz=11.0|b=None|i=None|col=None] [, writes the goal, creates milestones with an |font=None|sz=None|b=None|i=None|col=None] [order_index|font=Courier New|sz=11.0|b=None|i=None|col=None] [, maps each task’s |font=None|sz=None|b=None|i=None|col=None] [day_number|font=Courier New|sz=11.0|b=None|i=None|col=None] [ to |font=None|sz=None|b=None|i=None|col=None] [scheduled_date|font=Courier New|sz=11.0|b=None|i=None|col=None] [ = |font=Courier New|sz=11.0|b=None|i=None|col=None] [start_date|font=Courier New|sz=11.0|b=None|i=None|col=None] [ + (|font=Courier New|sz=11.0|b=None|i=None|col=None] [day_number|font=Courier New|sz=11.0|b=None|i=None|col=None] [ − 1)|font=Courier New|sz=11.0|b=None|i=None|col=None] [ days, logs a |font=None|sz=None|b=None|i=None|col=None] [goal_created|font=Courier New|sz=11.0|b=None|i=None|col=None] [ activity and commits. The result is returned to Gemini, which confirms in a short message, and the dashboard is re-rendered from the database.|font=None|sz=None|b=None|i=None|col=None]
+
+P201 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None]
+
+P202 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 5.3: Goal creation workflow for “I want to learn Angular in 30 days.”
+  RUNS: [Figure 5.3: |font=None|sz=11.0|b=True|i=None|col=None] [Goal creation workflow for “I want to learn Angular in 30 days.”|font=None|sz=11.0|b=None|i=None|col=None]
+
+P203 [style=Normal|align=LEFT (0)|sb=7.0|sa=2.0|line=1.5]:
+  TEXT: (c) Task completion flow
+  RUNS: [(c) Task completion flow|font=None|sz=None|b=True|i=None|col=None]
+
+P204 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: The main dashboard shows only today’s tasks; the goal detail view splits tasks into Ongoing (today), Past (before today, allowing retroactive catch-up) and Upcoming (later and pending). Figure 5.4 shows what happens on a click: JavaScript draws the tick immediately (optimistic update) and posts the change asynchronously; the server updates SQLite and the view is refreshed. Past tasks use the same command, so missed tasks can be completed later without altering their dates.
+  RUNS: [The main dashboard shows only today’s tasks; the goal detail view splits tasks into |font=None|sz=None|b=None|i=None|col=None] [Ongoing|font=None|sz=None|b=True|i=None|col=None] [ (today), |font=None|sz=None|b=None|i=None|col=None] [Past|font=None|sz=None|b=True|i=None|col=None] [ (before today, allowing retroactive catch-up) and |font=None|sz=None|b=None|i=None|col=None] [Upcoming|font=None|sz=None|b=True|i=None|col=None] [ (later and pending). Figure 5.4 shows what happens on a click: JavaScript draws the tick immediately (optimistic update) and posts the change asynchronously; the server updates SQLite and the view is refreshed. Past tasks use the same command, so missed tasks can be completed later without altering their dates.|font=None|sz=None|b=None|i=None|col=None]
+
+P205 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None]
+
+P206 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 5.4: Optimistic task completion between browser and server
+  RUNS: [Figure 5.4: |font=None|sz=11.0|b=True|i=None|col=None] [Optimistic task completion between browser and server|font=None|sz=11.0|b=None|i=None|col=None]
+
+P207 [style=Normal|align=LEFT (0)|sb=7.0|sa=2.0|line=1.5]:
+  TEXT: (d) Adaptive and replanning behaviour
+  RUNS: [(d) Adaptive and replanning |font=None|sz=None|b=True|i=None|col=None] [behaviour|font=None|sz=None|b=True|i=None|col=None]
+
+P208 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: The agent adapts to the user’s situation by choosing the matching tool (Figure 3.2). Missed work triggers an analysis of overdue tasks, a time limit triggers a duration-based recommendation, an early finish updates progress and suggests the next task, and a change of duration is handled by the two-step get_user_progress_summary then replan_goal_duration chain.
+  RUNS: [The agent adapts to the user’s situation by choosing the matching tool (Figure 3.2). Missed work triggers an analysis of overdue tasks, a time limit triggers a duration-based recommendation, an |font=None|sz=None|b=None|i=None|col=None] [early finish updates progress and suggests the next task, and a change of duration is handled by the two-step |font=None|sz=None|b=None|i=None|col=None] [get_user_progress_summary|font=Courier New|sz=11.0|b=None|i=None|col=None] [ then |font=None|sz=None|b=None|i=None|col=None] [replan_goal_duration|font=Courier New|sz=11.0|b=None|i=None|col=None] [ chain.|font=None|sz=None|b=None|i=None|col=None]
+
+P209 [style=Normal|align=LEFT (0)|sb=7.0|sa=2.0|line=1.5]:
+  TEXT: (e) Progress tracking and mathematical logic
+  RUNS: [(e) Progress tracking and mathematical logic|font=None|sz=None|b=True|i=None|col=None]
+
+P210 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Goal and milestone progress are computed on read. With completed and total denoting task counts:
+  RUNS: [Goal and milestone progress are computed on read. With |font=None|sz=None|b=None|i=None|col=None] [completed|font=None|sz=None|b=None|i=True|col=None] [ and |font=None|sz=None|b=None|i=None|col=None] [total|font=None|sz=None|b=None|i=True|col=None] [ denoting task counts:|font=None|sz=None|b=None|i=None|col=None]
+
+P211 [style=Normal|align=CENTER (1)|sb=6.0|sa=6.0|line=1.0]:
+  TEXT: 
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None]
+
+P212 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: The same ratio gives the daily completion percentage in get_weekly_data. The seven-day timeline is anchored to the goal’s start date when start_date ≤ today and today − start_date ≤ 6 days, and to today otherwise. The progress curve is an SVG path in which each interval is converted from a Catmull-Rom spline [10] to a cubic Bezier segment with tension τ = 0.28; for points P0 to P3 the control points of the segment P1 to P2 are (vertical values clamped to the chart area):
+  RUNS: [The same ratio gives the daily completion percentage in |font=None|sz=None|b=None|i=None|col=None] [get_weekly_data|font=Courier New|sz=11.0|b=None|i=None|col=None] [. The seven-day timeline is anchored to the goal’s start date when |font=None|sz=None|b=None|i=None|col=None] [start_date|font=Courier New|sz=11.0|b=None|i=None|col=None] [ ≤ today and today − |font=None|sz=None|b=None|i=None|col=None] [start_date|font=Courier New|sz=11.0|b=None|i=None|col=None] [ ≤ 6 days, and to today otherwise. The progress curve is an SVG path in which each interval is converted from a Catmull-Rom spline [10] to a cubic Bezier segment with tension τ = 0.28; for points |font=None|sz=None|b=None|i=None|col=None] [P|font=None|sz=None|b=None|i=True|col=None] [0 to |font=None|sz=None|b=None|i=None|col=None] [P|font=None|sz=None|b=None|i=True|col=None] [3 the control points of the segment |font=None|sz=None|b=None|i=None|col=None] [P|font=None|sz=None|b=None|i=True|col=None] [1 to |font=None|sz=None|b=None|i=None|col=None] [P|font=None|sz=None|b=None|i=True|col=None] [2 are (vertical values clamped to the chart area):|font=None|sz=None|b=None|i=None|col=None]
+
+P213 [style=Normal|align=CENTER (1)|sb=6.0|sa=6.0|line=1.0]:
+  TEXT: 
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None]
+
+P214 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: The streak, computed by get_streak(), counts backwards from today (up to 365 days) the consecutive days on which all scheduled tasks are completed, and stops at the first day with an uncompleted task.
+  RUNS: [The streak, computed by |font=None|sz=None|b=None|i=None|col=None] [get_|font=Courier New|sz=11.0|b=None|i=None|col=None] [streak|font=Courier New|sz=11.0|b=None|i=None|col=None] [(|font=Courier New|sz=11.0|b=None|i=None|col=None] [)|font=Courier New|sz=11.0|b=None|i=None|col=None] [, counts backwards from today (up to 365 days) the consecutive days on which all scheduled tasks are completed, and stops at the first day with an uncompleted task.|font=None|sz=None|b=None|i=None|col=None]
+
+P215 [style=Normal|align=LEFT (0)|sb=7.0|sa=2.0|line=1.5]:
+  TEXT: (f) User access: sign-up and login
+  RUNS: [(f) User access: sign-up and login|font=None|sz=None|b=True|i=None|col=None]
+
+P216 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Figure 5.5 shows how access is controlled. A user without an active session is shown the Log In page (Figure 5.7), which asks for an email or username and a password, offers a Remember me option and a Forgot password link, and links to Sign Up for new users. The credentials are verified by the authentication module (backend/auth.py), which provides password hashing (bcrypt through Passlib) and JSON Web Token (HS256) helpers [11]. After a successful login the dashboard opens with the Dashboard, Progress and Goals navigation, the user’s name and a Log out link in the sidebar, and an AI Coach that greets the user by name.
+  RUNS: [Figure 5.5 shows how access is controlled. A user without an active session is shown the Log In page (Figure 5.7), which asks for an email or username and a password, offers a Remember me option and a Forgot password link, and links to Sign Up for new users. The credentials are verified by the authentication module (|font=None|sz=None|b=None|i=None|col=None] [backend/auth.py|font=Courier New|sz=11.0|b=None|i=None|col=None] [), which provides password hashing (|font=None|sz=None|b=None|i=None|col=None] [bcrypt|font=None|sz=None|b=None|i=None|col=None] [ through |font=None|sz=None|b=None|i=None|col=None] [Passlib|font=None|sz=None|b=None|i=None|col=None] [) and JSON Web Token (HS256) helpers [11]. After a successful login the dashboard opens with the Dashboard, Progress and Goals navigation, the user’s name and a Log out link in the sidebar, and an AI Coach that greets the user by name.|font=None|sz=None|b=None|i=None|col=None]
+
+P217 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None]
+
+P218 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 5.5: Sign-up and login flow
+  RUNS: [Figure 5.5: |font=None|sz=11.0|b=True|i=None|col=None] [Sign-up and login flow|font=None|sz=11.0|b=None|i=None|col=None]
+
+P219 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 5.3 Database and API Connections
+  RUNS: [5.3 Database and API Connections|font=None|sz=None|b=None|i=None|col=None]
+
+P220 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Data is stored in a SQLite 3 database (data/goalmate.db) with foreign keys enforced by an event listener. The schema in Figure 5.6 has four tables: goals is the parent of milestones, tasks and activity_logs (declared with cascade="all, delete-orphan"), and a task may optionally belong to a milestone. Task status is pending, completed or skipped; activity_logs records state transitions with an emoji icon. The micro-endpoints are listed in Table 5.3.
+  RUNS: [Data is stored in a SQLite 3 database (|font=None|sz=None|b=None|i=None|col=None] [data/|font=Courier New|sz=11.0|b=None|i=None|col=None] [goalmate.db|font=Courier New|sz=11.0|b=None|i=None|col=None] [) with foreign keys enforced by an event listener. The schema in Figure 5.6 has four tables: |font=None|sz=None|b=None|i=None|col=None] [goals|font=Courier New|sz=11.0|b=None|i=None|col=None] [ is the parent of |font=None|sz=None|b=None|i=None|col=None] [milestones|font=Courier New|sz=11.0|b=None|i=None|col=None] [, |font=None|sz=None|b=None|i=None|col=None] [tasks|font=Courier New|sz=11.0|b=None|i=None|col=None] [ and |font=None|sz=None|b=None|i=None|col=None] [activity_logs|font=Courier New|sz=11.0|b=None|i=None|col=None] [ (declared with |font=None|sz=None|b=None|i=None|col=None] [cascade="all, delete-orphan"|font=Courier New|sz=11.0|b=None|i=None|col=None] [), and a task may optionally belong to a milestone. Task status is pending, completed or skipped; |font=None|sz=None|b=None|i=None|col=None] [activity_logs|font=Courier New|sz=11.0|b=None|i=None|col=None] [ records state transitions with an emoji icon. The micro-endpoints are listed in Table 5.3.|font=None|sz=None|b=None|i=None|col=None]
+
+P221 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None]
+
+P222 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 5.6: Entity-relationship diagram of the GoalMate database
+  RUNS: [Figure 5.6: |font=None|sz=11.0|b=True|i=None|col=None] [Entity-relationship diagram of the |font=None|sz=11.0|b=None|i=None|col=None] [GoalMate|font=None|sz=11.0|b=None|i=None|col=None] [ database|font=None|sz=11.0|b=None|i=None|col=None]
+
+P223 [style=Normal|align=CENTER (1)|sb=8.0|sa=4.0|line=1.0]:
+  TEXT: Table 5.3: API endpoints
+  RUNS: [Table 5.3: |font=None|sz=11.0|b=True|i=None|col=None] [API endpoints|font=None|sz=11.0|b=None|i=None|col=None]
+
+P224 [style=Normal|align=None|sb=0|sa=0|line=127000]:
+  TEXT: 
+  RUNS: 
+
+P225 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Access to the workspace requires signing in, and passwords are processed by the hashing utilities of backend/auth.py. The GEMINI_API_KEY is loaded from .env and used only inside the server process; it never appears in client-side HTML, JavaScript or network payloads, and .env and database files are excluded from version control through .gitignore.
+  RUNS: [Access to the workspace requires signing in, and passwords are processed by the hashing utilities of |font=None|sz=None|b=None|i=None|col=None] [backend/auth.py|font=Courier New|sz=11.0|b=None|i=None|col=None] [. The |font=None|sz=None|b=None|i=None|col=None] [GEMINI_API_KEY|font=Courier New|sz=11.0|b=None|i=None|col=None] [ is loaded |font=None|sz=None|b=None|i=None|col=None] [from |font=None|sz=None|b=None|i=None|col=None] [.env|font=Courier New|sz=11.0|b=None|i=None|col=None] [ and used only inside the server process; it never appears in client-side HTML, JavaScript or network payloads, |font=None|sz=None|b=None|i=None|col=None] [and |font=None|sz=None|b=None|i=None|col=None] [.env|font=Courier New|sz=11.0|b=None|i=None|col=None] [ and database files are excluded from version control |font=None|sz=None|b=None|i=None|col=None] [through |font=None|sz=None|b=None|i=None|col=None] [.|font=Courier New|sz=11.0|b=None|i=None|col=None] [gitignore|font=Courier New|sz=11.0|b=None|i=None|col=None] [.|font=None|sz=None|b=None|i=None|col=None]
+
+P226 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 5.4 Simulation and Results
+  RUNS: [5.4 Simulation and Results|font=None|sz=None|b=None|i=None|col=None]
+
+P227 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: The system was verified with test_acceptance.py, which runs eight acceptance tests against the live SQLite database and the Gemini API. All eight passed (Table 5.4).
+  RUNS: [The system was verified with |font=None|sz=None|b=None|i=None|col=None] [test_acceptance.py|font=Courier New|sz=11.0|b=None|i=None|col=None] [, which runs eight acceptance tests against the live SQLite database and the Gemini API. All eight passed (Table 5.4).|font=None|sz=None|b=None|i=None|col=None]
+
+P228 [style=Normal|align=CENTER (1)|sb=8.0|sa=4.0|line=1.0]:
+  TEXT: Table 5.4: Acceptance test results
+  RUNS: [Table 5.4: |font=None|sz=11.0|b=True|i=None|col=None] [Acceptance test results|font=None|sz=11.0|b=None|i=None|col=None]
+
+P229 [style=Normal|align=None|sb=0|sa=0|line=127000]:
+  TEXT: 
+  RUNS: 
+
+P230 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: For the Angular request the agent produced a 30-day goal (deadline 2026-10-19) with the seven milestones shown in Figure 4.2 and sixteen progressive tasks assigned to daily offsets. The user interface is shown in Figures 5.7 to 5.10. Figure 5.7 is the Log In page with the “Welcome back!” card.
+  RUNS: [For the Angular request the agent produced a 30-day goal (deadline 2026-10-19) with the seven milestones shown in Figure 4.2 and sixteen progressive tasks assigned to daily offsets. The user |font=None|sz=None|b=None|i=None|col=None] [interface is shown in Figures 5.7 to 5.10. Figure 5.7 is the Log In page with the “Welcome back!” |font=None|sz=None|b=None|i=None|col=None] [|font=None|sz=None|b=None|i=None|col=None] [card.|font=None|sz=None|b=None|i=None|col=None]
+
+P231 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P232 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 5.7: Log In page
+  RUNS: [Figure 5.7: |font=None|sz=11.0|b=True|i=None|col=None] [Log In page|font=None|sz=11.0|b=None|i=None|col=None]
+
+P233 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Figure 5.8 shows the main dashboard after login: the goals sidebar, hero banner, Current Goals card, Quick Stats, Today’s Tasks, Progress Timeline and the AI Coach panel. In the chat, the coach asked for the duration of a sports routine and, on receiving “1 month”, created a 30-day
+  RUNS: [Figure 5.8 shows the main dashboard after login: the goals sidebar, hero banner, Current Goals card, Quick Stats, Today’s Tasks, Progress Timeline and the AI Coach panel. In the chat, the coach asked for the duration of a sports routine and, on receiving “1 month”, created a 30-day|font=None|sz=None|b=None|i=None|col=None]
+
+P234 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT:  “Sports Daily Routine for Volleyball” plan with five milestones. 
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None] [ “Sports Daily Routine for Volleyball” plan with five milestones.|font=None|sz=None|b=None|i=None|col=None] [ |font=None|sz=None|b=None|i=None|col=None]
+
+P235 [style=Normal|align=None|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P236 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 5.8: Main dashboard with AI Coach conversation
+  RUNS: [Figure 5.8: |font=None|sz=11.0|b=True|i=None|col=None] [Main dashboard with AI Coach conversation|font=None|sz=11.0|b=None|i=None|col=None]
+
+P237 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Figure 5.9 shows the Milestones card with per-milestone progress and the Progress Graph, a smooth Catmull-Rom curve of day-wise completion with three metrics: today’s percentage (67 %), weekly average (64 %) and peak day (Friday, 100 %).
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None] [Figure 5.9 shows the Milestones card with per-milestone progress and the Progress Graph, a smooth Catmull-Rom curve of day-wise completion with three metrics: today’s percentage (67 %), weekly average (64 %) and peak day (Friday, 100 %).|font=None|sz=None|b=None|i=None|col=None]
+
+P238 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P239 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 5.9: Milestones, timeline and progress graph
+  RUNS: [Figure 5.9: |font=None|sz=11.0|b=True|i=None|col=None] [Milestones, timeline and progress graph|font=None|sz=11.0|b=None|i=None|col=None]
+
+P240 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Selecting a goal opens the detail view (Figure 5.10) with overall completion (17 % for “Build an App”, 3 of 18 tasks, 50 days remaining), a milestone stepper roadmap, the Ongoing and Upcoming task lists and the pace-tracking card.
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None] [Selecting a goal opens the detail view (Figure 5.10) with overall completion (17 % for “Build an App”, 3 of 18 tasks, 50 days remaining), a milestone stepper roadmap, the Ongoing and Upcoming task lists and the pace-tracking card.|font=None|sz=None|b=None|i=None|col=None]
+
+P241 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P242 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 5.10: Goal detail view with milestone stepper and pace tracking
+  RUNS: [Figure 5.10: |font=None|sz=11.0|b=True|i=None|col=None] [Goal detail view with milestone stepper and pace tracking|font=None|sz=11.0|b=None|i=None|col=None]
+
+P243 [style=Heading 1|align=None|sb=18.0|sa=0|line=None]:
+  TEXT: Chapter 6
+  RUNS: [Chapter 6|font=None|sz=None|b=None|i=None|col=None]
+
+P244 [style=Normal|align=CENTER (1)|sb=6.0|sa=3.0|line=None]:
+  TEXT: Prior Art and Related Work (Literature Survey)
+  RUNS: [Prior Art and Related Work (Literature Survey)|font=None|sz=16.0|b=True|i=None|col=None]
+
+P245 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 6.1 Introduction
+  RUNS: [6.1 Introduction|font=None|sz=None|b=None|i=None|col=None]
+
+P246 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: This chapter surveys existing tools and research and identifies the gap that GoalMate addresses.
+  RUNS: [This chapter surveys existing tools and research and identifies the gap that |font=None|sz=None|b=None|i=None|col=None] [GoalMate|font=None|sz=None|b=None|i=None|col=None] [ addresses.|font=None|sz=None|b=None|i=None|col=None]
+
+P247 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 6.2 Existing Technologies
+  RUNS: [6.2 Existing Technologies|font=None|sz=None|b=None|i=None|col=None]
+
+P248 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Task managers such as Todoist and Trello capture tasks and send reminders, but they are passive: the user decides the tasks, due dates and adjustments. LLM chat assistants produce a roadmap as text, with no completion tracking or structured rescheduling. Figure 6.1 positions these approaches against GoalMate.
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None] [Task managers|font=None|sz=None|b=True|i=None|col=None] [ such as |font=None|sz=None|b=None|i=None|col=None] [Todoist|font=None|sz=None|b=None|i=None|col=None] [ and Trello capture tasks and send reminders, but they are passive: the user decides the tasks, due dates and adjustments. |font=None|sz=None|b=None|i=None|col=None] [LLM chat assistants|font=None|sz=None|b=True|i=None|col=None] [ produce a roadmap as text, with no completion tracking or structured rescheduling. Figure 6.1 positions these approaches against |font=None|sz=None|b=None|i=None|col=None] [GoalMate|font=None|sz=None|b=None|i=None|col=None] [.|font=None|sz=None|b=None|i=None|col=None]
+
+P249 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P250 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 6.1: Qualitative positioning of GoalMate against existing approaches
+  RUNS: [Figure 6.1: |font=None|sz=11.0|b=True|i=None|col=None] [Qualitative positioning of |font=None|sz=11.0|b=None|i=None|col=None] [GoalMate|font=None|sz=11.0|b=None|i=None|col=None] [ against existing approaches|font=None|sz=11.0|b=None|i=None|col=None]
+
+P251 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 6.3 Related Work
+  RUNS: [6.3 Related Work|font=None|sz=None|b=None|i=None|col=None]
+
+P252 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Goals and habits. Locke and Latham report that specific goals with feedback improve performance [1]; Gollwitzer showed that implementation intentions (when and where to act) raise the likelihood of goal attainment [2]; and habits took a median of 66 days to become automatic [12], which motivates dated daily tasks and streaks.
+  RUNS: [Goals and habits.|font=None|sz=None|b=True|i=None|col=None] [ Locke and Latham report that specific goals with feedback improve performance [1]; Gollwitzer showed that implementation intentions (when and where to act) raise the likelihood of goal attainment [2]; and habits took a median of 66 days to become automatic [12], which motivates dated daily tasks and streaks.|font=None|sz=None|b=None|i=None|col=None]
+
+P253 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: LLM-based agents. ReAct interleaves reasoning with tool actions [5]; Toolformer showed that models can learn which APIs to call [13]; a survey organises agents into profile, memory, planning and action modules [14]; and generative agents combine memory, reflection and planning [15]. GoalMate applies these ideas with a function-calling loop and a database as memory.
+  RUNS: [LLM-based agents.|font=None|sz=None|b=True|i=None|col=None] [ |font=None|sz=None|b=None|i=None|col=None] [ReAct|font=None|sz=None|b=None|i=None|col=None] [ interleaves reasoning with tool actions [5]; |font=None|sz=None|b=None|i=None|col=None] [Toolformer|font=None|sz=None|b=None|i=None|col=None] [ showed that models can learn which APIs to call [13]; a survey |font=None|sz=None|b=None|i=None|col=None] [organises|font=None|sz=None|b=None|i=None|col=None] [ agents into profile, memory, planning and action modules [14]; and generative agents combine memory, reflection and |font=None|sz=None|b=None|i=None|col=None] [planning [15]. |font=None|sz=None|b=None|i=None|col=None] [GoalMate|font=None|sz=None|b=None|i=None|col=None] [ applies these ideas with a function-calling loop and a database as memory.|font=None|sz=None|b=None|i=None|col=None]
+
+P254 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 6.4 Summary
+  RUNS: [6.4 Summary|font=None|sz=None|b=None|i=None|col=None]
+
+P255 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: Task managers offer persistence without intelligence; LLM chat offers intelligence without persistence. GoalMate combines both.
+  RUNS: [Task managers offer persistence without intelligence; LLM chat offers intelligence without persistence. |font=None|sz=None|b=None|i=None|col=None] [GoalMate|font=None|sz=None|b=None|i=None|col=None] [ combines both.|font=None|sz=None|b=None|i=None|col=None]
+
+P256 [style=Heading 1|align=None|sb=18.0|sa=0|line=None]:
+  TEXT: Chapter 7
+  RUNS: [Chapter 7|font=None|sz=None|b=None|i=None|col=None]
+
+P257 [style=Normal|align=CENTER (1)|sb=6.0|sa=3.0|line=None]:
+  TEXT: Applications and Deployment Areas
+  RUNS: [Applications and Deployment Areas|font=None|sz=16.0|b=True|i=None|col=None]
+
+P258 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 7.1 Applications
+  RUNS: [7.1 Applications|font=None|sz=None|b=None|i=None|col=None]
+
+P259 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: GoalMate suits any goal that can be broken into dated steps (Figure 7.1): learning frameworks such as Angular, preparing for exams and interviews (for example Data Structures and Algorithms), language practice, fitness and sports routines (the volleyball routine in the demonstration), project planning (“Build an App”) and professional upskilling within limited daily time.
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None] [GoalMate|font=None|sz=None|b=None|i=None|col=None] [ suits any goal that can be broken into dated steps (Figure 7.1): learning frameworks such as Angular, preparing for exams and interviews (for example Data Structures and Algorithms), language practice, fitness and sports routines (the volleyball routine in the demonstration), project planning (“Build an App”) and professional upskilling within limited daily time.|font=None|sz=None|b=None|i=None|col=None]
+
+P260 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P261 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 7.1: Application areas of GoalMate
+  RUNS: [Figure 7.1: |font=None|sz=11.0|b=True|i=None|col=None] [Application areas of |font=None|sz=11.0|b=None|i=None|col=None] [GoalMate|font=None|sz=11.0|b=None|i=None|col=None]
+
+P262 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 7.2 Deployment Areas
+  RUNS: [7.2 Deployment Areas|font=None|sz=None|b=None|i=None|col=None]
+
+P263 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: The current implementation runs locally as a personal web application, started with python app.py. For production, the architecture can be packaged in a multi-stage Docker image based on python:3.12-slim, the database replaced by managed PostgreSQL through DATABASE_URL, and Uvicorn workers run behind a reverse proxy (Nginx or Traefik) with TLS under Kubernetes or systemd (Figure 7.2). An installable Progressive Web App layer would extend it to mobile use.
+  RUNS: [The current implementation runs locally as a personal web application, started with |font=None|sz=None|b=None|i=None|col=None] [python app.py|font=Courier New|sz=11.0|b=None|i=None|col=None] [. For production, the architecture can be packaged in a multi-stage Docker image based on |font=None|sz=None|b=None|i=None|col=None] [python:3.12-slim|font=Courier New|sz=11.0|b=None|i=None|col=None] [, the database replaced by managed PostgreSQL through |font=None|sz=None|b=None|i=None|col=None] [DATABASE_URL|font=Courier New|sz=11.0|b=None|i=None|col=None] [, and |font=None|sz=None|b=None|i=None|col=None] [Uvicorn|font=None|sz=None|b=None|i=None|col=None] [ workers run behind a reverse proxy (Nginx or |font=None|sz=None|b=None|i=None|col=None] [Traefik|font=None|sz=None|b=None|i=None|col=None] [) with TLS under Kubernetes or |font=None|sz=None|b=None|i=None|col=None] [systemd|font=None|sz=None|b=None|i=None|col=None] [ (Figure 7.2). An installable Progressive Web App layer would extend it to mobile use.|font=None|sz=None|b=None|i=None|col=None]
+
+P264 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None]
+
+P265 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 7.2: Current local deployment and future cloud deployment
+  RUNS: [Figure 7.2: |font=None|sz=11.0|b=True|i=None|col=None] [Current local deployment and future cloud deployment|font=None|sz=11.0|b=None|i=None|col=None]
+
+P266 [style=Heading 1|align=None|sb=18.0|sa=0|line=None]:
+  TEXT: Chapter 8
+  RUNS: [Chapter 8|font=None|sz=None|b=None|i=None|col=None]
+
+P267 [style=Normal|align=CENTER (1)|sb=6.0|sa=3.0|line=None]:
+  TEXT: Conclusion and Future Scope
+  RUNS: [Conclusion and Future Scope|font=None|sz=16.0|b=True|i=None|col=None]
+
+P268 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 8.1 Conclusion
+  RUNS: [8.1 Conclusion|font=None|sz=None|b=None|i=None|col=None]
+
+P269 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: This project designed and implemented an AI Agent for Personal Goal Tracking, realised as GoalMate. By combining Gemini’s native function calling with eight database-backed tools, the system turns one natural-language sentence into a persisted plan of milestones and date-assigned daily tasks, tracks real progress on a reactive dashboard and a habit-analytics Progress page behind a Sign Up / Log In screen, and adapts the plan when the user misses tasks, has limited time or changes the deadline. Answers are always read from the database, which removes the risk of invented progress, and all eight acceptance tests passed. Current limitations are:
+  RUNS: [This project designed and implemented an AI Agent for Personal Goal Tracking, |font=None|sz=None|b=None|i=None|col=None] [realised|font=None|sz=None|b=None|i=None|col=None] [ as |font=None|sz=None|b=None|i=None|col=None] [GoalMate|font=None|sz=None|b=None|i=None|col=None] [. By combining Gemini’s native function calling with eight database-backed tools, the system turns one natural-language sentence into a persisted plan of milestones and date-assigned daily tasks, tracks real progress on a reactive dashboard and a habit-analytics Progress page behind a Sign Up / Log In screen, and adapts the plan when the user |font=None|sz=None|b=None|i=None|col=None] [misses|font=None|sz=None|b=None|i=None|col=None] [ tasks, has limited time or changes the deadline. Answers are always read from the database, which removes the risk of invented progress, and all eight acceptance tests passed. Current limitations are:|font=None|sz=None|b=None|i=None|col=None]
+
+P270 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: SQLite write concurrency: the database file is locked during writes, limiting concurrent use without migrating to PostgreSQL.
+  RUNS: [SQLite write concurrency:|font=None|sz=None|b=True|i=None|col=None] [ the database file is locked during writes, limiting concurrent use without migrating to PostgreSQL.|font=None|sz=None|b=None|i=None|col=None]
+
+P271 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Synchronous tool dispatch: tools in agent/tools.py run synchronously rather than through asynchronous I/O.
+  RUNS: [Synchronous tool dispatch:|font=None|sz=None|b=True|i=None|col=None] [ tools in |font=None|sz=None|b=None|i=None|col=None] [agent/tools.py|font=Courier New|sz=11.0|b=None|i=None|col=None] [ run synchronously rather than through asynchronous I/O.|font=None|sz=None|b=None|i=None|col=None]
+
+P272 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: No calendar synchronisation: tasks are tracked only inside the application.
+  RUNS: [No calendar |font=None|sz=None|b=True|i=None|col=None] [synchronisation|font=None|sz=None|b=True|i=None|col=None] [:|font=None|sz=None|b=True|i=None|col=None] [ tasks are tracked only inside the application.|font=None|sz=None|b=None|i=None|col=None]
+
+P273 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Unused search dependency: the Tavily package in requirements.txt is not declared in agent/tools.py.
+  RUNS: [Unused search dependency:|font=None|sz=None|b=True|i=None|col=None] [ the |font=None|sz=None|b=None|i=None|col=None] [Tavily|font=None|sz=None|b=None|i=None|col=None] [ package in |font=None|sz=None|b=None|i=None|col=None] [requirements.txt|font=Courier New|sz=11.0|b=None|i=None|col=None] [ is not declared in |font=None|sz=None|b=None|i=None|col=None] [agent/tools.py|font=Courier New|sz=11.0|b=None|i=None|col=None] [.|font=None|sz=None|b=None|i=None|col=None]
+
+P274 [style=Normal|align=CENTER (1)|sb=6.0|sa=2.0|line=1.0]:
+  TEXT: 
+  RUNS: [|font=None|sz=None|b=None|i=None|col=None]
+
+P275 [style=Normal|align=CENTER (1)|sb=2.0|sa=8.0|line=1.0]:
+  TEXT: Figure 8.1: Delivered features and future scope
+  RUNS: [Figure 8.1: |font=None|sz=11.0|b=True|i=None|col=None] [Delivered features and future scope|font=None|sz=11.0|b=None|i=None|col=None]
+
+P276 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 8.2 Future Scope
+  RUNS: [8.2 Future Scope|font=None|sz=None|b=None|i=None|col=None]
+
+P277 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: PostgreSQL and asynchronous drivers for high-concurrency cloud scaling.
+  RUNS: [PostgreSQL and asynchronous drivers|font=None|sz=None|b=True|i=None|col=None] [ for high-concurrency cloud scaling.|font=None|sz=None|b=None|i=None|col=None]
+
+P278 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: External calendar synchronisation through iCalendar (WebCAL) feeds and Google Calendar integration.
+  RUNS: [External calendar |font=None|sz=None|b=True|i=None|col=None] [synchronisation|font=None|sz=None|b=True|i=None|col=None] [ through iCalendar (|font=None|sz=None|b=None|i=None|col=None] [WebCAL|font=None|sz=None|b=None|i=None|col=None] [) feeds and Google Calendar integration.|font=None|sz=None|b=None|i=None|col=None]
+
+P279 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Web-search enrichment: wiring the Tavily dependency into the tools to attach live tutorial links to tasks.
+  RUNS: [Web-search enrichment:|font=None|sz=None|b=True|i=None|col=None] [ wiring the |font=None|sz=None|b=None|i=None|col=None] [Tavily|font=None|sz=None|b=None|i=None|col=None] [ dependency into the tools to attach live tutorial links to tasks.|font=None|sz=None|b=None|i=None|col=None]
+
+P280 [style=Normal|align=None|sb=0|sa=2.5|line=1.4166666666666667]:
+  TEXT: Progressive Web App support with a service worker and manifest for installable, offline-capable mobile use.
+  RUNS: [Progressive Web App support|font=None|sz=None|b=True|i=None|col=None] [ with a service worker and manifest for installable, offline-capable mobile use.|font=None|sz=None|b=None|i=None|col=None]
+
+P281 [style=Heading 1|align=None|sb=18.0|sa=0|line=None]:
+  TEXT: Chapter 9
+  RUNS: [Chapter 9|font=None|sz=None|b=None|i=None|col=None]
+
+P282 [style=Normal|align=CENTER (1)|sb=6.0|sa=3.0|line=None]:
+  TEXT: GitHub Link and Short Code
+  RUNS: [GitHub Link and Short Code|font=None|sz=16.0|b=True|i=None|col=None]
+
+P283 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 9.1 GitHub Repository
+  RUNS: [9.1 GitHub Repository|font=None|sz=None|b=None|i=None|col=None]
+
+P284 [style=Normal|align=LEFT (0)|sb=0|sa=6.0|line=1.5]:
+  TEXT: GitHub link: <GitHub repository URL to be added>
+  RUNS: [GitHub link:|font=None|sz=None|b=True|i=None|col=None] [ <GitHub repository URL to be added>|font=None|sz=None|b=None|i=None|col=None]
+
+P285 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 9.2 Project File Structure
+  RUNS: [9.2 Project File Structure|font=None|sz=None|b=None|i=None|col=None]
+
+P286 [style=Normal|align=CENTER (1)|sb=8.0|sa=4.0|line=1.0]:
+  TEXT: Listing 9.1: Project file structure
+  RUNS: [Listing 9.1: |font=None|sz=11.0|b=True|i=None|col=None] [Project file structure|font=None|sz=11.0|b=None|i=None|col=None]
+
+P287 [style=Normal|align=LEFT (0)|sb=3.0|sa=0|line=1.0]:
+  TEXT: goalmate/
+  RUNS: [goalmate|font=Courier New|sz=8.5|b=None|i=None|col=None] [/|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P288 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: ├── app.py             # Entry point (FastAPI + Gradio + Uvicorn)
+  RUNS: [├── app.py             # Entry point (|font=Courier New|sz=8.5|b=None|i=None|col=None] [FastAPI|font=Courier New|sz=8.5|b=None|i=None|col=None] [ + |font=Courier New|sz=8.5|b=None|i=None|col=None] [Gradio|font=Courier New|sz=8.5|b=None|i=None|col=None] [ + |font=Courier New|sz=8.5|b=None|i=None|col=None] [Uvicorn|font=Courier New|sz=8.5|b=None|i=None|col=None] [)|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P289 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: ├── config.py          # Paths, model and environment settings
+  RUNS: [├── config.py          # Paths, model and environment settings|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P290 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: ├── requirements.txt   # Python dependencies
+  RUNS: [├── requirements.txt   # Python dependencies|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P291 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: ├── agent/
+  RUNS: [├── agent/|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P292 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: │   ├── llm.py         # Gemini REST client, prompt, agent loop
+  RUNS: [│   ├── llm.py         # Gemini REST client, prompt, agent loop|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P293 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: │   └── tools.py       # TOOL_DECLARATIONS and tool execution
+  RUNS: [│   └── tools.py       # TOOL_DECLARATIONS and tool execution|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P294 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: ├── backend/
+  RUNS: [├── backend/|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P295 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: │   ├── models.py      # Goal, Milestone, Task, ActivityLog
+  RUNS: [│   ├── models.py      # Goal, Milestone, Task, |font=Courier New|sz=8.5|b=None|i=None|col=None] [ActivityLog|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P296 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: │   ├── services.py    # Toggling, replanning, streaks, analytics
+  RUNS: [│   ├── services.py    # Toggling, replanning, streaks, analytics|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P297 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: │   ├── auth.py        # Sign-up / login helpers
+  RUNS: [│   ├── auth.py        # Sign-up / login helpers|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P298 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: │   └── database.py    # SQLite engine, sessions, FK pragma
+  RUNS: [│   └── database.py    # SQLite engine, sessions, FK pragma|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P299 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: ├── ui/
+  RUNS: [├── |font=Courier New|sz=8.5|b=None|i=None|col=None] [ui|font=Courier New|sz=8.5|b=None|i=None|col=None] [/|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P300 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: │   ├── dashboard.py   # Gradio layout, chat events, JS bridge
+  RUNS: [│   ├── dashboard.py   # |font=Courier New|sz=8.5|b=None|i=None|col=None] [Gradio|font=Courier New|sz=8.5|b=None|i=None|col=None] [ layout, chat events, JS bridge|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P301 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: │   ├── components.py  # HTML cards, Catmull-Rom SVG curves
+  RUNS: [│   ├── |font=Courier New|sz=8.5|b=None|i=None|col=None] [components.py  #|font=Courier New|sz=8.5|b=None|i=None|col=None] [ HTML cards, Catmull-Rom SVG curves|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P302 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: │   └── styles.py      # CSS stylesheet
+  RUNS: [│   └── styles.py      # CSS stylesheet|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P303 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: ├── data/goalmate.db   # SQLite database
+  RUNS: [├── data/|font=Courier New|sz=8.5|b=None|i=None|col=None] [goalmate.db|font=Courier New|sz=8.5|b=None|i=None|col=None] [   # SQLite database|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P304 [style=Normal|align=LEFT (0)|sb=0|sa=3.0|line=1.0]:
+  TEXT: └── test_acceptance.py # 8-step acceptance test suite
+  RUNS: [└── test_acceptance.py # 8-step acceptance test suite|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P305 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P306 [style=Heading 2|align=None|sb=10.0|sa=3.0|line=None]:
+  TEXT: 9.3 Short Code Excerpts
+  RUNS: [9.3 Short Code Excerpts|font=None|sz=None|b=None|i=None|col=None]
+
+P307 [style=Normal|align=None|sb=0|sa=6.0|line=1.5]:
+  TEXT: The excerpts are simplified to show the core ideas; the full code is in the repository.
+  RUNS: [The excerpts are simplified to show the core ideas; the full code is in the repository.|font=None|sz=None|b=None|i=None|col=None]
+
+P308 [style=Normal|align=CENTER (1)|sb=8.0|sa=4.0|line=1.0]:
+  TEXT: Listing 9.2: Agent loop with Gemini function calling (agent/llm.py)
+  RUNS: [Listing 9.2: |font=None|sz=11.0|b=True|i=None|col=None] [Agent loop with Gemini function calling (agent/llm.py)|font=None|sz=11.0|b=None|i=None|col=None]
+
+P309 [style=Normal|align=LEFT (0)|sb=3.0|sa=0|line=1.0]:
+  TEXT: def agent_chat(history, user_msg, max_tool_loops=4):
+  RUNS: [def |font=Courier New|sz=8.5|b=None|i=None|col=None] [agent_|font=Courier New|sz=8.5|b=None|i=None|col=None] [chat|font=Courier New|sz=8.5|b=None|i=None|col=None] [(|font=Courier New|sz=8.5|b=None|i=None|col=None] [history, |font=Courier New|sz=8.5|b=None|i=None|col=None] [user_msg|font=Courier New|sz=8.5|b=None|i=None|col=None] [, |font=Courier New|sz=8.5|b=None|i=None|col=None] [max_tool_loops|font=Courier New|sz=8.5|b=None|i=None|col=None] [=4):|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P310 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:     contents = build_contents(history, user_msg)
+  RUNS: [    contents = |font=Courier New|sz=8.5|b=None|i=None|col=None] [build_|font=Courier New|sz=8.5|b=None|i=None|col=None] [contents|font=Courier New|sz=8.5|b=None|i=None|col=None] [(|font=Courier New|sz=8.5|b=None|i=None|col=None] [history, |font=Courier New|sz=8.5|b=None|i=None|col=None] [user_msg|font=Courier New|sz=8.5|b=None|i=None|col=None] [)|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P311 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:     for _ in range(max_tool_loops):
+  RUNS: [    for _ in range(|font=Courier New|sz=8.5|b=None|i=None|col=None] [max_tool_loops|font=Courier New|sz=8.5|b=None|i=None|col=None] [):|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P312 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:         resp = call_gemini(contents, system=SYSTEM_PROMPT,
+  RUNS: [        resp = |font=Courier New|sz=8.5|b=None|i=None|col=None] [call_|font=Courier New|sz=8.5|b=None|i=None|col=None] [gemini|font=Courier New|sz=8.5|b=None|i=None|col=None] [(|font=Courier New|sz=8.5|b=None|i=None|col=None] [contents, system=SYSTEM_PROMPT,|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P313 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:                            tools=[{"function_declarations": TOOL_DECLARATIONS}])
+  RUNS: [                           tools|font=Courier New|sz=8.5|b=None|i=None|col=None] [=[|font=Courier New|sz=8.5|b=None|i=None|col=None] [{"|font=Courier New|sz=8.5|b=None|i=None|col=None] [function_declarations|font=Courier New|sz=8.5|b=None|i=None|col=None] [": TOOL_DECLARATIONS}])|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P314 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:         part = resp["candidates"][0]["content"]["parts"][0]
+  RUNS: [        part = resp["candidates"][|font=Courier New|sz=8.5|b=None|i=None|col=None] [0][|font=Courier New|sz=8.5|b=None|i=None|col=None] ["content|font=Courier New|sz=8.5|b=None|i=None|col=None] ["][|font=Courier New|sz=8.5|b=None|i=None|col=None] ["parts"][0]|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P315 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:         if "functionCall" not in part:
+  RUNS: [        if "|font=Courier New|sz=8.5|b=None|i=None|col=None] [functionCall|font=Courier New|sz=8.5|b=None|i=None|col=None] [" not in part:|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P316 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:             return part["text"]            # final natural-language answer
+  RUNS: [            return part["text|font=Courier New|sz=8.5|b=None|i=None|col=None] ["]   |font=Courier New|sz=8.5|b=None|i=None|col=None] [         # final natural-language answer|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P317 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:         name = part["functionCall"]["name"]
+  RUNS: [        name = part["|font=Courier New|sz=8.5|b=None|i=None|col=None] [functionCall|font=Courier New|sz=8.5|b=None|i=None|col=None] ["][|font=Courier New|sz=8.5|b=None|i=None|col=None] ["name"]|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P318 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:         result = execute_tool(name, part["functionCall"]["args"])
+  RUNS: [        result = |font=Courier New|sz=8.5|b=None|i=None|col=None] [execute_|font=Courier New|sz=8.5|b=None|i=None|col=None] [tool|font=Courier New|sz=8.5|b=None|i=None|col=None] [(|font=Courier New|sz=8.5|b=None|i=None|col=None] [name, part["|font=Courier New|sz=8.5|b=None|i=None|col=None] [functionCall|font=Courier New|sz=8.5|b=None|i=None|col=None] ["][|font=Courier New|sz=8.5|b=None|i=None|col=None] ["|font=Courier New|sz=8.5|b=None|i=None|col=None] [args|font=Courier New|sz=8.5|b=None|i=None|col=None] ["])|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P319 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:         contents.append({"role": "model", "parts": [part]})
+  RUNS: [        |font=Courier New|sz=8.5|b=None|i=None|col=None] [contents.append|font=Courier New|sz=8.5|b=None|i=None|col=None] [({"role": "model", "parts": [part]})|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P320 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:         contents.append({"role": "user", "parts": [{"functionResponse": {
+  RUNS: [        |font=Courier New|sz=8.5|b=None|i=None|col=None] [contents.append|font=Courier New|sz=8.5|b=None|i=None|col=None] [({"role": "user", "parts": [{"|font=Courier New|sz=8.5|b=None|i=None|col=None] [functionResponse|font=Courier New|sz=8.5|b=None|i=None|col=None] [": {|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P321 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:             "name": name, "response": {"result": result}}}]})
+  RUNS: [            "name": name, "response": {"result": result}}}]})|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P322 [style=Normal|align=LEFT (0)|sb=0|sa=3.0|line=1.0]:
+  TEXT:     return "I could not complete that request."
+  RUNS: [    return "I could not complete that request."|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P323 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P324 [style=Normal|align=CENTER (1)|sb=8.0|sa=4.0|line=1.0]:
+  TEXT: Listing 9.3: Catmull-Rom to cubic Bezier segment (ui/components.py)
+  RUNS: [Listing 9.3: |font=None|sz=11.0|b=True|i=None|col=None] [Catmull-Rom to cubic Bezier segment (|font=None|sz=11.0|b=None|i=None|col=None] [ui|font=None|sz=11.0|b=None|i=None|col=None] [/components.py)|font=None|sz=11.0|b=None|i=None|col=None]
+
+P325 [style=Normal|align=LEFT (0)|sb=3.0|sa=0|line=1.0]:
+  TEXT: TAU = 0.28
+  RUNS: [TAU = 0.28|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P326 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:  
+  RUNS: [ |font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P327 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT: def bezier_segment(p0, p1, p2, p3, top, base):
+  RUNS: [def |font=Courier New|sz=8.5|b=None|i=None|col=None] [bezier_|font=Courier New|sz=8.5|b=None|i=None|col=None] [segment|font=Courier New|sz=8.5|b=None|i=None|col=None] [(|font=Courier New|sz=8.5|b=None|i=None|col=None] [p0, p1, p2, p3, top, base):|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P328 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:     cp1x = p1.x + (p2.x - p0.x) * TAU
+  RUNS: [    cp1x = p1.x + (p2.x - p0.x) * TAU|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P329 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:     cp1y = max(top, min(base, p1.y + (p2.y - p0.y) * TAU))
+  RUNS: [    cp1y = |font=Courier New|sz=8.5|b=None|i=None|col=None] [max(|font=Courier New|sz=8.5|b=None|i=None|col=None] [top, |font=Courier New|sz=8.5|b=None|i=None|col=None] [min(|font=Courier New|sz=8.5|b=None|i=None|col=None] [base, p1.y + (p2.y - p0.y) * TAU))|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P330 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:     cp2x = p2.x - (p3.x - p1.x) * TAU
+  RUNS: [    cp2x = p2.x - (p3.x - p1.x) * TAU|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P331 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:     cp2y = max(top, min(base, p2.y - (p3.y - p1.y) * TAU))
+  RUNS: [    cp2y = |font=Courier New|sz=8.5|b=None|i=None|col=None] [max(|font=Courier New|sz=8.5|b=None|i=None|col=None] [top, |font=Courier New|sz=8.5|b=None|i=None|col=None] [min(|font=Courier New|sz=8.5|b=None|i=None|col=None] [base, p2.y - (p3.y - p1.y) * TAU))|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P332 [style=Normal|align=LEFT (0)|sb=0|sa=0|line=1.0]:
+  TEXT:     return (f"C {cp1x:.1f} {cp1y:.1f}, {cp2x:.1f} {cp2y:.1f}, "
+  RUNS: [    return (|font=Courier New|sz=8.5|b=None|i=None|col=None] [f"C|font=Courier New|sz=8.5|b=None|i=None|col=None] [ {cp1x:.1f} {cp1y:.1f}, {cp2x:.1f} {cp2y:.1f}, "|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P333 [style=Normal|align=LEFT (0)|sb=0|sa=3.0|line=1.0]:
+  TEXT:             f"{p2.x:.1f} {p2.y:.1f}")
+  RUNS: [            f"{p2.x:.1f} {p2.y:.1f}")|font=Courier New|sz=8.5|b=None|i=None|col=None]
+
+P334 [style=Normal|align=None|sb=0|sa=0|line=1.0]:
+  TEXT: 
+  RUNS: 
+
+P335 [style=Heading 1|align=None|sb=0|sa=0|line=None]:
+  TEXT: References / Bibliography
+  RUNS: [References / Bibliography|font=None|sz=None|b=None|i=None|col=None]
+
+P336 [style=Normal|align=None|sb=0|sa=5.0|line=1.25]:
+  TEXT: [1]	E. A. Locke and G. P. Latham, “Building a practically useful theory of goal setting and task motivation: A 35-year odyssey,” American Psychologist, vol. 57, no. 9, pp. 705–717, 2002.
+  RUNS: [[1]|font=None|sz=10.0|b=None|i=None|col=None] [	E. A. Locke and G. P. Latham, “Building a practically useful theory of goal setting and task motivation: A 35-year odyssey,” |font=None|sz=10.0|b=None|i=None|col=None] [American Psychologist|font=None|sz=10.0|b=None|i=True|col=None] [, vol. 57, no. 9, pp. 705–717, 2002.|font=None|sz=10.0|b=None|i=None|col=None]
+
+P337 [style=Normal|align=None|sb=0|sa=5.0|line=1.25]:
+  TEXT: [2]	P. M. Gollwitzer, “Implementation intentions: Strong effects of simple plans,” American Psychologist, vol. 54, no. 7, pp. 493–503, 1999.
+  RUNS: [[2]|font=None|sz=10.0|b=None|i=None|col=None] [	P. M. Gollwitzer, “Implementation intentions: Strong effects of simple plans,” |font=None|sz=10.0|b=None|i=None|col=None] [American Psychologist|font=None|sz=10.0|b=None|i=True|col=None] [, vol. 54, no. 7, pp. 493–503, 1999.|font=None|sz=10.0|b=None|i=None|col=None]
+
+P338 [style=Normal|align=None|sb=0|sa=5.0|line=1.25]:
+  TEXT: [3]	Gemini Team, Google, “Gemini: A family of highly capable multimodal models,” arXiv:2312.11805, 2023.
+  RUNS: [[3]|font=None|sz=10.0|b=None|i=None|col=None] [	Gemini Team, Google, “Gemini: A family of highly capable multimodal models,” arXiv:2312.11805, 2023.|font=None|sz=10.0|b=None|i=None|col=None]
+
+P339 [style=Normal|align=None|sb=0|sa=5.0|line=1.25]:
+  TEXT: [4]	Google, “Gemini API documentation: Function calling,” Google AI for Developers. [Online]. Available: https://ai.google.dev/docs
+  RUNS: [[4]|font=None|sz=10.0|b=None|i=None|col=None] [	Google, “Gemini API documentation: Function calling,” Google AI for Developers. [Online]. Available: https://ai.google.dev/docs|font=None|sz=10.0|b=None|i=None|col=None]
+
+P340 [style=Normal|align=None|sb=0|sa=5.0|line=1.25]:
+  TEXT: [5]	S. Yao et al., “ReAct: Synergizing reasoning and acting in language models,” in Proc. Int. Conf. Learning Representations (ICLR), 2023.
+  RUNS: [[5]|font=None|sz=10.0|b=None|i=None|col=None] [	S. Yao |font=None|sz=10.0|b=None|i=None|col=None] [et al.|font=None|sz=10.0|b=None|i=True|col=None] [, “|font=None|sz=10.0|b=None|i=None|col=None] [ReAct|font=None|sz=10.0|b=None|i=None|col=None] [: Synergizing reasoning and acting in language models,” in |font=None|sz=10.0|b=None|i=None|col=None] [Proc. Int. Conf. Learning Representations (ICLR)|font=None|sz=10.0|b=None|i=True|col=None] [, 2023.|font=None|sz=10.0|b=None|i=None|col=None]
+
+P341 [style=Normal|align=None|sb=0|sa=5.0|line=1.25]:
+  TEXT: [6]	M. Bayer, “SQLAlchemy: The database toolkit for Python.” [Online]. Available: https://www.sqlalchemy.org/
+  RUNS: [[6]|font=None|sz=10.0|b=None|i=None|col=None] [	M. Bayer, “|font=None|sz=10.0|b=None|i=None|col=None] [SQLAlchemy|font=None|sz=10.0|b=None|i=None|col=None] [: The database toolkit for Python.” [Online]. Available: https://www.sqlalchemy.org/|font=None|sz=10.0|b=None|i=None|col=None]
+
+P342 [style=Normal|align=None|sb=0|sa=5.0|line=1.25]:
+  TEXT: [7]	D. R. Hipp, “SQLite: An embeddable SQL database engine.” [Online]. Available: https://www.sqlite.org/
+  RUNS: [[7]|font=None|sz=10.0|b=None|i=None|col=None] [	D. R. Hipp, “SQLite: An embeddable SQL database engine.” [Online]. Available: https://www.sqlite.org/|font=None|sz=10.0|b=None|i=None|col=None]
+
+P343 [style=Normal|align=None|sb=0|sa=5.0|line=1.25]:
+  TEXT: [8]	A. Abid et al., “Gradio: Hassle-free sharing and testing of ML models in the wild,” arXiv:1906.02569, 2019.
+  RUNS: [[8]|font=None|sz=10.0|b=None|i=None|col=None] [	A. Abid |font=None|sz=10.0|b=None|i=None|col=None] [et al.|font=None|sz=10.0|b=None|i=True|col=None] [, “|font=None|sz=10.0|b=None|i=None|col=None] [Gradio|font=None|sz=10.0|b=None|i=None|col=None] [: Hassle-free sharing and testing of ML models in the wild,” arXiv:1906.02569, 2019.|font=None|sz=10.0|b=None|i=None|col=None]
+
+P344 [style=Normal|align=None|sb=0|sa=5.0|line=1.25]:
+  TEXT: [9]	S. Ramírez, “FastAPI: High performance, easy to learn, fast to code, ready for production.” [Online]. Available: https://fastapi.tiangolo.com/
+  RUNS: [[9]|font=None|sz=10.0|b=None|i=None|col=None] [	S. Ramírez, “|font=None|sz=10.0|b=None|i=None|col=None] [FastAPI|font=None|sz=10.0|b=None|i=None|col=None] [: High performance, easy to learn, fast to code, ready for production.” [Online]. Available: https://fastapi.tiangolo.com/|font=None|sz=10.0|b=None|i=None|col=None]
+
+P345 [style=Normal|align=None|sb=0|sa=5.0|line=1.25]:
+  TEXT: [10]	E. Catmull and R. Rom, “A class of local interpolating splines,” in Computer Aided Geometric Design, R. E. Barnhill and R. F. Riesenfeld, Eds. New York, NY, USA: Academic Press, 1974, pp. 317–326.
+  RUNS: [[10]|font=None|sz=10.0|b=None|i=None|col=None] [	E. Catmull and R. Rom, “A class of local interpolating splines,” in |font=None|sz=10.0|b=None|i=None|col=None] [Computer Aided Geometric Design|font=None|sz=10.0|b=None|i=True|col=None] [, R. E. Barnhill and R. F. Riesenfeld, Eds. New York, NY, USA: Academic Press, 1974, pp. 317–326.|font=None|sz=10.0|b=None|i=None|col=None]
+
+P346 [style=Normal|align=None|sb=0|sa=5.0|line=1.25]:
+  TEXT: [11]	M. Jones, J. Bradley, and N. Sakimura, “JSON Web Token (JWT),” RFC 7519, Internet Engineering Task Force (IETF), May 2015.
+  RUNS: [[11]|font=None|sz=10.0|b=None|i=None|col=None] [	M. Jones, J. Bradley, and N. |font=None|sz=10.0|b=None|i=None|col=None] [Sakimura|font=None|sz=10.0|b=None|i=None|col=None] [, “JSON Web Token (JWT),” RFC 7519, Internet Engineering Task Force (IETF), May 2015.|font=None|sz=10.0|b=None|i=None|col=None]
+
+P347 [style=Normal|align=None|sb=0|sa=5.0|line=1.25]:
+  TEXT: [12]	P. Lally, C. H. M. van Jaarsveld, H. W. W. Potts, and J. Wardle, “How are habits formed: Modelling habit formation in the real world,” European Journal of Social Psychology, vol. 40, no. 6, pp. 998–1009, 2010.
+  RUNS: [[12]|font=None|sz=10.0|b=None|i=None|col=None] [	P. Lally, C. H. M. van Jaarsveld, H. W. W. Potts, and J. Wardle, “How are habits formed: Modelling habit formation in the real world,” |font=None|sz=10.0|b=None|i=None|col=None] [European Journal of Social Psychology|font=None|sz=10.0|b=None|i=True|col=None] [, vol. 40, no. 6, pp. 998–1009, 2010.|font=None|sz=10.0|b=None|i=None|col=None]
+
+P348 [style=Normal|align=None|sb=0|sa=5.0|line=1.25]:
+  TEXT: [13]	T. Schick et al., “Toolformer: Language models can teach themselves to use tools,” in Advances in Neural Information Processing Systems (NeurIPS), 2023.
+  RUNS: [[13]|font=None|sz=10.0|b=None|i=None|col=None] [	T. Schick |font=None|sz=10.0|b=None|i=None|col=None] [et al.|font=None|sz=10.0|b=None|i=True|col=None] [, “|font=None|sz=10.0|b=None|i=None|col=None] [Toolformer|font=None|sz=10.0|b=None|i=None|col=None] [: Language models can teach themselves to use tools,” in |font=None|sz=10.0|b=None|i=None|col=None] [Advances in Neural Information Processing Systems (|font=None|sz=10.0|b=None|i=True|col=None] [NeurIPS|font=None|sz=10.0|b=None|i=True|col=None] [)|font=None|sz=10.0|b=None|i=True|col=None] [, 2023.|font=None|sz=10.0|b=None|i=None|col=None]
+
+P349 [style=Normal|align=None|sb=0|sa=5.0|line=1.25]:
+  TEXT: [14]	L. Wang et al., “A survey on large language model based autonomous agents,” Frontiers of Computer Science, vol. 18, no. 6, Art. no. 186345, 2024.
+  RUNS: [[14]|font=None|sz=10.0|b=None|i=None|col=None] [	L. Wang |font=None|sz=10.0|b=None|i=None|col=None] [et al.|font=None|sz=10.0|b=None|i=True|col=None] [, “A survey on large language model based autonomous agents,” |font=None|sz=10.0|b=None|i=None|col=None] [Frontiers of Computer Science|font=None|sz=10.0|b=None|i=True|col=None] [, vol. 18, no. 6, Art. no. 186345, 2024.|font=None|sz=10.0|b=None|i=None|col=None]
+
+P350 [style=Normal|align=None|sb=0|sa=5.0|line=1.25]:
+  TEXT: [15]	J. S. Park et al., “Generative agents: Interactive simulacra of human behavior,” in Proc. 36th Annu. ACM Symp. User Interface Software and Technology (UIST), 2023.
+  RUNS: [[15]|font=None|sz=10.0|b=None|i=None|col=None] [	J. S. Park |font=None|sz=10.0|b=None|i=None|col=None] [et al.|font=None|sz=10.0|b=None|i=True|col=None] [, “Generative agents: Interactive simulacra of human behavior,” in |font=None|sz=10.0|b=None|i=None|col=None] [Proc. 36th Annu. ACM Symp. User Interface Software and Technology (UIST)|font=None|sz=10.0|b=None|i=True|col=None] [, 2023.|font=None|sz=10.0|b=None|i=None|col=None]
+

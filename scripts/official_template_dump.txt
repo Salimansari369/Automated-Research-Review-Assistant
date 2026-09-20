@@ -1,0 +1,220 @@
+P000 [style=normal|align=CENTER (1)]: 
+P001 [style=normal|align=CENTER (1)]: 
+P002 [style=normal|align=CENTER (1)]: A PROJECT REPORT
+P003 [style=normal|align=CENTER (1)]: 
+P004 [style=normal|align=CENTER (1)]: ON
+P005 [style=normal|align=CENTER (1)]: 
+P006 [style=normal|align=CENTER (1)]: “<PROJECT TITLE NAME>”
+P007 [style=normal|align=CENTER (1)]: 
+P008 [style=normal|align=CENTER (1)]: 
+P009 [style=normal|align=CENTER (1)]: A project report submitted in partial fulfilment of the requirements for the degree of Bachelor of Technology in Computer Science and Engineering
+P010 [style=normal|align=CENTER (1)]: 
+P011 [style=normal|align=CENTER (1)]: 
+P012 [style=normal|align=CENTER (1)]: 
+P013 [style=normal|align=CENTER (1)]: BACHELOR OF TECHNOLOGY COMPUTER SCIENCE AND ENGINEERING
+P014 [style=normal|align=CENTER (1)]: 
+P015 [style=normal|align=CENTER (1)]: 
+P016 [style=normal|align=CENTER (1)]: Submitted By
+P017 [style=normal|align=CENTER (1)]: <Student1 Name (PRN)>
+
+P018 [style=normal|align=None]: 
+P019 [style=normal|align=None]: 
+P020 [style=normal|align=CENTER (1)]: 
+P021 [style=normal|align=CENTER (1)]: UNDER THE GUIDANCE OF
+P022 [style=normal|align=CENTER (1)]: 
+P023 [style=normal|align=CENTER (1)]: Dr./Prof. <XYZ>
+P024 [style=normal|align=CENTER (1)]: 
+P025 [style=normal|align=CENTER (1)]: <Designation>
+P026 [style=normal|align=None]: 
+P027 [style=normal|align=CENTER (1)]: 
+P028 [style=normal|align=CENTER (1)]: 
+P029 [style=normal|align=CENTER (1)]: DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
+P030 [style=normal|align=CENTER (1)]: AY 2026-27
+P031 [style=normal|align=CENTER (1)]: 
+P032 [style=normal|align=CENTER (1)]: DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
+P033 [style=normal|align=CENTER (1)]: 
+P034 [style=normal|align=CENTER (1)]: 
+P035 [style=normal|align=CENTER (1)]: 
+CERTIFICATE
+P036 [style=normal|align=None]: This is to certify that the Project work entitled “<Title of the Project>” is carried out by the <Name of the Students>, in partial fulfillment for the award of the degree of Bachelor of Technology in Computer Science and Engineering, Symbiosis International (Deemed University), Pune during the academic year 2026-2027.
+P037 [style=normal|align=None]: 
+P038 [style=normal|align=CENTER (1)]: 
+P039 [style=Heading 2|align=None]: DECLARATION
+P040 [style=normal|align=None]: I hereby declare that the project titled “<Project title>” submitted to Symbiosis Institute of Technology, a constituent of Symbiosis International (Deemed University) Pune, for the award of the degree of Bachelor of Technology in Computer Science and Engineering, is a result of original research carried out by me. I understand that my report may be made electronically available to the public. It is further declared that the project report or any part thereof has not been previously submitted to any University or Institute for the award of any degree or diploma.
+P041 [style=normal|align=LEFT (0)]: Name of Student <1>: <XYZ (PRN)>  
+P042 [style=normal|align=LEFT (0)]: 
+P043 [style=normal|align=LEFT (0)]: 	
+P044 [style=normal|align=LEFT (0)]: Degree: 	Bachelor of Technology in CSE
+P045 [style=normal|align=LEFT (0)]: Department: 	Computer Science and Engineering
+P046 [style=normal|align=LEFT (0)]: Title of the project: < Title of the project >
+P047 [style=normal|align=LEFT (0)]: 
+P048 [style=normal|align=LEFT (0)]: <Student1 Name and Signature> 
+P049 [style=normal|align=LEFT (0)]: Date: 
+P050 [style=normal|align=None]: 					
+P051 [style=Heading 2|align=JUSTIFY (3)]: Declaration
+P052 [style=Heading 2|align=JUSTIFY (3)]: We hereby declare that the project entitled “TITLE”, submitted by me for the purpose of processing under the IPR framework, is not an industry-sponsored project.
+P053 [style=Heading 2|align=JUSTIFY (3)]: We further provide my full consent to SIT Nagpur and SCRI Pune to evaluate, process, and proceed with the filing of the Intellectual Property Rights (IPR) application for the said idea.
+P054 [style=Heading 2|align=None]: 
+P055 [style=Heading 2|align=None]: 
+P056 [style=Heading 2|align=None]: 
+P057 [style=Heading 2|align=LEFT (0)]: Student Signature
+P058 [style=normal|align=None]: Student Name
+P059 [style=normal|align=None]: 
+P060 [style=normal|align=None]: 
+P061 [style=normal|align=None]: 
+P062 [style=normal|align=None]: Dr. Shreyas Rajendra Hole
+P063 [style=normal|align=None]: 
+P064 [style=normal|align=None]: 
+P065 [style=normal|align=None]: Mr. Parag Naik
+P066 [style=normal|align=None]: 
+P067 [style=Heading 2|align=None]: 
+P068 [style=Heading 2|align=None]: 
+P069 [style=Heading 2|align=None]: 
+P070 [style=Heading 2|align=None]: 
+P071 [style=Heading 2|align=None]: 
+P072 [style=Heading 2|align=None]: 
+P073 [style=Heading 2|align=None]: 
+P074 [style=Heading 2|align=None]: 
+P075 [style=Heading 2|align=None]: 
+P076 [style=Heading 2|align=None]: 
+P077 [style=Heading 2|align=None]: 
+P078 [style=Heading 2|align=None]: 
+P079 [style=Heading 2|align=None]: 
+P080 [style=Heading 2|align=None]: 
+P081 [style=Heading 2|align=None]: 
+P082 [style=Heading 2|align=None]: 
+P083 [style=Heading 2|align=None]: 
+P084 [style=Heading 2|align=None]: ABSTRACT
+P085 [style=normal|align=None]: This electronic document is a “live” template and already defines the components of your report <Font size:11, Bold, Times New Roman> in its style sheet.    
+P086 [style=normal|align=None]: 
+P087 [style=normal|align=None]: Keywords—component, formatting, style, styling, insert (key words) < Font size:10, Times New Roman Bold, Italic>
+P088 [style=normal|align=None]: 
+P089 [style=normal|align=None]: 
+P090 [style=Heading 2|align=None]: TABLE OF CONTENTS
+P091 [style=normal|align=JUSTIFY (3)]: 
+P092 [style=normal|align=RIGHT (2)]: Page
+P093 [style=normal|align=JUSTIFY (3)]: 
+P094 [style=normal|align=None]: Certificate                                                                                                                          i
+P095 [style=normal|align=JUSTIFY (3)]: Declaration	ii
+P096 [style=normal|align=JUSTIFY (3)]: Abstract	iv
+P097 [style=normal|align=JUSTIFY (3)]: Table of Contents	v
+P098 [style=normal|align=JUSTIFY (3)]: CHAPTER 1: BACKGROUND AND TECHNICAL OVERVIEW	1
+P099 [style=normal|align=JUSTIFY (3)]: CHAPTER 2: PROBLEM STATEMENT AND MOTIVATION	3
+P100 [style=normal|align=JUSTIFY (3)]: CHAPTER 3: NOVELTY AND INNOVATIVE CONTRIBUTIONS	4
+P101 [style=normal|align=JUSTIFY (3)]: CHAPTER 4: TECHNICAL ADVANTAGES AND PRACTICAL USEFULNESS	5
+P102 [style=normal|align=JUSTIFY (3)]: CHAPTER 5: DETAILED METHODOLOGY / SYSTEM ARCHITECTURE	6
+P103 [style=normal|align=JUSTIFY (3)]: CHAPTER 6: PRIOR ART AND RELATED WORK (Literature Survey) CHAPTER 7: APPLICATIONS AND DEPLOYMENT AREAS
+P104 [style=normal|align=JUSTIFY (3)]: CHAPTER 8: CONCLUSION AND FUTURE SCOPE	13
+P105 [style=normal|align=JUSTIFY (3)]: CHAPTER 9: GITHUB LINK AND SHORT CODE	14
+P106 [style=normal|align=None]: REFERENCES APPENDICES
+P107 [style=normal|align=None]: 
+P108 [style=normal|align=None]: 
+P109 [style=Heading 1|align=None]: Chapter 1
+P110 [style=normal|align=CENTER (1)]: Background and Technical Overview
+P111 [style=normal|align=JUSTIFY (3)]: 
+P112 [style=Heading 2|align=None]: 1.1 Background
+P113 [style=normal|align=None]: 
+P114 [style=Heading 2|align=None]: 1.2 Objectives
+P115 [style=normal|align=None]: 
+P116 [style=normal|align=None]: 
+P117 [style=normal|align=None]: 
+P118 [style=normal|align=None]: 
+P119 [style=normal|align=None]: 
+P120 [style=normal|align=None]: 
+P121 [style=normal|align=None]: 
+P122 [style=normal|align=None]: 
+P123 [style=normal|align=None]: 
+P124 [style=normal|align=None]: 
+P125 [style=normal|align=None]: 
+P126 [style=Heading 2|align=None]: 1.3 Hardware  Components
+P127 [style=Heading 1|align=None]: 
+P128 [style=Heading 1|align=None]: 
+P129 [style=Heading 1|align=None]: 
+P130 [style=Heading 1|align=None]: 
+P131 [style=Heading 1|align=None]: 
+P132 [style=Heading 1|align=None]: 
+P133 [style=Heading 1|align=None]: 
+P134 [style=Heading 1|align=None]: 
+P135 [style=Heading 1|align=None]: 
+P136 [style=Heading 1|align=None]: 
+P137 [style=Heading 1|align=None]: 
+P138 [style=Heading 1|align=None]: 
+P139 [style=Heading 1|align=None]: 
+P140 [style=Heading 1|align=None]: 
+P141 [style=Heading 1|align=None]: 
+P142 [style=Heading 1|align=None]: 
+P143 [style=Heading 1|align=None]: 
+P144 [style=Heading 1|align=None]: 
+P145 [style=Heading 1|align=None]: 
+P146 [style=Heading 1|align=None]: 
+P147 [style=Heading 1|align=None]: 
+P148 [style=Heading 1|align=None]: Chapter 2
+P149 [style=normal|align=CENTER (1)]: Problem Statement and Motivation
+P150 [style=Heading 2|align=None]: 2.1 Problem Statement
+P151 [style=normal|align=None]: 
+P152 [style=Heading 2|align=None]: 2.2 Motivation
+P153 [style=Heading 1|align=None]: 
+P154 [style=Heading 1|align=None]: 
+P155 [style=Heading 1|align=None]: 
+P156 [style=Heading 1|align=None]: 
+P157 [style=Heading 1|align=None]: 
+P158 [style=Heading 1|align=None]: 
+P159 [style=Heading 1|align=None]: 
+P160 [style=Heading 1|align=None]: 
+P161 [style=Heading 1|align=None]: 
+P162 [style=Heading 1|align=None]: 
+P163 [style=Heading 1|align=None]: 
+P164 [style=Heading 1|align=None]: Chapter 3
+P165 [style=normal|align=CENTER (1)]: Novelty and Innovative Contributions
+P166 [style=normal|align=JUSTIFY (3)]: 
+P167 [style=Heading 2|align=None]: 3.1 Novelty
+P168 [style=Heading 2|align=None]: 3.2 Innovative   Contributions
+P169 [style=Heading 1|align=None]: Chapter 4
+P170 [style=normal|align=CENTER (1)]: Technical Advantages and Practical Usefulness
+P171 [style=Heading 2|align=None]: 4.1 Technical Advantages
+P172 [style=Heading 2|align=None]: 4.2 Practical Usefulness
+P173 [style=Heading 1|align=None]: Chapter 5
+P174 [style=normal|align=CENTER (1)]: Detailed Methodology / System Architecture
+P175 [style=Heading 2|align=None]: 5.1 System Architecture
+P176 [style=normal|align=None]: 
+P177 [style=Heading 2|align=None]: 5.2 Working Principle
+P178 [style=Heading 2|align=None]: 5.3 Circuit Connections
+P179 [style=normal|align=None]: 
+P180 [style=Heading 2|align=None]: 5.4 Simulation
+P181 [style=Heading 1|align=None]: 
+P182 [style=Heading 1|align=None]: 
+P183 [style=Heading 1|align=None]: 
+P184 [style=Heading 1|align=None]: 
+P185 [style=Heading 1|align=None]: 
+P186 [style=Heading 1|align=None]: 
+P187 [style=Heading 1|align=None]: 
+P188 [style=Heading 1|align=None]: 
+P189 [style=Heading 1|align=None]: 
+P190 [style=Heading 1|align=None]: 
+P191 [style=Heading 1|align=None]: 
+P192 [style=Heading 1|align=None]: 
+P193 [style=normal|align=None]: 
+P194 [style=normal|align=None]: 
+P195 [style=Heading 1|align=None]: Chapter 6
+P196 [style=normal|align=CENTER (1)]: Prior Art and Related Work (Literature Survey)
+P197 [style=Heading 2|align=None]: 6.1 Introduction
+P198 [style=Heading 2|align=None]: 6.2 Existing Technologies
+P199 [style=normal|align=LEFT (0)]: D
+P200 [style=Heading 2|align=None]: 6.3 Related Work
+P201 [style=Heading 2|align=None]: 6.4 Summary
+P202 [style=Heading 1|align=LEFT (0)]: Chapter 7 Applications and Deployment Areas
+P203 [style=Heading 2|align=None]: 7.1 Applications
+P204 [style=Heading 2|align=None]: 7.2 Deployment Areas
+P205 [style=normal|align=None]: 
+P206 [style=normal|align=None]: 
+P207 [style=normal|align=None]: 
+P208 [style=normal|align=None]: 
+P209 [style=normal|align=None]: 
+P210 [style=normal|align=None]: 
+P211 [style=normal|align=None]: 
+P212 [style=Heading 1|align=LEFT (0)]: Chapter 8 Conclusion and Future Scope
+P213 [style=Heading 2|align=None]: 8.1 Conclusion
+P214 [style=Heading 2|align=None]: 8.2 Future Scope
+P215 [style=Heading 1|align=None]: References / Bibliography
+P216 [style=normal|align=JUSTIFY (3)]: 
+P217 [style=normal|align=CENTER (1)]: 
