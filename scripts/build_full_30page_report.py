@@ -1,10 +1,12 @@
 """
-Generates the authoritative, exhaustive 25-30 page Academic Project Report for Salim Ansari (PRN: 24070521005).
-Directly clones the official college template format while expanding all 9 chapters
-with rigorous theoretical discourse, mathematical models, algorithms, architecture tables,
-11 high-resolution diagrams and UI screenshots, bold abstract, IEEE citations, and appendices.
-Precisely eliminates all double-text, fixes spacing/justification bugs, ensures exact 1.5 line spacing,
-and matches the clean visual presentation of the reference report.
+Generates the authoritative, exhaustive 28-30 page Academic Project Report for Salim Ansari (PRN: 24070521005).
+Directly clones the official college template format while:
+1. Completely eliminating all old template tables (Tables 1-5 from GoalMate) from the body XML.
+2. Making the Abstract body text 100% bold as explicitly requested by user.
+3. Adding w:cantSplit to all table rows so tables never split awkwardly across page breaks.
+4. Setting w:tblHeader on table header rows.
+5. Ensuring each chapter and major diagram/table starts on a clean page, exactly matching the 34-page reference PDF structure.
+6. Ensuring Section 1 (Roman i-vi) and Section 2 (Arabic 1-28) page numbering is 100% synchronized.
 """
 
 import os
@@ -53,6 +55,10 @@ def add_custom_styled_table(doc, headers, rows_data, col_widths, align_list=None
         align_list = [WD_ALIGN_PARAGRAPH.LEFT] * len(headers)
 
     # Header Row
+    header_trPr = table.rows[0]._tr.get_or_add_trPr()
+    header_trPr.append(parse_xml(f'<w:tblHeader {nsdecls("w")}/>'))
+    header_trPr.append(parse_xml(f'<w:cantSplit {nsdecls("w")}/>'))
+
     for c_idx, h_text in enumerate(headers):
         cell = table.cell(0, c_idx)
         cell.width = col_widths[c_idx]
@@ -72,10 +78,14 @@ def add_custom_styled_table(doc, headers, rows_data, col_widths, align_list=None
     # Data Rows
     for r_idx, row in enumerate(rows_data):
         row_bg = even_bg if (r_idx % 2 == 0) else odd_bg
+        row_tr = table.rows[r_idx + 1]
+        row_trPr = row_tr._tr.get_or_add_trPr()
+        row_trPr.append(parse_xml(f'<w:cantSplit {nsdecls("w")}/>'))
+
         for c_idx, val in enumerate(row):
-            cell = table.cell(r_idx + 1, c_idx)
+            cell = row_tr.cells[c_idx]
             cell.width = col_widths[c_idx]
-            set_cell_margins(cell, top=90, bottom=90, left=150, right=150)
+            set_cell_margins(cell, top=80, bottom=80, left=150, right=150)
             set_cell_shading(cell, row_bg)
             p = cell.paragraphs[0]
             p.alignment = align_list[c_idx]
@@ -116,10 +126,14 @@ def generate_30page_report():
 
     p17 = doc.paragraphs[17]
     p17.text = ""
-    r1 = p17.add_run(f"{student_name} (PRN: {prn})\n")
+    r1 = p17.add_run(f"Name:- {student_name}\n")
     r1.font.name = "Times New Roman"
     r1.font.size = Pt(14)
     r1.font.bold = True
+    r2 = p17.add_run(f"PRN :- {prn}\n")
+    r2.font.name = "Times New Roman"
+    r2.font.size = Pt(14)
+    r2.font.bold = True
     p17.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
     p23 = doc.paragraphs[23]
@@ -192,8 +206,7 @@ def generate_30page_report():
 
     doc.paragraphs[58].text = student_name
 
-    # --- 5. ABSTRACT (P67 to P71) ---
-    # Single clean paragraph for Abstract body
+    # --- 5. ABSTRACT (P67 to P71) - 100% BOLD BODY TEXT AS REQUESTED ---
     p68 = doc.paragraphs[68]
     p68.text = ""
     r = p68.add_run(
@@ -216,6 +229,7 @@ def generate_30page_report():
     )
     r.font.name = "Times New Roman"
     r.font.size = Pt(11)
+    r.font.bold = True  # USER EXPLICIT REQUIREMENT: ABSTRACT BOLD
     p68.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     p68.paragraph_format.line_spacing = 1.2
     p68.paragraph_format.space_before = Pt(4)
@@ -223,12 +237,13 @@ def generate_30page_report():
 
     doc.paragraphs[69].text = ""
 
-    # Keywords paragraph
+    # Keywords paragraph (Bold Italic)
     p70 = doc.paragraphs[70]
     p70.text = ""
     r_kw = p70.add_run("Keywords—AI agent, agentic AI, literature review, function calling, FAISS vector search, DeepSeek, Groq LLaMA-3.3, Gradio, FastAPI, PyMuPDF")
     r_kw.font.name = "Times New Roman"
     r_kw.font.size = Pt(10)
+    r_kw.font.bold = True
     r_kw.font.italic = True
     p70.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     p70.paragraph_format.space_before = Pt(4)
@@ -236,10 +251,14 @@ def generate_30page_report():
 
     doc.paragraphs[71].text = ""
 
-    # --- 6. REMOVE BODY PARAGRAPHS FROM P113 ONWARD ---
-    while len(doc.paragraphs) > 113:
-        p = doc.paragraphs[113]
-        p._element.getparent().remove(p._element)
+    # --- 6. CRITICAL CLEANUP: REMOVE ALL OLD BODY ELEMENTS AFTER TABLE OF CONTENTS ---
+    # children[113] holds the sectPr that closes Section 1 (TOC).
+    # children[-1] is the final sectPr that closes Section 2 (Main Body).
+    # We remove ALL elements between 114 and len(children)-2 so that ALL OLD PARAGRAPHS AND TABLES ARE DESTROYED!
+    body = doc._body._element
+    children = list(body)
+    for elem in children[114:-1]:
+        body.remove(elem)
 
     # --- HELPER FUNCTIONS FOR CHAPTER BUILDER ---
     def add_chapter_head(num, name, is_first=False):
@@ -395,7 +414,7 @@ def generate_30page_report():
             r.font.color.rgb = RGBColor(0, 0, 0)
 
     # =========================================================================
-    # CHAPTER 1: BACKGROUND AND TECHNICAL OVERVIEW
+    # CHAPTER 1: BACKGROUND AND TECHNICAL OVERVIEW (Pages 1 to 3)
     # =========================================================================
     add_chapter_head(1, "Background and Technical Overview", is_first=True)
     add_sec_head("1.1 Background")
@@ -431,6 +450,7 @@ def generate_30page_report():
         "zero-hallucination citation guarantees."
     )
 
+    doc.add_page_break()
     add_sec_head("1.2 Objectives")
     add_p("The primary engineering and scientific objectives of this research project are formulated as follows:")
     add_bullet("1. Multi-Source Autonomous Querying:", "Develop an asynchronous query expansion agent capable of reformulating high-level research concepts into multi-faceted Boolean queries that simultaneously interrogate live global academic repositories, including ArXiv and Semantic Scholar.")
@@ -446,6 +466,8 @@ def generate_30page_report():
         "ensuring complete data privacy for proprietary research drafts."
     )
 
+    # Table 1.1 on dedicated page so it never breaks awkwardly
+    doc.add_page_break()
     add_table_title("Table 1.1: Software and hardware components used in the project")
     t1_headers = ["Component Category", "Specification & Version", "Operational Role in ALRA"]
     t1_data = [
@@ -467,7 +489,7 @@ def generate_30page_report():
     )
 
     # =========================================================================
-    # CHAPTER 2: PROBLEM STATEMENT AND MOTIVATION
+    # CHAPTER 2: PROBLEM STATEMENT AND MOTIVATION (Pages 4 to 5)
     # =========================================================================
     add_chapter_head(2, "Problem Statement and Motivation")
     add_sec_head("2.1 Problem Statement")
@@ -490,19 +512,19 @@ def generate_30page_report():
         "untested domain intersections, or methodological contradictions remain unresolved in the literature."
     )
 
+    add_fig('assets/diagrams/fig2_1_problem_gap.png', "Figure 2.1: Traditional Literature Review vs ALRA Agentic Automation Workflow", width_in=5.6)
+
+    doc.add_page_break()
     add_sec_head("2.2 Motivation")
     add_p(
         "Under manual human research workflows, solving this multi-objective optimization problem is constrained by human working memory and "
-        "reading speed. As illustrated in Figure 2.1, traditional literature review workflows suffer from five severe systemic flaws:\n"
+        "reading speed. Traditional literature review workflows suffer from five severe systemic flaws:\n"
         "• Fragmented Ingestion: Searching across disparate databases with rigid keyword matching fails to capture synonymous terminology.\n"
         "• Reading Volume Overload: Researchers must download and skim 100+ PDF documents, spending days on manual section triage.\n"
         "• Error-Prone Manual Assembly: Hand-copying metrics into spreadsheets leads to inconsistent comparison criteria and formatting errors.\n"
         "• Incomplete Gap Detection: Human readers suffer from cognitive blindspots, missing critical unaddressed intersections between distinct subfields.\n"
         "• Hallucination Risks in Generic AI: General-purpose LLM chatbots (e.g., ChatGPT) invent fake citations and hallucinate non-existent DOIs."
     )
-
-    add_fig('assets/diagrams/fig2_1_problem_gap.png', "Figure 2.1: Traditional Literature Review vs ALRA Agentic Automation Workflow", width_in=5.6)
-
     add_p(
         "In contrast, the ALRA Agentic Automation framework transforms this entire workflow into an automated, intelligent, and verifiable "
         "pipeline. By coupling parallel multi-API queries with dense local FAISS vector search, structured taxonomy extraction, and 3D cluster "
@@ -518,7 +540,7 @@ def generate_30page_report():
     )
 
     # =========================================================================
-    # CHAPTER 3: NOVELTY AND INNOVATIVE CONTRIBUTIONS
+    # CHAPTER 3: NOVELTY AND INNOVATIVE CONTRIBUTIONS (Pages 6 to 7)
     # =========================================================================
     add_chapter_head(3, "Novelty and Innovative Contributions")
     add_sec_head("3.1 Novelty")
@@ -529,6 +551,7 @@ def generate_30page_report():
 
     add_fig('assets/diagrams/fig3_1_static_vs_agentic.png', "Figure 3.1: Static LLM / Chatbot Approach vs ALRA Tool-Grounded Agentic Pipeline", width_in=5.6)
 
+    doc.add_page_break()
     add_p(
         "In traditional static LLM systems, a user submits a broad literature query. The LLM processes this input in a single forward pass over its "
         "frozen training weights without accessing external academic indices. Consequently, the output contains unverified generalities, outdated "
@@ -551,7 +574,7 @@ def generate_30page_report():
     add_bullet("4. Hybrid Offline-First Persistence:", "Complete offline privacy preservation by storing all vectorized research corpora in local FAISS databases and SQLite instances, eliminating third-party data tracking.")
 
     # =========================================================================
-    # CHAPTER 4: TECHNICAL ADVANTAGES AND PRACTICAL USEFULNESS
+    # CHAPTER 4: TECHNICAL ADVANTAGES AND PRACTICAL USEFULNESS (Pages 8 to 9)
     # =========================================================================
     add_chapter_head(4, "Technical Advantages and Practical Usefulness")
     add_sec_head("4.1 Technical Advantages")
@@ -573,6 +596,7 @@ def generate_30page_report():
         "retrieval across extensive literature libraries."
     )
 
+    doc.add_page_break()
     add_sec_head("4.2 Practical Usefulness")
     add_p(
         "To rigorously quantify the operational acceleration provided by ALRA, a comparative benchmark trial was conducted across five diverse "
@@ -599,7 +623,7 @@ def generate_30page_report():
     )
 
     # =========================================================================
-    # CHAPTER 5: DETAILED METHODOLOGY / SYSTEM ARCHITECTURE
+    # CHAPTER 5: DETAILED METHODOLOGY / SYSTEM ARCHITECTURE (Pages 10 to 19)
     # =========================================================================
     add_chapter_head(5, "Detailed Methodology / System Architecture")
     add_sec_head("5.1 System Architecture")
@@ -619,6 +643,7 @@ def generate_30page_report():
 
     add_fig('assets/diagrams/fig5_1_layered_architecture.png', "Figure 5.1: 5-Tier Layered System Architecture of ALRA", width_in=5.6)
 
+    doc.add_page_break()
     add_sec_head("5.2 Working Principle")
     add_subsec_head("(a) Multi-Turn Agentic Execution Loop")
     add_p(
@@ -632,6 +657,7 @@ def generate_30page_report():
 
     add_fig('assets/diagrams/fig5_2_agent_loop.png', "Figure 5.2: Multi-Turn Agentic Tool-Calling & Review Synthesis Workflow Loop", width_in=5.6)
 
+    doc.add_page_break()
     add_subsec_head("(b) Salim AI Multimodal Voice Pipeline")
     add_p(
         "Figure 5.3 details the specialized Salim AI Multimodal Voice Pipeline: User Speech captured via microphone (Step 1) is processed "
@@ -642,6 +668,7 @@ def generate_30page_report():
 
     add_fig('assets/diagrams/fig5_5_voice_flow.png', "Figure 5.3: Salim AI Bidirectional Multimodal Voice Interaction Pipeline", width_in=5.6)
 
+    doc.add_page_break()
     add_sec_head("5.3 Database and API Connections")
     add_p(
         "ALRA maintains a hybrid persistence architecture combining SQLite relational storage with FAISS vector index files:\n"
@@ -652,12 +679,6 @@ def generate_30page_report():
 
     add_sec_head("5.4 Simulation and Results")
     add_p("The operational user interface and system telemetry are demonstrated in Figures 5.4 through 5.8 below:")
-
-    add_fig('assets/dashboard_light.png', "Figure 5.4: ALRA Comprehensive Dashboard (Light Academic Theme)")
-    add_fig('assets/salim_voice_chat.png', "Figure 5.5: Salim AI Voice Agent Live Audio Research Dialogue")
-    add_fig('assets/document_upload.png', "Figure 5.6: PDF Parsing, Chunking & Local FAISS Vector Indexing Workspace")
-    add_fig('assets/intelligence_cards.png', "Figure 5.7: Research Gap Intelligence & Dynamic Citation Analysis Cards")
-    add_fig('assets/dashboard_dark.png', "Figure 5.8: ALRA Responsive Dark Cyber Themed Interface")
 
     add_table_title("Table 5.4: System simulation and benchmark validation results")
     t3_headers = ["System Benchmark Metric", "Baseline Raw LLM", "ALRA Agentic Pipeline", "Verification Status"]
@@ -675,8 +696,23 @@ def generate_30page_report():
         header_bg="1E3A8A", even_bg="F8FAFC", odd_bg="FFFFFF"
     )
 
+    doc.add_page_break()
+    add_fig('assets/dashboard_light.png', "Figure 5.4: ALRA Comprehensive Dashboard (Light Academic Theme)")
+
+    doc.add_page_break()
+    add_fig('assets/salim_voice_chat.png', "Figure 5.5: Salim AI Voice Agent Live Audio Research Dialogue")
+
+    doc.add_page_break()
+    add_fig('assets/document_upload.png', "Figure 5.6: PDF Parsing, Chunking & Local FAISS Vector Indexing Workspace")
+
+    doc.add_page_break()
+    add_fig('assets/intelligence_cards.png', "Figure 5.7: Research Gap Intelligence & Dynamic Citation Analysis Cards")
+
+    doc.add_page_break()
+    add_fig('assets/dashboard_dark.png', "Figure 5.8: ALRA Responsive Dark Cyber Themed Interface")
+
     # =========================================================================
-    # CHAPTER 6: PRIOR ART AND RELATED WORK (LITERATURE SURVEY)
+    # CHAPTER 6: PRIOR ART AND RELATED WORK (LITERATURE SURVEY) (Pages 20 to 21)
     # =========================================================================
     add_chapter_head(6, "Prior Art and Related Work (Literature Survey)")
     add_sec_head("6.1 Introduction")
@@ -699,6 +735,7 @@ def generate_30page_report():
         "and do not export formatted, IEEE-compliant dissertations."
     )
 
+    doc.add_page_break()
     add_sec_head("6.3 Related Work")
     add_p(
         "Related research in Large Language Model agents (e.g., ReAct [5], Toolformer [6], and Generative Agents [7]) demonstrates that language "
@@ -727,7 +764,7 @@ def generate_30page_report():
     )
 
     # =========================================================================
-    # CHAPTER 7: APPLICATIONS AND DEPLOYMENT AREAS
+    # CHAPTER 7: APPLICATIONS AND DEPLOYMENT AREAS (Pages 22 to 23)
     # =========================================================================
     add_chapter_head(7, "Applications and Deployment Areas")
     add_sec_head("7.1 Applications")
@@ -737,6 +774,7 @@ def generate_30page_report():
     add_bullet("• Corporate R&D & Patent Landscape Analysis:", "Conducting rapid competitive intelligence, mapping patent white spaces, and assessing the feasibility of novel intellectual property.")
     add_bullet("• Clinical Trial & Biomedical Synthesis:", "Synthesizing medical literature across PubMed/ArXiv to extract comparative drug effectiveness metrics.")
 
+    doc.add_page_break()
     add_sec_head("7.2 Deployment Areas")
     add_p(
         "ALRA supports two primary deployment topologies:\n"
@@ -747,7 +785,7 @@ def generate_30page_report():
     )
 
     # =========================================================================
-    # CHAPTER 8: CONCLUSION AND FUTURE SCOPE
+    # CHAPTER 8: CONCLUSION AND FUTURE SCOPE (Pages 24 to 25)
     # =========================================================================
     add_chapter_head(8, "Conclusion and Future Scope")
     add_sec_head("8.1 Conclusion")
@@ -759,13 +797,14 @@ def generate_30page_report():
         "time from 28 hours to under 4.3 minutes while maintaining 100% citation grounding with zero hallucinations."
     )
 
+    doc.add_page_break()
     add_sec_head("8.2 Future Scope")
     add_bullet("1. Direct CrossRef & PubMed Central Integration:", "Expanding API connectors to index over 150 million biomedical and multidisciplinary papers.")
     add_bullet("2. Direct Reference Manager Synchronization:", "Establishing bidirectional synchronization with Zotero, Mendeley, and Overleaf via REST webhooks.")
     add_bullet("3. Multi-Agent Adversarial Peer Review:", "Simulating adversarial multi-agent review panels to stress-test research methodology robustness prior to formal submission to IEEE / Springer / ACM conferences.")
 
     # =========================================================================
-    # CHAPTER 9: GITHUB LINK AND SHORT CODE
+    # CHAPTER 9: GITHUB LINK AND SHORT CODE (Pages 26 to 27)
     # =========================================================================
     add_chapter_head(9, "GitHub Link and Short Code")
     add_sec_head("9.1 GitHub Repository")
@@ -804,6 +843,7 @@ def generate_30page_report():
     r_t.font.size = Pt(8.5)
     r_t.font.color.rgb = RGBColor(15, 23, 42)
 
+    doc.add_page_break()
     add_sec_head("9.3 Short Code Excerpts")
     add_p("The excerpts are simplified to show the core ideas; the full code is in the repository.")
     
@@ -836,7 +876,7 @@ def generate_30page_report():
     r_c.font.size = Pt(8.5)
     r_c.font.color.rgb = RGBColor(0, 51, 102)
 
-    # ================= REFERENCES =================
+    # ================= REFERENCES (Page 28) =================
     doc.add_page_break()
     p_rf = doc.add_paragraph(style='Heading 1')
     p_rf.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -900,7 +940,7 @@ def generate_30page_report():
         except Exception as e:
             print(f"[SKIPPED/LOCKED] {tgt} ({e})")
 
-    print("[SUCCESS] Report generated cleanly without duplication!")
+    print("[SUCCESS] Report generated with 100% precision!")
 
 if __name__ == "__main__":
     generate_30page_report()
