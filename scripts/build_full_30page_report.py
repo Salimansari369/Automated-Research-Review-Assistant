@@ -3,8 +3,8 @@ Generates the authoritative, exhaustive 25-30 page Academic Project Report for S
 Directly clones the official college template format while expanding all 9 chapters
 with rigorous theoretical discourse, mathematical models, algorithms, architecture tables,
 11 high-resolution diagrams and UI screenshots, bold abstract, IEEE citations, and appendices.
-Precisely matches the 1.5 line spacing, native Heading 1/Heading 2 hierarchy, font settings,
-and layout of the reference report.
+Precisely eliminates all double-text, fixes spacing/justification bugs, ensures exact 1.5 line spacing,
+and matches the clean visual presentation of the reference report.
 """
 
 import os
@@ -89,7 +89,7 @@ def add_custom_styled_table(doc, headers, rows_data, col_widths, align_list=None
             if c_idx == 0:
                 r.font.bold = True
 
-    p_after = doc.add_paragraph()
+    p_after = doc.add_paragraph(style='Normal')
     p_after.paragraph_format.space_before = Pt(0)
     p_after.paragraph_format.space_after = Pt(6)
     return table
@@ -99,7 +99,6 @@ def generate_30page_report():
     doc = docx.Document(friend_path)
 
     short_title = "Automated Literature Review Assistant"
-    full_title = "Automated Literature Review Assistant: An Agentic AI-Powered Autonomous Academic Research Discovery, Gap Intelligence, and Review Synthesis System"
     student_name = "Salim Ansari"
     prn = "24070521005"
     guide_name = "Dr. Parag Naik"
@@ -107,138 +106,135 @@ def generate_30page_report():
     coord_name = "Dr. Shreyas Rajendra Hole"
 
     # --- 1. COVER PAGE (P0 to P30) ---
-    for i, p in enumerate(doc.paragraphs[:31]):
-        txt = p.text
-        if "AI Agent for Personal Goal" in txt or "GoalMate" in txt or "“AI Agent" in txt or ("PROJECT REPORT" in txt and "ON" not in txt and i == 6):
-            p.text = ""
-            r = p.add_run(f"“{short_title}”")
-            r.font.name = "Times New Roman"
-            r.font.size = Pt(18)
-            r.font.bold = True
-            r.font.color.rgb = RGBColor(0, 0, 0)
-            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        elif "Sanskruti" in txt or "24070521025" in txt:
-            p.text = ""
-            r1 = p.add_run(f"Name:- {student_name}\n")
-            r1.font.name = "Times New Roman"
-            r1.font.size = Pt(13)
-            r1.font.bold = True
-            r1.font.color.rgb = RGBColor(0, 0, 0)
-            r2 = p.add_run(f"PRN :- {prn}\n")
-            r2.font.name = "Times New Roman"
-            r2.font.size = Pt(13)
-            r2.font.bold = True
-            r2.font.color.rgb = RGBColor(0, 0, 0)
-            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        elif "<Guide Name>" in txt or "Dr./Prof." in txt:
-            p.text = ""
-            r = p.add_run(guide_name)
-            r.font.name = "Times New Roman"
-            r.font.size = Pt(13)
-            r.font.bold = True
-            r.font.color.rgb = RGBColor(0, 0, 0)
-            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        elif "<Designation>" in txt:
-            p.text = ""
-            r = p.add_run(guide_desg)
-            r.font.name = "Times New Roman"
-            r.font.size = Pt(13)
-            r.font.color.rgb = RGBColor(0, 0, 0)
-            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p06 = doc.paragraphs[6]
+    p06.text = ""
+    r = p06.add_run(f"“{short_title}”")
+    r.font.name = "Times New Roman"
+    r.font.size = Pt(18)
+    r.font.bold = True
+    p06.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+    p17 = doc.paragraphs[17]
+    p17.text = ""
+    r1 = p17.add_run(f"{student_name} (PRN: {prn})\n")
+    r1.font.name = "Times New Roman"
+    r1.font.size = Pt(14)
+    r1.font.bold = True
+    p17.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+    p23 = doc.paragraphs[23]
+    p23.text = ""
+    r = p23.add_run(guide_name)
+    r.font.name = "Times New Roman"
+    r.font.size = Pt(14)
+    r.font.bold = True
+    p23.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+    p25 = doc.paragraphs[25]
+    p25.text = ""
+    r = p25.add_run(guide_desg)
+    r.font.name = "Times New Roman"
+    r.font.size = Pt(14)
+    p25.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
     # --- 2. CERTIFICATE (P32 to P38) ---
-    for i, p in enumerate(doc.paragraphs[32:38]):
-        if "This is to certify that" in p.text:
-            p.text = ""
-            r = p.add_run(
-                f"This is to certify that the Project work entitled “{short_title}” is carried out by the "
-                f"{student_name}, in partial fulfillment for the award of the degree of Bachelor of Technology "
-                f"in Computer Science and Engineering, Symbiosis International (Deemed University), Pune during the academic year 2026-2027."
-            )
-            r.font.name = "Times New Roman"
-            r.font.size = Pt(11.5)
-            r.font.color.rgb = RGBColor(0, 0, 0)
-            p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-            p.paragraph_format.line_spacing = 1.25
+    p36 = doc.paragraphs[36]
+    p36.text = ""
+    r = p36.add_run(
+        f"This is to certify that the Project work entitled “{short_title}” is carried out by "
+        f"{student_name} (PRN: {prn}), in partial fulfillment for the award of the degree of Bachelor of Technology "
+        f"in Computer Science and Engineering, Symbiosis International (Deemed University), Pune during the academic year 2026-2027."
+    )
+    r.font.name = "Times New Roman"
+    r.font.size = Pt(11.5)
+    p36.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+    p36.paragraph_format.line_spacing = 1.25
 
     # --- 3. DECLARATION 1 (P38 to P51) ---
-    for i, p in enumerate(doc.paragraphs[38:51]):
-        txt = p.text
-        if "I hereby declare that" in txt:
-            p.text = ""
-            r = p.add_run(
-                f"I hereby declare that the project titled “{short_title}” submitted to Symbiosis Institute of Technology, "
-                f"a constituent of Symbiosis International (Deemed University) Pune, for the award of the degree of Bachelor of "
-                f"Technology in Computer Science and Engineering, is a result of original research carried out by me. I understand "
-                f"that my report may be made electronically available to the public. It is further declared that the project report "
-                f"or any part thereof has not been previously submitted to any University or Institute for the award of any degree or diploma."
-            )
-            r.font.name = "Times New Roman"
-            r.font.size = Pt(11.5)
-            r.font.color.rgb = RGBColor(0, 0, 0)
-            p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-            p.paragraph_format.line_spacing = 1.25
-        elif "Sanskruti" in txt:
-            p.text = p.text.replace("Sanskruti Gorle", student_name).replace("24070521025", prn)
-        elif "Title of the project:" in txt:
-            p.text = f"Title of the project: “{short_title}”"
+    p40 = doc.paragraphs[40]
+    p40.text = ""
+    r = p40.add_run(
+        f"I hereby declare that the project titled “{short_title}” submitted to Symbiosis Institute of Technology, "
+        f"a constituent of Symbiosis International (Deemed University) Pune, for the award of the degree of Bachelor of "
+        f"Technology in Computer Science and Engineering, is a result of original research carried out by me. I understand "
+        f"that my report may be made electronically available to the public. It is further declared that the project report "
+        f"or any part thereof has not been previously submitted to any University or Institute for the award of any degree or diploma."
+    )
+    r.font.name = "Times New Roman"
+    r.font.size = Pt(11.5)
+    p40.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+    p40.paragraph_format.line_spacing = 1.25
+
+    doc.paragraphs[41].text = f"Name of Student 1: {student_name} (PRN: {prn})"
+    doc.paragraphs[47].text = f"Title of the project: “{short_title}”"
+    doc.paragraphs[49].text = student_name
 
     # --- 4. DECLARATION 2 (IPR Consent, P51 to P67) ---
-    for i, p in enumerate(doc.paragraphs[51:67]):
-        txt = p.text
-        if "I hereby declare that" in txt or "WE HEREBY DECLARE" in txt or "AI Agent" in txt:
-            p.text = ""
-            r = p.add_run(
-                f"WE HEREBY DECLARE THAT THE PROJECT ENTITLED ““{short_title.upper()}” SUBMITTED BY ME FOR THE PURPOSE "
-                f"OF PROCESSING UNDER THE IPR FRAMEWORK, IS NOT AN INDUSTRY-SPONSORED PROJECT.\n\n"
-                f"WE FURTHER PROVIDE MY FULL CONSENT TO SIT NAGPUR AND SCRI PUNE TO EVALUATE, PROCESS, AND PROCEED "
-                f"WITH THE FILING OF THE INTELLECTUAL PROPERTY RIGHTS (IPR) APPLICATION FOR THE SAID IDEA."
-            )
-            r.font.name = "Times New Roman"
-            r.font.size = Pt(11)
-            r.font.bold = True
-            r.font.color.rgb = RGBColor(0, 0, 0)
-            p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-            p.paragraph_format.line_spacing = 1.25
-        elif "Sanskruti" in txt:
-            p.text = p.text.replace("Sanskruti Gorle", student_name).replace("24070521025", prn)
+    p52 = doc.paragraphs[52]
+    p52.text = ""
+    r = p52.add_run(
+        f"I hereby declare that the project entitled “{short_title}”, submitted by me for the purpose of processing under the IPR framework, is not an industry-sponsored project."
+    )
+    r.font.name = "Times New Roman"
+    r.font.size = Pt(11)
+    p52.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+    p52.paragraph_format.line_spacing = 1.25
 
-    # --- 5. ABSTRACT (P67 to P72) ---
-    for i, p in enumerate(doc.paragraphs[67:72]):
-        if "ABSTRACT" not in p.text and len(p.text.strip()) > 20:
-            p.text = ""
-            r = p.add_run(
-                "Conducting comprehensive, high-quality literature reviews is one of the most critical yet cognitively "
-                "exhausting and time-intensive phases of academic research. Contemporary investigators face the monumental challenge "
-                "of discovering relevant publications across fragmented repositories (ArXiv, Semantic Scholar), extracting core "
-                "methodological details, detecting subtle unexplored research gaps, and synthesizing structured comparative taxonomy "
-                "matrices. Traditional keyword search engines lack deep semantic comprehension, while generic Large Language Model (LLM) "
-                "chatbots suffer from ungrounded hallucinations, fabricated citations, and an inability to perform autonomous multi-step "
-                "research workflows.\n\n"
-                "To resolve these fundamental challenges, this project presents the Automated Literature Review Assistant (ALRA), an autonomous, "
-                "agentic AI system engineered to automate the end-to-end academic literature review lifecycle. Built on an asynchronous "
-                "FastAPI backend and a highly polished dual-themed Gradio 6.0 interface, ALRA orchestrates specialized autonomous agents: "
-                "(1) Multi-Source Research Retrieval Agent interfacing with ArXiv and Semantic Scholar APIs, (2) Neural Extraction & Embedding "
-                "Pipeline utilizing PyMuPDF, sentence-transformers, and FAISS vector indexing, (3) Research Gap Intelligence Engine employing "
-                "DeepSeek-R1 and Groq LLaMA-3.3 reasoning models with dynamic 3D network visualizations, (4) Automated Literature Review Synthesis "
-                "and Comparative Matrix Generator with exportable Word (.docx) and LaTeX formats, and (5) Salim AI — an interactive, bidirectional "
-                "multimodal voice assistant equipped with browser SpeechRecognition and EdgeTTS audio synthesis. "
-                "Empirical benchmarks demonstrate that ALRA reduces preliminary literature discovery time from 28 hours to under 4.3 minutes "
-                "with 100% citation grounding and zero hallucinated references."
-            )
-            r.font.name = "Times New Roman"
-            r.font.size = Pt(11)
-            r.font.bold = True
-            r.font.color.rgb = RGBColor(0, 0, 0)
-            p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-            p.paragraph_format.line_spacing = 1.2
-        elif "Keywords" in p.text:
-            p.text = ""
-            r = p.add_run("Keywords—AI agent, agentic AI, literature review, function calling, FAISS vector search, DeepSeek, Groq LLaMA-3.3, Gradio, FastAPI, PyMuPDF")
-            r.font.name = "Times New Roman"
-            r.font.size = Pt(10)
-            r.font.italic = True
-            p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+    p53 = doc.paragraphs[53]
+    p53.text = ""
+    r = p53.add_run(
+        "I further provide my full consent to SIT Nagpur and SCRI Pune to evaluate, process, and proceed with the filing of the Intellectual Property Rights (IPR) application for the said idea."
+    )
+    r.font.name = "Times New Roman"
+    r.font.size = Pt(11)
+    p53.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+    p53.paragraph_format.line_spacing = 1.25
+
+    doc.paragraphs[58].text = student_name
+
+    # --- 5. ABSTRACT (P67 to P71) ---
+    # Single clean paragraph for Abstract body
+    p68 = doc.paragraphs[68]
+    p68.text = ""
+    r = p68.add_run(
+        "Conducting comprehensive, high-quality literature reviews is one of the most critical yet cognitively "
+        "exhausting and time-intensive phases of academic research. Contemporary investigators face the monumental challenge "
+        "of discovering relevant publications across fragmented repositories (ArXiv, Semantic Scholar), extracting core "
+        "methodological details, detecting subtle unexplored research gaps, and synthesizing structured comparative taxonomy "
+        "matrices. Traditional keyword search engines lack deep semantic comprehension, while generic Large Language Model (LLM) "
+        "chatbots suffer from ungrounded hallucinations, fabricated citations, and an inability to perform autonomous multi-step "
+        "research workflows. To resolve these fundamental challenges, this project presents the Automated Literature Review Assistant "
+        "(ALRA), an autonomous agentic AI system engineered to automate the end-to-end academic literature review lifecycle. "
+        "Built on an asynchronous FastAPI backend and a highly polished dual-themed Gradio 6.0 interface, ALRA orchestrates specialized "
+        "autonomous agents: (1) Multi-Source Research Retrieval Agent interfacing with ArXiv and Semantic Scholar APIs, (2) Neural "
+        "Extraction & Embedding Pipeline utilizing PyMuPDF, sentence-transformers, and local FAISS vector indexing, (3) Research Gap "
+        "Intelligence Engine employing DeepSeek-R1 and Groq LLaMA-3.3 reasoning models with dynamic 3D network visualizations, (4) Automated "
+        "Literature Review Synthesis and Comparative Matrix Generator with exportable Word (.docx) and LaTeX formats, and (5) Salim AI — "
+        "an interactive, bidirectional multimodal voice assistant equipped with browser SpeechRecognition and EdgeTTS audio synthesis. "
+        "Empirical benchmarks demonstrate that ALRA reduces preliminary literature discovery time from 28 hours to under 4.3 minutes "
+        "with 100% citation grounding and zero hallucinated references."
+    )
+    r.font.name = "Times New Roman"
+    r.font.size = Pt(11)
+    p68.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+    p68.paragraph_format.line_spacing = 1.2
+    p68.paragraph_format.space_before = Pt(4)
+    p68.paragraph_format.space_after = Pt(8)
+
+    doc.paragraphs[69].text = ""
+
+    # Keywords paragraph
+    p70 = doc.paragraphs[70]
+    p70.text = ""
+    r_kw = p70.add_run("Keywords—AI agent, agentic AI, literature review, function calling, FAISS vector search, DeepSeek, Groq LLaMA-3.3, Gradio, FastAPI, PyMuPDF")
+    r_kw.font.name = "Times New Roman"
+    r_kw.font.size = Pt(10)
+    r_kw.font.italic = True
+    p70.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+    p70.paragraph_format.space_before = Pt(4)
+    p70.paragraph_format.space_after = Pt(6)
+
+    doc.paragraphs[71].text = ""
 
     # --- 6. REMOVE BODY PARAGRAPHS FROM P113 ONWARD ---
     while len(doc.paragraphs) > 113:
@@ -338,7 +334,7 @@ def generate_30page_report():
         r_txt.font.color.rgb = RGBColor(0, 0, 0)
         return p
 
-    def add_fig(path, cap, width_in=5.8):
+    def add_fig(path, cap, width_in=5.6):
         if os.path.exists(path):
             p_i = doc.add_paragraph(style='Normal')
             p_i.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -505,7 +501,7 @@ def generate_30page_report():
         "• Hallucination Risks in Generic AI: General-purpose LLM chatbots (e.g., ChatGPT) invent fake citations and hallucinate non-existent DOIs."
     )
 
-    add_fig('assets/diagrams/fig2_1_problem_gap.png', "Figure 2.1: Traditional Literature Review vs ALRA Agentic Automation Workflow", width_in=5.8)
+    add_fig('assets/diagrams/fig2_1_problem_gap.png', "Figure 2.1: Traditional Literature Review vs ALRA Agentic Automation Workflow", width_in=5.6)
 
     add_p(
         "In contrast, the ALRA Agentic Automation framework transforms this entire workflow into an automated, intelligent, and verifiable "
@@ -531,7 +527,7 @@ def generate_30page_report():
         "agentic architecture. Figure 3.1 illustrates the structural divergence between traditional static LLM chatbots and ALRA's autonomous pipeline."
     )
 
-    add_fig('assets/diagrams/fig3_1_static_vs_agentic.png', "Figure 3.1: Static LLM / Chatbot Approach vs ALRA Tool-Grounded Agentic Pipeline", width_in=5.8)
+    add_fig('assets/diagrams/fig3_1_static_vs_agentic.png', "Figure 3.1: Static LLM / Chatbot Approach vs ALRA Tool-Grounded Agentic Pipeline", width_in=5.6)
 
     add_p(
         "In traditional static LLM systems, a user submits a broad literature query. The LLM processes this input in a single forward pass over its "
@@ -621,7 +617,7 @@ def generate_30page_report():
         "Web Speech API speech recognition, and interactive 3D citation network visualizers."
     )
 
-    add_fig('assets/diagrams/fig5_1_layered_architecture.png', "Figure 5.1: 5-Tier Layered System Architecture of ALRA", width_in=5.8)
+    add_fig('assets/diagrams/fig5_1_layered_architecture.png', "Figure 5.1: 5-Tier Layered System Architecture of ALRA", width_in=5.6)
 
     add_sec_head("5.2 Working Principle")
     add_subsec_head("(a) Multi-Turn Agentic Execution Loop")
@@ -634,7 +630,7 @@ def generate_30page_report():
         "Word (.docx) and LaTeX documents (Step 5)."
     )
 
-    add_fig('assets/diagrams/fig5_2_agent_loop.png', "Figure 5.2: Multi-Turn Agentic Tool-Calling & Review Synthesis Workflow Loop", width_in=5.8)
+    add_fig('assets/diagrams/fig5_2_agent_loop.png', "Figure 5.2: Multi-Turn Agentic Tool-Calling & Review Synthesis Workflow Loop", width_in=5.6)
 
     add_subsec_head("(b) Salim AI Multimodal Voice Pipeline")
     add_p(
@@ -644,7 +640,7 @@ def generate_30page_report():
         "natural speech via the Microsoft EdgeTTS Engine (Step 4) and played back through the user's speaker system (Step 5)."
     )
 
-    add_fig('assets/diagrams/fig5_5_voice_flow.png', "Figure 5.3: Salim AI Bidirectional Multimodal Voice Interaction Pipeline", width_in=5.8)
+    add_fig('assets/diagrams/fig5_5_voice_flow.png', "Figure 5.3: Salim AI Bidirectional Multimodal Voice Interaction Pipeline", width_in=5.6)
 
     add_sec_head("5.3 Database and API Connections")
     add_p(
@@ -904,7 +900,7 @@ def generate_30page_report():
         except Exception as e:
             print(f"[SKIPPED/LOCKED] {tgt} ({e})")
 
-    print("[SUCCESS] 25-30 page comprehensive report generated successfully!")
+    print("[SUCCESS] Report generated cleanly without duplication!")
 
 if __name__ == "__main__":
     generate_30page_report()
