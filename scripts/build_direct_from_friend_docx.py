@@ -1,9 +1,9 @@
 """
-Directly clones and modifies the friend's document:
+Directly clones and populates the friend's docx:
 'AI_Agent_for_Personal_Goal_Tracking_Project_Report (1).docx'
-Preserves 100% of the genuine layout, native margins, section breaks,
-footer page numbers, and formatting, while populating Salim Ansari's
-exhaustive academic project content.
+Embeds 11 high-resolution system architecture diagrams, flowcharts,
+and UI screenshots specifically crafted for the Automated Literature Review Assistant.
+Includes bold formatted abstract and IEEE references.
 """
 
 import os
@@ -70,6 +70,7 @@ def build_direct_from_friend():
             r = p.add_run(f"{student_name} (PRN: {prn})\n")
             r.font.name = "Times New Roman"
             r.font.size = Pt(14)
+            r.font.bold = True
             r.font.color.rgb = RGBColor(0, 0, 0)
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER
         elif "<Guide Name>" in txt or "Dr./Prof." in txt:
@@ -77,6 +78,7 @@ def build_direct_from_friend():
             r = p.add_run(guide_name)
             r.font.name = "Times New Roman"
             r.font.size = Pt(14)
+            r.font.bold = True
             r.font.color.rgb = RGBColor(0, 0, 0)
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER
         elif "<Designation>" in txt:
@@ -143,8 +145,8 @@ def build_direct_from_friend():
             p.text = p.text.replace("Sanskruti Gorle", student_name).replace("24070521025", prn)
 
     # --- 5. ABSTRACT (P67 to P74) ---
-    for i, p in enumerate(doc.paragraphs[67:74]):
-        if "ABSTRACT" not in p.text and len(p.text.strip()) > 30:
+    for i, p in enumerate(doc.paragraphs[67:75]):
+        if "ABSTRACT" not in p.text and len(p.text.strip()) > 20:
             p.text = ""
             r = p.add_run(
                 "Conducting comprehensive, high-quality literature reviews is one of the most critical yet cognitively "
@@ -167,25 +169,24 @@ def build_direct_from_friend():
             )
             r.font.name = "Times New Roman"
             r.font.size = Pt(11)
+            r.font.bold = True
             r.font.color.rgb = RGBColor(0, 0, 0)
             p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
             p.paragraph_format.line_spacing = 1.25
+            break
 
-    # --- 6. FIND START OF SECTION 2 AND REPLACE ALL CHAPTER CONTENT ---
-    # In the friend document, P114 is where Chapter 1 body begins (after TOC and List of Figures/Tables)
+    # --- 6. FIND START OF CHAPTER 1 AND REPLACE WITH ALL 9 EXPANDED CHAPTERS & DIAGRAMS ---
     chap1_idx = None
     for i, p in enumerate(doc.paragraphs):
         if "1.1 Background" in p.text and i > 90:
-            chap1_idx = i - 1 # Include the Chapter 1 heading
+            chap1_idx = i - 1
             break
 
     if chap1_idx is not None:
-        # Remove all old paragraphs from chap1_idx onwards
         for _ in range(len(doc.paragraphs) - chap1_idx):
             p = doc.paragraphs[chap1_idx]
             p._element.getparent().remove(p._element)
 
-    # Helper functions for adding rich content
     def add_chapter_head(num, name):
         p = doc.add_paragraph()
         p.alignment = WD_ALIGN_PARAGRAPH.LEFT
@@ -257,12 +258,12 @@ def build_direct_from_friend():
         "downloading, skimming, and tabulating existing literature."
     )
     add_p(
-        "Recent breakthroughs in Large Language Models (LLMs) and Autonomous Agent frameworks offer an unprecedented opportunity to automate "
-        "these labor-intensive processes. The Automated Literature Review Assistant (ALRA) conceptualizes literature synthesis as a multi-agent "
-        "collaborative task. By combining real-time API integrations (ArXiv and Semantic Scholar) with dense vector retrieval (FAISS) and "
-        "deep reasoning LLMs (Groq LLaMA-3.3 and DeepSeek R1), ALRA transforms passive document reading into an interactive, verifiable, "
-        "and fully autonomous discovery ecosystem."
+        "The Automated Literature Review Assistant (ALRA) conceptualizes literature synthesis as a multi-agent collaborative ecosystem (Figure 1.1). "
+        "By combining real-time API integrations (ArXiv and Semantic Scholar) with dense vector retrieval (FAISS) and deep reasoning LLMs "
+        "(Groq LLaMA-3.3 and DeepSeek R1), ALRA transforms passive document reading into an interactive, verifiable, and fully autonomous discovery process."
     )
+
+    add_fig('assets/diagrams/fig1_1_ecosystem.png', "Figure 1.1: Automated Literature Review Assistant high-level functional ecosystem")
 
     add_subhead("1.2 Research Objectives & Project Scope")
     add_p(
@@ -312,11 +313,13 @@ def build_direct_from_friend():
     add_chapter_head(2, "Problem Statement and Motivation")
     add_subhead("2.1 Formal Problem Statement")
     add_p(
-        "Traditional scholarly literature reviews suffer from three severe systemic flaws:\n"
+        "Traditional scholarly literature reviews suffer from three severe systemic flaws (Figure 2.1):\n"
         "1. Fragmented Information Retrieval: Researchers must manually query separate databases (Google Scholar, IEEE Xplore, ArXiv, PubMed) with rigid keyword syntax, failing to retrieve papers using synonymous terminology.\n"
         "2. Manual Comparison Overhead: Constructing comparative taxonomy tables (comparing dataset sizes, evaluation metrics, limitations, and architectures) requires dozens of hours of manual copy-pasting.\n"
         "3. Cognitive Blindspots in Gap Identification: Identifying what has NOT been done requires a researcher to mentally synthesize hundreds of articles. Inexperienced graduate students frequently pursue research trajectories that are either already saturated or methodologically invalid."
     )
+
+    add_fig('assets/diagrams/fig2_1_problem_gap.png', "Figure 2.1: Problem space and cognitive bottlenecks in traditional literature review vs ALRA Agentic Automation")
 
     add_subhead("2.2 Motivation & Industry Relevance")
     add_p(
@@ -331,10 +334,12 @@ def build_direct_from_friend():
     add_chapter_head(3, "Novelty and Innovative Contributions")
     add_subhead("3.1 System Novelty")
     add_p(
-        "Unlike generic commercial AI search tools that treat documents as flat text dumps, ALRA introduces an Agentic Decomposition Pipeline. "
+        "Unlike generic commercial AI search tools that treat documents as flat text dumps, ALRA introduces an Agentic Decomposition Pipeline (Figure 3.1). "
         "The system treats academic literature as structured multidimensional knowledge nodes consisting of Problem, Method, Dataset, Metric, "
         "Limitation, and Future Scope vectors. This structured representation allows ALRA to perform verifiable cross-paper matrix operations."
     )
+
+    add_fig('assets/diagrams/fig3_1_static_vs_agentic.png', "Figure 3.1: Static LLM Generation vs Tool-Grounded Autonomous Review Synthesis")
 
     add_subhead("3.2 Core Innovative Architectural Contributions")
     add_p(
@@ -395,19 +400,24 @@ def build_direct_from_friend():
     add_chapter_head(5, "Detailed Methodology and System Architecture")
     add_subhead("5.1 End-to-End System Architecture")
     add_p(
-        "The architecture of the Automated Literature Review Assistant is structured into five cohesive layers: "
-        "(1) Multi-Source Ingestion Layer, (2) Document Parsing & Vector Storage Layer, (3) Autonomous Agent Reasoning Layer, "
-        "(4) Synthesis & Export Engine, and (5) Gradio 6.0 Multimodal Presentation Layer."
+        "The architecture of the Automated Literature Review Assistant is structured into five cohesive layers (Figure 5.1): "
+        "(1) Presentation & Multimodal UI Layer, (2) API Gateway & Application Routing Layer, (3) Autonomous Agentic Intelligence Layer, "
+        "(4) Extraction & Vector Indexing Layer, and (5) External Academic Repositories Layer."
     )
+
+    add_fig('assets/diagrams/fig5_1_layered_architecture.png', "Figure 5.1: 5-Tier Layered System Architecture of ALRA")
 
     add_subhead("5.2 Working Principles & Agentic Subsystems")
     add_p(
-        "The core subsystems and algorithmic responsibilities are detailed below:\n"
+        "The execution lifecycle of ALRA operates in a multi-turn tool-calling loop (Figure 5.2):\n"
         "• Query Expansion Agent: Takes a high-level research topic (e.g., 'Agentic AI in Healthcare') and formulates multiple Boolean search queries tailored for ArXiv and Semantic Scholar APIs.\n"
         "• PDF Parsing & Semantic Chunking Engine: Extracts raw text, handles multi-column layouts, removes headers/footers, and segments content into 512-token chunks with 64-token overlap.\n"
         "• Research Gap Analysis Engine: Computes cross-document semantic dissimilarities to detect unpopulated clusters in the research embedding space.\n"
-        "• Salim AI Voice Assistant: Handles real-time speech input via Web Speech API and produces ultra-clear voice synthesis through Microsoft EdgeTTS."
+        "• Salim AI Voice Assistant: Handles real-time speech input via Web Speech API and produces ultra-clear voice synthesis through Microsoft EdgeTTS (Figure 5.5)."
     )
+
+    add_fig('assets/diagrams/fig5_2_agent_loop.png', "Figure 5.2: Multi-Turn Agentic Tool-Calling & Review Synthesis Workflow Loop")
+    add_fig('assets/diagrams/fig5_5_voice_flow.png', "Figure 5.3: Salim AI Bidirectional Multimodal Voice Interaction Architecture")
 
     add_subhead("5.3 Database, Vector Indexing, and External API Integrations")
     add_p(
@@ -416,13 +426,13 @@ def build_direct_from_friend():
     )
 
     add_subhead("5.4 Experimental Simulation, Benchmarking, and Results")
-    add_p("The user interface and execution outputs are illustrated in the figures below:")
+    add_p("The operational user interface and system telemetry are demonstrated in Figures 5.4 through 5.8 below:")
 
-    add_fig('assets/dashboard_light.png', "Figure 5.1: Automated Literature Review Assistant comprehensive dashboard (Light Academic Theme)")
-    add_fig('assets/salim_voice_chat.png', "Figure 5.2: Salim AI multimodal voice agent interactive review and audio dialogue")
-    add_fig('assets/document_upload.png', "Figure 5.3: PDF parsing, chunking, and FAISS vector embedding ingestion workspace")
-    add_fig('assets/intelligence_cards.png', "Figure 5.4: Research gap intelligence extraction and dynamic citation cards")
-    add_fig('assets/dashboard_dark.png', "Figure 5.5: ALRA responsive dark cyber theme with real-time telemetry")
+    add_fig('assets/dashboard_light.png', "Figure 5.4: ALRA Comprehensive Dashboard (Light Academic Theme)")
+    add_fig('assets/salim_voice_chat.png', "Figure 5.5: Salim AI Voice Agent Live Audio Research Dialogue")
+    add_fig('assets/document_upload.png', "Figure 5.6: PDF Parsing, Chunking & Local FAISS Vector Indexing Workspace")
+    add_fig('assets/intelligence_cards.png', "Figure 5.7: Research Gap Intelligence & Dynamic Citation Analysis Cards")
+    add_fig('assets/dashboard_dark.png', "Figure 5.8: ALRA Responsive Dark Cyber Themed Interface")
 
     # Table 5.3
     t3 = doc.add_table(rows=5, cols=4)
@@ -622,7 +632,7 @@ def build_direct_from_friend():
         except Exception as e:
             print(f"[SKIPPED/LOCKED] {tgt} ({e})")
 
-    print("[SUCCESS] Direct cloned build from friend report completed successfully!")
+    print("[SUCCESS] Report with full diagrams and bold abstract successfully generated!")
 
 if __name__ == "__main__":
     build_direct_from_friend()
