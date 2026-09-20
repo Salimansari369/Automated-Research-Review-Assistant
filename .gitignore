@@ -1,0 +1,28 @@
+# Environment variables & secrets
+.env
+*.env
+.env.local
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+
+# Scratch & temporary test files
+scratch/
+test_*.docx
+*.log
+
+# Exported temp files (keep exports directory structure and official report)
+exports/*.csv
+!exports/Salim_Ansari_Project_Report_Automated_Literature_Review_Assistant.docx
